@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="patientApi" target="1.8" />
+      <module name="patientApi.main" target="1.8" />
+      <module name="patientApi.test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
