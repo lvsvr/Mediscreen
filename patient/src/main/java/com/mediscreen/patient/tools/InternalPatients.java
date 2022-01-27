@@ -30,7 +30,7 @@ public class InternalPatients {
 
     public void initializeInternalPatients() throws PatientAlreadyExistsException {
 
-        if(patientRepository.findAll() != null){
+        if(! patientRepository.findAll().isEmpty()){
             throw new PatientAlreadyExistsException("Patient already exists");
         }
             IntStream.range(0, InternalTestHelper.getInternalPatientNumber()).forEach(i -> {
