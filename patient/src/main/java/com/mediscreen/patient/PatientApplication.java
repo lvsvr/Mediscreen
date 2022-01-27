@@ -10,7 +10,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  */
 @SpringBootApplication
 public class PatientApplication {
-	private static final Logger logger = LogManager.getLogger("tourGuide");
+	private static final Logger logger = LogManager.getLogger("patient");
 	public static void main(String[] args) {
 		SpringApplication.run(PatientApplication.class, args);
 		logger.info("patient initialized");

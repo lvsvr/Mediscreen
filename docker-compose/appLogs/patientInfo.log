@@ -1,14 +1,164 @@
-[INFO ] 2022-01-26 15:50:30.307 [background-preinit] Version - HV000001: Hibernate Validator 6.2.0.Final
-[INFO ] 2022-01-26 15:50:30.332 [main] PatientApplication - Starting PatientApplication using Java 1.8.0_312 on fedora with PID 86084 (/home/alex/IdeaProjects/Mediscreen/patient/build/classes/java/main started by alex in /home/alex/IdeaProjects/Mediscreen)
-[INFO ] 2022-01-26 15:50:30.333 [main] PatientApplication - No active profile set, falling back to default profiles: default
-[INFO ] 2022-01-26 15:50:30.702 [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-[INFO ] 2022-01-26 15:50:30.734 [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 25 ms. Found 1 JPA repository interfaces.
-[INFO ] 2022-01-26 15:50:31.062 [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-[INFO ] 2022-01-26 15:50:31.108 [main] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 754 ms
-[INFO ] 2022-01-26 15:50:31.228 [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-[INFO ] 2022-01-26 15:50:31.258 [main] Version - HHH000412: Hibernate ORM core version 5.6.4.Final
-[INFO ] 2022-01-26 15:50:31.387 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-[WARN ] 2022-01-26 15:50:36.106 [main] JdbcEnvironmentInitiator - HHH000342: Could not obtain connection to query metadata
+[INFO ] 2022-01-27 00:06:42.001 [SpringApplicationShutdownHook] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2022-01-27 00:06:43.271 [background-preinit] Version - HV000001: Hibernate Validator 6.2.0.Final
+[INFO ] 2022-01-27 00:06:43.301 [main] PatientApplication - Starting PatientApplication using Java 1.8.0_312 on fedora with PID 100452 (/home/alex/IdeaProjects/Mediscreen/patient/build/classes/java/main started by alex in /home/alex/IdeaProjects/Mediscreen)
+[INFO ] 2022-01-27 00:06:43.303 [main] PatientApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2022-01-27 00:06:43.707 [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2022-01-27 00:06:43.740 [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 26 ms. Found 1 JPA repository interfaces.
+[INFO ] 2022-01-27 00:06:44.175 [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2022-01-27 00:06:44.223 [main] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 886 ms
+[INFO ] 2022-01-27 00:06:44.344 [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2022-01-27 00:06:44.386 [main] Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+[INFO ] 2022-01-27 00:06:44.494 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 2022-01-27 00:06:44.699 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+[INFO ] 2022-01-27 00:06:45.041 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2022-01-27 00:06:45.047 [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2022-01-27 00:06:45.080 [main] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 2022-01-27 00:06:45.557 [main] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO ] 2022-01-27 00:06:45.563 [main] PatientApplication - Started PatientApplication in 2.469 seconds (JVM running for 3.032)
+[INFO ] 2022-01-27 00:06:45.658 [SpringApplicationShutdownHook] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2022-01-27 09:40:15.456 [background-preinit] Version - HV000001: Hibernate Validator 6.2.0.Final
+[INFO ] 2022-01-27 09:40:15.476 [main] PatientApplication - Starting PatientApplication using Java 1.8.0_312 on fedora with PID 22521 (/home/alex/IdeaProjects/Mediscreen/patient/build/classes/java/main started by alex in /home/alex/IdeaProjects/Mediscreen)
+[INFO ] 2022-01-27 09:40:15.478 [main] PatientApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2022-01-27 09:40:15.924 [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2022-01-27 09:40:15.964 [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 32 ms. Found 1 JPA repository interfaces.
+[INFO ] 2022-01-27 09:40:16.331 [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2022-01-27 09:40:16.384 [main] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 881 ms
+[INFO ] 2022-01-27 09:40:16.487 [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2022-01-27 09:40:16.519 [main] Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+[INFO ] 2022-01-27 09:40:16.614 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 2022-01-27 09:40:16.788 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+[INFO ] 2022-01-27 09:40:17.162 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2022-01-27 09:40:17.166 [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2022-01-27 09:40:17.365 [main] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[WARN ] 2022-01-27 09:40:17.769 [main] AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+[INFO ] 2022-01-27 09:40:17.770 [main] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2022-01-27 09:40:17.784 [main] ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[ERROR] 2022-01-27 09:40:17.795 [main] LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+[INFO ] 2022-01-27 09:40:36.714 [background-preinit] Version - HV000001: Hibernate Validator 6.2.0.Final
+[INFO ] 2022-01-27 09:40:36.735 [main] PatientApplication - Starting PatientApplication using Java 1.8.0_312 on fedora with PID 22693 (/home/alex/IdeaProjects/Mediscreen/patient/build/classes/java/main started by alex in /home/alex/IdeaProjects/Mediscreen)
+[INFO ] 2022-01-27 09:40:36.737 [main] PatientApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2022-01-27 09:40:37.072 [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2022-01-27 09:40:37.101 [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 24 ms. Found 1 JPA repository interfaces.
+[INFO ] 2022-01-27 09:40:37.466 [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2022-01-27 09:40:37.513 [main] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 749 ms
+[INFO ] 2022-01-27 09:40:37.623 [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2022-01-27 09:40:37.654 [main] Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+[INFO ] 2022-01-27 09:40:37.732 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 2022-01-27 09:40:37.895 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+[INFO ] 2022-01-27 09:40:38.226 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2022-01-27 09:40:38.231 [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2022-01-27 09:40:38.415 [main] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[WARN ] 2022-01-27 09:40:38.734 [main] AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+[INFO ] 2022-01-27 09:40:38.735 [main] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2022-01-27 09:40:38.751 [main] ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[ERROR] 2022-01-27 09:40:38.764 [main] LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+[INFO ] 2022-01-27 09:42:26.603 [background-preinit] Version - HV000001: Hibernate Validator 6.2.0.Final
+[INFO ] 2022-01-27 09:42:26.623 [main] PatientApplication - Starting PatientApplication using Java 1.8.0_312 on fedora with PID 23240 (/home/alex/IdeaProjects/Mediscreen/patient/build/classes/java/main started by alex in /home/alex/IdeaProjects/Mediscreen)
+[INFO ] 2022-01-27 09:42:26.624 [main] PatientApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2022-01-27 09:42:27.021 [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2022-01-27 09:42:27.052 [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 25 ms. Found 1 JPA repository interfaces.
+[INFO ] 2022-01-27 09:42:27.380 [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2022-01-27 09:42:27.424 [main] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 778 ms
+[INFO ] 2022-01-27 09:42:27.502 [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2022-01-27 09:42:27.525 [main] Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+[INFO ] 2022-01-27 09:42:27.618 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 2022-01-27 09:42:27.794 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+[INFO ] 2022-01-27 09:42:28.178 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2022-01-27 09:42:28.184 [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2022-01-27 09:42:28.383 [main] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[WARN ] 2022-01-27 09:42:28.789 [main] AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+[INFO ] 2022-01-27 09:42:28.790 [main] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2022-01-27 09:42:28.809 [main] ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[ERROR] 2022-01-27 09:42:28.823 [main] LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+[INFO ] 2022-01-27 09:48:36.938 [background-preinit] Version - HV000001: Hibernate Validator 6.2.0.Final
+[INFO ] 2022-01-27 09:48:36.957 [main] PatientApplication - Starting PatientApplication using Java 1.8.0_312 on fedora with PID 24990 (/home/alex/IdeaProjects/Mediscreen/patient/build/classes/java/main started by alex in /home/alex/IdeaProjects/Mediscreen)
+[INFO ] 2022-01-27 09:48:36.959 [main] PatientApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2022-01-27 09:48:37.318 [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2022-01-27 09:48:37.349 [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 24 ms. Found 1 JPA repository interfaces.
+[INFO ] 2022-01-27 09:48:37.706 [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2022-01-27 09:48:37.749 [main] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 770 ms
+[INFO ] 2022-01-27 09:48:37.829 [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2022-01-27 09:48:37.855 [main] Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+[INFO ] 2022-01-27 09:48:37.946 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 2022-01-27 09:48:38.099 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+[INFO ] 2022-01-27 09:48:38.423 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2022-01-27 09:48:38.428 [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2022-01-27 09:48:38.635 [main] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[WARN ] 2022-01-27 09:48:38.945 [main] AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+[INFO ] 2022-01-27 09:48:38.946 [main] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2022-01-27 09:48:38.959 [main] ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[ERROR] 2022-01-27 09:48:38.969 [main] LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+[INFO ] 2022-01-27 09:49:07.212 [background-preinit] Version - HV000001: Hibernate Validator 6.2.0.Final
+[INFO ] 2022-01-27 09:49:07.234 [main] PatientApplication - Starting PatientApplication using Java 1.8.0_312 on fedora with PID 25165 (/home/alex/IdeaProjects/Mediscreen/patient/build/classes/java/main started by alex in /home/alex/IdeaProjects/Mediscreen)
+[INFO ] 2022-01-27 09:49:07.236 [main] PatientApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2022-01-27 09:49:07.609 [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2022-01-27 09:49:07.638 [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 23 ms. Found 1 JPA repository interfaces.
+[INFO ] 2022-01-27 09:49:07.963 [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2022-01-27 09:49:08.009 [main] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 753 ms
+[INFO ] 2022-01-27 09:49:08.088 [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2022-01-27 09:49:08.113 [main] Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+[INFO ] 2022-01-27 09:49:08.207 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[WARN ] 2022-01-27 09:49:10.425 [main] JdbcEnvironmentInitiator - HHH000342: Could not obtain connection to query metadata
 org.postgresql.util.PSQLException: The connection attempt failed.
 	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:313) ~[postgresql-42.3.1.jar:42.3.1]
 	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:51) ~[postgresql-42.3.1.jar:42.3.1]
@@ -60,8 +210,8 @@ org.postgresql.util.PSQLException: The connection attempt failed.
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302) [spring-boot-2.6.3.jar:2.6.3]
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) [spring-boot-2.6.3.jar:2.6.3]
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) [spring-boot-2.6.3.jar:2.6.3]
-	at com.mediscreen.patient.PatientApplication.main(PatientApplication.java:10) [main/:?]
-Caused by: java.net.UnknownHostException: loca
+	at com.mediscreen.patient.PatientApplication.main(PatientApplication.java:15) [main/:?]
+Caused by: java.net.UnknownHostException: dbpatient
 	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:184) ~[?:1.8.0_312]
 	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[?:1.8.0_312]
 	at java.net.Socket.connect(Socket.java:607) ~[?:1.8.0_312]
@@ -70,15 +220,15 @@ Caused by: java.net.UnknownHostException: loca
 	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:100) ~[postgresql-42.3.1.jar:42.3.1]
 	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:215) ~[postgresql-42.3.1.jar:42.3.1]
 	... 50 more
-[INFO ] 2022-01-26 15:50:36.121 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
-[WARN ] 2022-01-26 15:50:37.418 [main] SqlExceptionHelper - SQL Error: 0, SQLState: 08001
-[ERROR] 2022-01-26 15:50:37.419 [main] SqlExceptionHelper - The connection attempt failed.
-[ERROR] 2022-01-26 15:50:37.427 [main] LocalContainerEntityManagerFactoryBean - Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
-[WARN ] 2022-01-26 15:50:37.428 [main] AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
-[INFO ] 2022-01-26 15:50:37.440 [main] ConditionEvaluationReportLoggingListener - 
+[INFO ] 2022-01-27 09:49:10.437 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+[WARN ] 2022-01-27 09:49:11.736 [main] SqlExceptionHelper - SQL Error: 0, SQLState: 08001
+[ERROR] 2022-01-27 09:49:11.737 [main] SqlExceptionHelper - The connection attempt failed.
+[ERROR] 2022-01-27 09:49:11.744 [main] LocalContainerEntityManagerFactoryBean - Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+[WARN ] 2022-01-27 09:49:11.745 [main] AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+[INFO ] 2022-01-27 09:49:11.760 [main] ConditionEvaluationReportLoggingListener - 
 
 Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-[ERROR] 2022-01-26 15:50:37.448 [main] SpringApplication - Application run failed
+[ERROR] 2022-01-27 09:49:11.768 [main] SpringApplication - Application run failed
 org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-5.3.15.jar:5.3.15]
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.15.jar:5.3.15]
@@ -96,7 +246,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302) [spring-boot-2.6.3.jar:2.6.3]
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) [spring-boot-2.6.3.jar:2.6.3]
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) [spring-boot-2.6.3.jar:2.6.3]
-	at com.mediscreen.patient.PatientApplication.main(PatientApplication.java:10) [main/:?]
+	at com.mediscreen.patient.PatientApplication.main(PatientApplication.java:15) [main/:?]
 Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421) ~[spring-orm-5.3.15.jar:5.3.15]
 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-5.3.15.jar:5.3.15]
@@ -166,7 +316,7 @@ Caused by: org.postgresql.util.PSQLException: The connection attempt failed.
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.15.jar:5.3.15]
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.15.jar:5.3.15]
 	... 16 more
-Caused by: java.net.UnknownHostException: loca
+Caused by: java.net.UnknownHostException: dbpatient
 	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:184) ~[?:1.8.0_312]
 	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[?:1.8.0_312]
 	at java.net.Socket.connect(Socket.java:607) ~[?:1.8.0_312]
@@ -208,17 +358,302 @@ Caused by: java.net.UnknownHostException: loca
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.15.jar:5.3.15]
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.15.jar:5.3.15]
 	... 16 more
-[INFO ] 2022-01-26 15:50:55.913 [background-preinit] Version - HV000001: Hibernate Validator 6.2.0.Final
-[INFO ] 2022-01-26 15:50:55.935 [main] PatientApplication - Starting PatientApplication using Java 1.8.0_312 on fedora with PID 86243 (/home/alex/IdeaProjects/Mediscreen/patient/build/classes/java/main started by alex in /home/alex/IdeaProjects/Mediscreen)
-[INFO ] 2022-01-26 15:50:55.937 [main] PatientApplication - No active profile set, falling back to default profiles: default
-[INFO ] 2022-01-26 15:50:56.326 [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-[INFO ] 2022-01-26 15:50:56.353 [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 22 ms. Found 1 JPA repository interfaces.
-[INFO ] 2022-01-26 15:50:56.677 [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-[INFO ] 2022-01-26 15:50:56.721 [main] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 741 ms
-[INFO ] 2022-01-26 15:50:56.800 [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-[INFO ] 2022-01-26 15:50:56.825 [main] Version - HHH000412: Hibernate ORM core version 5.6.4.Final
-[INFO ] 2022-01-26 15:50:56.908 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-[WARN ] 2022-01-26 15:51:01.607 [main] JdbcEnvironmentInitiator - HHH000342: Could not obtain connection to query metadata
+[INFO ] 2022-01-27 09:49:24.773 [background-preinit] Version - HV000001: Hibernate Validator 6.2.0.Final
+[INFO ] 2022-01-27 09:49:24.792 [main] PatientApplication - Starting PatientApplication using Java 1.8.0_312 on fedora with PID 25304 (/home/alex/IdeaProjects/Mediscreen/patient/build/classes/java/main started by alex in /home/alex/IdeaProjects/Mediscreen)
+[INFO ] 2022-01-27 09:49:24.794 [main] PatientApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2022-01-27 09:49:25.181 [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2022-01-27 09:49:25.210 [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 23 ms. Found 1 JPA repository interfaces.
+[INFO ] 2022-01-27 09:49:25.535 [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2022-01-27 09:49:25.579 [main] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 764 ms
+[INFO ] 2022-01-27 09:49:25.658 [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2022-01-27 09:49:25.683 [main] Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+[INFO ] 2022-01-27 09:49:25.767 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 2022-01-27 09:49:25.920 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+[INFO ] 2022-01-27 09:49:26.228 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2022-01-27 09:49:26.232 [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2022-01-27 09:49:26.418 [main] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[WARN ] 2022-01-27 09:49:26.733 [main] AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+[INFO ] 2022-01-27 09:49:26.734 [main] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2022-01-27 09:49:26.747 [main] ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[ERROR] 2022-01-27 09:49:26.760 [main] LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+[INFO ] 2022-01-27 09:50:34.114 [background-preinit] Version - HV000001: Hibernate Validator 6.2.0.Final
+[INFO ] 2022-01-27 09:50:34.136 [main] PatientApplication - Starting PatientApplication using Java 1.8.0_312 on fedora with PID 26052 (/home/alex/IdeaProjects/Mediscreen/patient/build/classes/java/main started by alex in /home/alex/IdeaProjects/Mediscreen)
+[INFO ] 2022-01-27 09:50:34.138 [main] PatientApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2022-01-27 09:50:34.542 [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2022-01-27 09:50:34.571 [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 22 ms. Found 1 JPA repository interfaces.
+[INFO ] 2022-01-27 09:50:34.910 [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2022-01-27 09:50:34.957 [main] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 793 ms
+[INFO ] 2022-01-27 09:50:35.057 [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2022-01-27 09:50:35.093 [main] Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+[INFO ] 2022-01-27 09:50:35.183 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 2022-01-27 09:50:35.372 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+[INFO ] 2022-01-27 09:50:35.739 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2022-01-27 09:50:35.744 [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2022-01-27 09:50:35.978 [main] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[WARN ] 2022-01-27 09:50:36.319 [main] AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+[INFO ] 2022-01-27 09:50:36.320 [main] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2022-01-27 09:50:36.332 [main] ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[ERROR] 2022-01-27 09:50:36.341 [main] LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+[INFO ] 2022-01-27 09:53:40.321 [background-preinit] Version - HV000001: Hibernate Validator 6.2.0.Final
+[INFO ] 2022-01-27 09:53:40.346 [main] PatientApplication - Starting PatientApplication using Java 1.8.0_312 on fedora with PID 27299 (/home/alex/IdeaProjects/Mediscreen/patient/build/classes/java/main started by alex in /home/alex/IdeaProjects/Mediscreen)
+[INFO ] 2022-01-27 09:53:40.348 [main] PatientApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2022-01-27 09:53:40.765 [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2022-01-27 09:53:40.803 [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 30 ms. Found 1 JPA repository interfaces.
+[INFO ] 2022-01-27 09:53:41.161 [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2022-01-27 09:53:41.209 [main] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 817 ms
+[INFO ] 2022-01-27 09:53:41.291 [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2022-01-27 09:53:41.313 [main] Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+[INFO ] 2022-01-27 09:53:41.385 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 2022-01-27 09:53:41.532 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+[INFO ] 2022-01-27 09:53:41.861 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2022-01-27 09:53:41.866 [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2022-01-27 09:53:42.042 [main] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[WARN ] 2022-01-27 09:53:42.350 [main] AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+[INFO ] 2022-01-27 09:53:42.351 [main] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2022-01-27 09:53:42.364 [main] ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[ERROR] 2022-01-27 09:53:42.375 [main] LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+[INFO ] 2022-01-27 09:58:17.728 [background-preinit] Version - HV000001: Hibernate Validator 6.2.0.Final
+[INFO ] 2022-01-27 09:58:17.746 [main] PatientApplication - Starting PatientApplication using Java 1.8.0_312 on fedora with PID 29155 (/home/alex/IdeaProjects/Mediscreen/patient/build/classes/java/main started by alex in /home/alex/IdeaProjects/Mediscreen)
+[INFO ] 2022-01-27 09:58:17.747 [main] PatientApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2022-01-27 09:58:18.123 [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2022-01-27 09:58:18.155 [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 26 ms. Found 1 JPA repository interfaces.
+[INFO ] 2022-01-27 09:58:18.506 [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2022-01-27 09:58:18.551 [main] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 783 ms
+[INFO ] 2022-01-27 09:58:18.633 [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2022-01-27 09:58:18.655 [main] Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+[INFO ] 2022-01-27 09:58:18.726 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 2022-01-27 09:58:18.880 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+[INFO ] 2022-01-27 09:58:19.214 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2022-01-27 09:58:19.219 [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2022-01-27 09:58:19.424 [main] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 2022-01-27 09:58:19.794 [main] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO ] 2022-01-27 09:58:19.800 [main] PatientApplication - Started PatientApplication in 2.236 seconds (JVM running for 2.608)
+[INFO ] 2022-01-27 09:58:19.802 [main] tourGuide - patient initialized
+[INFO ] 2022-01-27 15:44:29.480 [SpringApplicationShutdownHook] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2022-01-27 15:53:25.350 [background-preinit] Version - HV000001: Hibernate Validator 6.2.0.Final
+[INFO ] 2022-01-27 15:53:25.376 [main] PatientApplication - Starting PatientApplication using Java 1.8.0_312 on fedora with PID 6883 (/home/alex/IdeaProjects/Mediscreen/patient/build/classes/java/main started by alex in /home/alex/IdeaProjects/Mediscreen)
+[INFO ] 2022-01-27 15:53:25.378 [main] PatientApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2022-01-27 15:53:25.711 [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2022-01-27 15:53:25.741 [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 24 ms. Found 1 JPA repository interfaces.
+[INFO ] 2022-01-27 15:53:26.116 [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2022-01-27 15:53:26.158 [main] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 758 ms
+[INFO ] 2022-01-27 15:53:26.244 [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2022-01-27 15:53:26.275 [main] Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+[INFO ] 2022-01-27 15:53:26.375 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 2022-01-27 15:53:26.555 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+[INFO ] 2022-01-27 15:53:26.874 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2022-01-27 15:53:26.879 [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2022-01-27 15:53:27.074 [main] AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'patientController': Unsatisfied dependency expressed through field 'internalPatients'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.mediscreen.patient.tools.InternalPatients' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+[INFO ] 2022-01-27 15:53:27.074 [main] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2022-01-27 15:53:27.095 [main] ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[ERROR] 2022-01-27 15:53:27.110 [main] LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field internalPatients in com.mediscreen.patient.controller.PatientController required a bean of type 'com.mediscreen.patient.tools.InternalPatients' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.mediscreen.patient.tools.InternalPatients' in your configuration.
+
+[INFO ] 2022-01-27 15:55:04.947 [background-preinit] Version - HV000001: Hibernate Validator 6.2.0.Final
+[INFO ] 2022-01-27 15:55:04.967 [main] PatientApplication - Starting PatientApplication using Java 1.8.0_312 on fedora with PID 7085 (/home/alex/IdeaProjects/Mediscreen/patient/build/classes/java/main started by alex in /home/alex/IdeaProjects/Mediscreen)
+[INFO ] 2022-01-27 15:55:04.969 [main] PatientApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2022-01-27 15:55:05.329 [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2022-01-27 15:55:05.362 [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 28 ms. Found 1 JPA repository interfaces.
+[INFO ] 2022-01-27 15:55:05.729 [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2022-01-27 15:55:05.771 [main] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 776 ms
+[INFO ] 2022-01-27 15:55:05.851 [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2022-01-27 15:55:05.874 [main] Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+[INFO ] 2022-01-27 15:55:05.953 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 2022-01-27 15:55:06.098 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+[INFO ] 2022-01-27 15:55:06.420 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2022-01-27 15:55:06.424 [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2022-01-27 15:55:06.429 [main] AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'patientController' defined in file [/home/alex/IdeaProjects/Mediscreen/patient/build/classes/java/main/com/mediscreen/patient/controller/PatientController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.mediscreen.patient.tools.InternalPatients' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+[INFO ] 2022-01-27 15:55:06.429 [main] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2022-01-27 15:55:06.441 [main] ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[ERROR] 2022-01-27 15:55:06.451 [main] LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.mediscreen.patient.controller.PatientController required a bean of type 'com.mediscreen.patient.tools.InternalPatients' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.mediscreen.patient.tools.InternalPatients' in your configuration.
+
+[INFO ] 2022-01-27 15:56:53.023 [background-preinit] Version - HV000001: Hibernate Validator 6.2.0.Final
+[INFO ] 2022-01-27 15:56:53.046 [main] PatientApplication - Starting PatientApplication using Java 1.8.0_312 on fedora with PID 7763 (/home/alex/IdeaProjects/Mediscreen/patient/build/classes/java/main started by alex in /home/alex/IdeaProjects/Mediscreen)
+[INFO ] 2022-01-27 15:56:53.049 [main] PatientApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2022-01-27 15:56:53.428 [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2022-01-27 15:56:53.460 [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 26 ms. Found 1 JPA repository interfaces.
+[INFO ] 2022-01-27 15:56:53.823 [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2022-01-27 15:56:53.872 [main] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 779 ms
+[INFO ] 2022-01-27 15:56:53.963 [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2022-01-27 15:56:53.989 [main] Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+[INFO ] 2022-01-27 15:56:54.082 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 2022-01-27 15:56:54.230 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+[INFO ] 2022-01-27 15:56:54.543 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2022-01-27 15:56:54.548 [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2022-01-27 15:56:54.553 [main] AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'patientController' defined in file [/home/alex/IdeaProjects/Mediscreen/patient/build/classes/java/main/com/mediscreen/patient/controller/PatientController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.mediscreen.patient.tools.InternalPatients' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+[INFO ] 2022-01-27 15:56:54.553 [main] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2022-01-27 15:56:54.566 [main] ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[ERROR] 2022-01-27 15:56:54.577 [main] LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.mediscreen.patient.controller.PatientController required a bean of type 'com.mediscreen.patient.tools.InternalPatients' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.mediscreen.patient.tools.InternalPatients' in your configuration.
+
+[INFO ] 2022-01-27 16:00:23.111 [background-preinit] Version - HV000001: Hibernate Validator 6.2.0.Final
+[INFO ] 2022-01-27 16:00:23.136 [main] PatientApplication - Starting PatientApplication using Java 1.8.0_312 on fedora with PID 9556 (/home/alex/IdeaProjects/Mediscreen/patient/build/classes/java/main started by alex in /home/alex/IdeaProjects/Mediscreen)
+[INFO ] 2022-01-27 16:00:23.138 [main] PatientApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2022-01-27 16:00:23.544 [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2022-01-27 16:00:23.578 [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 27 ms. Found 1 JPA repository interfaces.
+[INFO ] 2022-01-27 16:00:23.899 [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2022-01-27 16:00:23.945 [main] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 763 ms
+[INFO ] 2022-01-27 16:00:24.064 [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2022-01-27 16:00:24.091 [main] Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+[INFO ] 2022-01-27 16:00:24.204 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 2022-01-27 16:00:24.362 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+[INFO ] 2022-01-27 16:00:24.676 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2022-01-27 16:00:24.681 [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2022-01-27 16:00:24.686 [main] AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'patientController' defined in file [/home/alex/IdeaProjects/Mediscreen/patient/build/classes/java/main/com/mediscreen/patient/controller/PatientController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.mediscreen.patient.tools.InternalPatients' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+[INFO ] 2022-01-27 16:00:24.686 [main] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2022-01-27 16:00:24.700 [main] ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[ERROR] 2022-01-27 16:00:24.711 [main] LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.mediscreen.patient.controller.PatientController required a bean of type 'com.mediscreen.patient.tools.InternalPatients' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.mediscreen.patient.tools.InternalPatients' in your configuration.
+
+[INFO ] 2022-01-27 16:02:07.884 [background-preinit] Version - HV000001: Hibernate Validator 6.2.0.Final
+[INFO ] 2022-01-27 16:02:07.908 [main] PatientApplication - Starting PatientApplication using Java 1.8.0_312 on fedora with PID 10677 (/home/alex/IdeaProjects/Mediscreen/patient/build/classes/java/main started by alex in /home/alex/IdeaProjects/Mediscreen)
+[INFO ] 2022-01-27 16:02:07.911 [main] PatientApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2022-01-27 16:02:08.477 [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2022-01-27 16:02:08.519 [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 33 ms. Found 1 JPA repository interfaces.
+[INFO ] 2022-01-27 16:02:08.990 [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2022-01-27 16:02:09.046 [main] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1106 ms
+[INFO ] 2022-01-27 16:02:09.139 [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2022-01-27 16:02:09.162 [main] Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+[INFO ] 2022-01-27 16:02:09.253 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 2022-01-27 16:02:09.460 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+[INFO ] 2022-01-27 16:02:09.854 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2022-01-27 16:02:09.858 [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2022-01-27 16:02:09.865 [main] AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'patientController' defined in file [/home/alex/IdeaProjects/Mediscreen/patient/build/classes/java/main/com/mediscreen/patient/controller/PatientController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.mediscreen.patient.tools.InternalPatients' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+[INFO ] 2022-01-27 16:02:09.865 [main] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2022-01-27 16:02:09.876 [main] ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[ERROR] 2022-01-27 16:02:09.886 [main] LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.mediscreen.patient.controller.PatientController required a bean of type 'com.mediscreen.patient.tools.InternalPatients' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.mediscreen.patient.tools.InternalPatients' in your configuration.
+
+[INFO ] 2022-01-27 16:02:41.500 [background-preinit] Version - HV000001: Hibernate Validator 6.2.0.Final
+[INFO ] 2022-01-27 16:02:41.524 [main] PatientApplication - Starting PatientApplication using Java 1.8.0_312 on fedora with PID 10864 (/home/alex/IdeaProjects/Mediscreen/patient/build/classes/java/main started by alex in /home/alex/IdeaProjects/Mediscreen)
+[INFO ] 2022-01-27 16:02:41.526 [main] PatientApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2022-01-27 16:02:41.918 [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2022-01-27 16:02:41.959 [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 33 ms. Found 1 JPA repository interfaces.
+[INFO ] 2022-01-27 16:02:42.338 [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2022-01-27 16:02:42.389 [main] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 843 ms
+[INFO ] 2022-01-27 16:02:42.485 [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2022-01-27 16:02:42.511 [main] Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+[INFO ] 2022-01-27 16:02:42.625 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[WARN ] 2022-01-27 16:02:44.843 [main] JdbcEnvironmentInitiator - HHH000342: Could not obtain connection to query metadata
 org.postgresql.util.PSQLException: The connection attempt failed.
 	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:313) ~[postgresql-42.3.1.jar:42.3.1]
 	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:51) ~[postgresql-42.3.1.jar:42.3.1]
@@ -270,8 +705,8 @@ org.postgresql.util.PSQLException: The connection attempt failed.
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302) [spring-boot-2.6.3.jar:2.6.3]
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) [spring-boot-2.6.3.jar:2.6.3]
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) [spring-boot-2.6.3.jar:2.6.3]
-	at com.mediscreen.patient.PatientApplication.main(PatientApplication.java:10) [main/:?]
-Caused by: java.net.UnknownHostException: loca
+	at com.mediscreen.patient.PatientApplication.main(PatientApplication.java:15) [main/:?]
+Caused by: java.net.UnknownHostException: dbpatient
 	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:184) ~[?:1.8.0_312]
 	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[?:1.8.0_312]
 	at java.net.Socket.connect(Socket.java:607) ~[?:1.8.0_312]
@@ -280,15 +715,15 @@ Caused by: java.net.UnknownHostException: loca
 	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:100) ~[postgresql-42.3.1.jar:42.3.1]
 	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:215) ~[postgresql-42.3.1.jar:42.3.1]
 	... 50 more
-[INFO ] 2022-01-26 15:51:01.627 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
-[WARN ] 2022-01-26 15:51:02.925 [main] SqlExceptionHelper - SQL Error: 0, SQLState: 08001
-[ERROR] 2022-01-26 15:51:02.925 [main] SqlExceptionHelper - The connection attempt failed.
-[ERROR] 2022-01-26 15:51:02.932 [main] LocalContainerEntityManagerFactoryBean - Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
-[WARN ] 2022-01-26 15:51:02.933 [main] AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
-[INFO ] 2022-01-26 15:51:02.945 [main] ConditionEvaluationReportLoggingListener - 
+[INFO ] 2022-01-27 16:02:44.865 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+[WARN ] 2022-01-27 16:02:46.203 [main] SqlExceptionHelper - SQL Error: 0, SQLState: 08001
+[ERROR] 2022-01-27 16:02:46.204 [main] SqlExceptionHelper - The connection attempt failed.
+[ERROR] 2022-01-27 16:02:46.207 [main] LocalContainerEntityManagerFactoryBean - Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+[WARN ] 2022-01-27 16:02:46.207 [main] AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+[INFO ] 2022-01-27 16:02:46.214 [main] ConditionEvaluationReportLoggingListener - 
 
 Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-[ERROR] 2022-01-26 15:51:02.954 [main] SpringApplication - Application run failed
+[ERROR] 2022-01-27 16:02:46.223 [main] SpringApplication - Application run failed
 org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-5.3.15.jar:5.3.15]
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.15.jar:5.3.15]
@@ -306,7 +741,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302) [spring-boot-2.6.3.jar:2.6.3]
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) [spring-boot-2.6.3.jar:2.6.3]
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) [spring-boot-2.6.3.jar:2.6.3]
-	at com.mediscreen.patient.PatientApplication.main(PatientApplication.java:10) [main/:?]
+	at com.mediscreen.patient.PatientApplication.main(PatientApplication.java:15) [main/:?]
 Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421) ~[spring-orm-5.3.15.jar:5.3.15]
 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-5.3.15.jar:5.3.15]
@@ -376,7 +811,7 @@ Caused by: org.postgresql.util.PSQLException: The connection attempt failed.
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.15.jar:5.3.15]
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.15.jar:5.3.15]
 	... 16 more
-Caused by: java.net.UnknownHostException: loca
+Caused by: java.net.UnknownHostException: dbpatient
 	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:184) ~[?:1.8.0_312]
 	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[?:1.8.0_312]
 	at java.net.Socket.connect(Socket.java:607) ~[?:1.8.0_312]
@@ -418,17 +853,182 @@ Caused by: java.net.UnknownHostException: loca
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.15.jar:5.3.15]
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.15.jar:5.3.15]
 	... 16 more
-[INFO ] 2022-01-26 15:56:56.737 [background-preinit] Version - HV000001: Hibernate Validator 6.2.0.Final
-[INFO ] 2022-01-26 15:56:56.760 [main] PatientApplication - Starting PatientApplication using Java 1.8.0_312 on fedora with PID 87813 (/home/alex/IdeaProjects/Mediscreen/patient/build/classes/java/main started by alex in /home/alex/IdeaProjects/Mediscreen)
-[INFO ] 2022-01-26 15:56:56.762 [main] PatientApplication - No active profile set, falling back to default profiles: default
-[INFO ] 2022-01-26 15:56:57.144 [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-[INFO ] 2022-01-26 15:56:57.171 [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21 ms. Found 1 JPA repository interfaces.
-[INFO ] 2022-01-26 15:56:57.520 [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-[INFO ] 2022-01-26 15:56:57.564 [main] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 763 ms
-[INFO ] 2022-01-26 15:56:57.645 [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-[INFO ] 2022-01-26 15:56:57.673 [main] Version - HHH000412: Hibernate ORM core version 5.6.4.Final
-[INFO ] 2022-01-26 15:56:57.774 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-[WARN ] 2022-01-26 15:57:02.607 [main] JdbcEnvironmentInitiator - HHH000342: Could not obtain connection to query metadata
+[INFO ] 2022-01-27 16:02:54.902 [background-preinit] Version - HV000001: Hibernate Validator 6.2.0.Final
+[INFO ] 2022-01-27 16:02:54.928 [main] PatientApplication - Starting PatientApplication using Java 1.8.0_312 on fedora with PID 11003 (/home/alex/IdeaProjects/Mediscreen/patient/build/classes/java/main started by alex in /home/alex/IdeaProjects/Mediscreen)
+[INFO ] 2022-01-27 16:02:54.929 [main] PatientApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2022-01-27 16:02:55.293 [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2022-01-27 16:02:55.322 [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 24 ms. Found 1 JPA repository interfaces.
+[INFO ] 2022-01-27 16:02:55.661 [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2022-01-27 16:02:55.704 [main] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 752 ms
+[INFO ] 2022-01-27 16:02:55.782 [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2022-01-27 16:02:55.805 [main] Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+[INFO ] 2022-01-27 16:02:55.886 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 2022-01-27 16:02:56.046 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+[INFO ] 2022-01-27 16:02:56.361 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2022-01-27 16:02:56.365 [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2022-01-27 16:02:56.371 [main] AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'patientController' defined in file [/home/alex/IdeaProjects/Mediscreen/patient/build/classes/java/main/com/mediscreen/patient/controller/PatientController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.mediscreen.patient.tools.InternalPatients' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+[INFO ] 2022-01-27 16:02:56.371 [main] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2022-01-27 16:02:56.383 [main] ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[ERROR] 2022-01-27 16:02:56.394 [main] LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.mediscreen.patient.controller.PatientController required a bean of type 'com.mediscreen.patient.tools.InternalPatients' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.mediscreen.patient.tools.InternalPatients' in your configuration.
+
+[INFO ] 2022-01-27 16:03:43.698 [background-preinit] Version - HV000001: Hibernate Validator 6.2.0.Final
+[INFO ] 2022-01-27 16:03:43.723 [main] PatientApplication - Starting PatientApplication using Java 1.8.0_312 on fedora with PID 11170 (/home/alex/IdeaProjects/Mediscreen/patient/build/classes/java/main started by alex in /home/alex/IdeaProjects/Mediscreen)
+[INFO ] 2022-01-27 16:03:43.726 [main] PatientApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2022-01-27 16:03:44.199 [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2022-01-27 16:03:44.228 [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 23 ms. Found 1 JPA repository interfaces.
+[INFO ] 2022-01-27 16:03:44.557 [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2022-01-27 16:03:44.600 [main] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 852 ms
+[INFO ] 2022-01-27 16:03:44.681 [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2022-01-27 16:03:44.708 [main] Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+[INFO ] 2022-01-27 16:03:44.812 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 2022-01-27 16:03:44.977 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+[INFO ] 2022-01-27 16:03:45.295 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2022-01-27 16:03:45.299 [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2022-01-27 16:03:45.307 [main] AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'patientController' defined in file [/home/alex/IdeaProjects/Mediscreen/patient/build/classes/java/main/com/mediscreen/patient/controller/PatientController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.mediscreen.patient.tools.InternalPatients' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+[INFO ] 2022-01-27 16:03:45.307 [main] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2022-01-27 16:03:45.319 [main] ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[ERROR] 2022-01-27 16:03:45.333 [main] LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.mediscreen.patient.controller.PatientController required a bean of type 'com.mediscreen.patient.tools.InternalPatients' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.mediscreen.patient.tools.InternalPatients' in your configuration.
+
+[INFO ] 2022-01-27 16:07:01.081 [background-preinit] Version - HV000001: Hibernate Validator 6.2.0.Final
+[INFO ] 2022-01-27 16:07:01.100 [main] PatientApplication - Starting PatientApplication using Java 1.8.0_312 on fedora with PID 12448 (/home/alex/IdeaProjects/Mediscreen/patient/build/classes/java/main started by alex in /home/alex/IdeaProjects/Mediscreen)
+[INFO ] 2022-01-27 16:07:01.102 [main] PatientApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2022-01-27 16:07:01.451 [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2022-01-27 16:07:01.480 [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 24 ms. Found 1 JPA repository interfaces.
+[INFO ] 2022-01-27 16:07:01.804 [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2022-01-27 16:07:01.847 [main] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 724 ms
+[INFO ] 2022-01-27 16:07:01.928 [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2022-01-27 16:07:01.954 [main] Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+[INFO ] 2022-01-27 16:07:02.043 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 2022-01-27 16:07:02.195 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+[INFO ] 2022-01-27 16:07:02.498 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2022-01-27 16:07:02.503 [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2022-01-27 16:07:02.509 [main] AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'patientController' defined in file [/home/alex/IdeaProjects/Mediscreen/patient/build/classes/java/main/com/mediscreen/patient/controller/PatientController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.mediscreen.patient.tools.InternalPatients' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+[INFO ] 2022-01-27 16:07:02.509 [main] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2022-01-27 16:07:02.520 [main] ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[ERROR] 2022-01-27 16:07:02.531 [main] LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.mediscreen.patient.controller.PatientController required a bean of type 'com.mediscreen.patient.tools.InternalPatients' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.mediscreen.patient.tools.InternalPatients' in your configuration.
+
+[INFO ] 2022-01-27 16:08:20.853 [background-preinit] Version - HV000001: Hibernate Validator 6.2.0.Final
+[INFO ] 2022-01-27 16:08:20.877 [main] PatientApplication - Starting PatientApplication using Java 1.8.0_312 on fedora with PID 12852 (/home/alex/IdeaProjects/Mediscreen/patient/build/classes/java/main started by alex in /home/alex/IdeaProjects/Mediscreen)
+[INFO ] 2022-01-27 16:08:20.879 [main] PatientApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2022-01-27 16:08:21.244 [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2022-01-27 16:08:21.273 [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 24 ms. Found 1 JPA repository interfaces.
+[INFO ] 2022-01-27 16:08:21.643 [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2022-01-27 16:08:21.687 [main] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 763 ms
+[INFO ] 2022-01-27 16:08:21.766 [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2022-01-27 16:08:21.790 [main] Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+[INFO ] 2022-01-27 16:08:21.874 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 2022-01-27 16:08:22.040 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+[INFO ] 2022-01-27 16:08:22.369 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2022-01-27 16:08:22.373 [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2022-01-27 16:08:22.381 [main] AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'patientController' defined in file [/home/alex/IdeaProjects/Mediscreen/patient/build/classes/java/main/com/mediscreen/patient/controller/PatientController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.mediscreen.patient.tools.InternalPatients' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+[INFO ] 2022-01-27 16:08:22.381 [main] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2022-01-27 16:08:22.395 [main] ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[ERROR] 2022-01-27 16:08:22.410 [main] LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.mediscreen.patient.controller.PatientController required a bean of type 'com.mediscreen.patient.tools.InternalPatients' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.mediscreen.patient.tools.InternalPatients' in your configuration.
+
+[INFO ] 2022-01-27 16:08:30.208 [background-preinit] Version - HV000001: Hibernate Validator 6.2.0.Final
+[INFO ] 2022-01-27 16:08:30.231 [main] PatientApplication - Starting PatientApplication using Java 1.8.0_312 on fedora with PID 13009 (/home/alex/IdeaProjects/Mediscreen/patient/build/classes/java/main started by alex in /home/alex/IdeaProjects/Mediscreen)
+[INFO ] 2022-01-27 16:08:30.233 [main] PatientApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2022-01-27 16:08:30.592 [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2022-01-27 16:08:30.625 [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 26 ms. Found 1 JPA repository interfaces.
+[INFO ] 2022-01-27 16:08:30.984 [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2022-01-27 16:08:31.027 [main] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 774 ms
+[INFO ] 2022-01-27 16:08:31.106 [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2022-01-27 16:08:31.128 [main] Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+[INFO ] 2022-01-27 16:08:31.204 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 2022-01-27 16:08:31.349 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+[INFO ] 2022-01-27 16:08:31.648 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2022-01-27 16:08:31.653 [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2022-01-27 16:08:31.658 [main] AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'patientController' defined in file [/home/alex/IdeaProjects/Mediscreen/patient/build/classes/java/main/com/mediscreen/patient/controller/PatientController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.mediscreen.patient.tools.InternalPatients' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+[INFO ] 2022-01-27 16:08:31.658 [main] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2022-01-27 16:08:31.669 [main] ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[ERROR] 2022-01-27 16:08:31.679 [main] LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.mediscreen.patient.controller.PatientController required a bean of type 'com.mediscreen.patient.tools.InternalPatients' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.mediscreen.patient.tools.InternalPatients' in your configuration.
+
+[INFO ] 2022-01-27 16:09:14.162 [background-preinit] Version - HV000001: Hibernate Validator 6.2.0.Final
+[INFO ] 2022-01-27 16:09:14.185 [main] PatientApplication - Starting PatientApplication using Java 1.8.0_312 on fedora with PID 13168 (/home/alex/IdeaProjects/Mediscreen/patient/build/classes/java/main started by alex in /home/alex/IdeaProjects/Mediscreen)
+[INFO ] 2022-01-27 16:09:14.186 [main] PatientApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2022-01-27 16:09:14.540 [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2022-01-27 16:09:14.570 [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 24 ms. Found 1 JPA repository interfaces.
+[INFO ] 2022-01-27 16:09:14.931 [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2022-01-27 16:09:14.980 [main] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 774 ms
+[INFO ] 2022-01-27 16:09:15.079 [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2022-01-27 16:09:15.105 [main] Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+[INFO ] 2022-01-27 16:09:15.198 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[WARN ] 2022-01-27 16:09:19.844 [main] JdbcEnvironmentInitiator - HHH000342: Could not obtain connection to query metadata
 org.postgresql.util.PSQLException: The connection attempt failed.
 	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:313) ~[postgresql-42.3.1.jar:42.3.1]
 	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:51) ~[postgresql-42.3.1.jar:42.3.1]
@@ -480,8 +1080,8 @@ org.postgresql.util.PSQLException: The connection attempt failed.
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302) [spring-boot-2.6.3.jar:2.6.3]
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) [spring-boot-2.6.3.jar:2.6.3]
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) [spring-boot-2.6.3.jar:2.6.3]
-	at com.mediscreen.patient.PatientApplication.main(PatientApplication.java:10) [main/:?]
-Caused by: java.net.UnknownHostException: loca
+	at com.mediscreen.patient.PatientApplication.main(PatientApplication.java:15) [main/:?]
+Caused by: java.net.UnknownHostException: dbpatient
 	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:184) ~[?:1.8.0_312]
 	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[?:1.8.0_312]
 	at java.net.Socket.connect(Socket.java:607) ~[?:1.8.0_312]
@@ -490,15 +1090,15 @@ Caused by: java.net.UnknownHostException: loca
 	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:100) ~[postgresql-42.3.1.jar:42.3.1]
 	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:215) ~[postgresql-42.3.1.jar:42.3.1]
 	... 50 more
-[INFO ] 2022-01-26 15:57:02.618 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
-[WARN ] 2022-01-26 15:57:03.913 [main] SqlExceptionHelper - SQL Error: 0, SQLState: 08001
-[ERROR] 2022-01-26 15:57:03.914 [main] SqlExceptionHelper - The connection attempt failed.
-[ERROR] 2022-01-26 15:57:03.921 [main] LocalContainerEntityManagerFactoryBean - Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
-[WARN ] 2022-01-26 15:57:03.922 [main] AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
-[INFO ] 2022-01-26 15:57:03.938 [main] ConditionEvaluationReportLoggingListener - 
+[INFO ] 2022-01-27 16:09:19.858 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+[WARN ] 2022-01-27 16:09:21.144 [main] SqlExceptionHelper - SQL Error: 0, SQLState: 08001
+[ERROR] 2022-01-27 16:09:21.144 [main] SqlExceptionHelper - The connection attempt failed.
+[ERROR] 2022-01-27 16:09:21.152 [main] LocalContainerEntityManagerFactoryBean - Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+[WARN ] 2022-01-27 16:09:21.152 [main] AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+[INFO ] 2022-01-27 16:09:21.167 [main] ConditionEvaluationReportLoggingListener - 
 
 Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-[ERROR] 2022-01-26 15:57:03.949 [main] SpringApplication - Application run failed
+[ERROR] 2022-01-27 16:09:21.175 [main] SpringApplication - Application run failed
 org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-5.3.15.jar:5.3.15]
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.15.jar:5.3.15]
@@ -516,7 +1116,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302) [spring-boot-2.6.3.jar:2.6.3]
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) [spring-boot-2.6.3.jar:2.6.3]
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) [spring-boot-2.6.3.jar:2.6.3]
-	at com.mediscreen.patient.PatientApplication.main(PatientApplication.java:10) [main/:?]
+	at com.mediscreen.patient.PatientApplication.main(PatientApplication.java:15) [main/:?]
 Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421) ~[spring-orm-5.3.15.jar:5.3.15]
 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-5.3.15.jar:5.3.15]
@@ -586,7 +1186,7 @@ Caused by: org.postgresql.util.PSQLException: The connection attempt failed.
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.15.jar:5.3.15]
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.15.jar:5.3.15]
 	... 16 more
-Caused by: java.net.UnknownHostException: loca
+Caused by: java.net.UnknownHostException: dbpatient
 	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:184) ~[?:1.8.0_312]
 	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[?:1.8.0_312]
 	at java.net.Socket.connect(Socket.java:607) ~[?:1.8.0_312]
@@ -628,20 +1228,627 @@ Caused by: java.net.UnknownHostException: loca
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.15.jar:5.3.15]
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.15.jar:5.3.15]
 	... 16 more
-[INFO ] 2022-01-26 15:57:17.983 [background-preinit] Version - HV000001: Hibernate Validator 6.2.0.Final
-[INFO ] 2022-01-26 15:57:18.007 [main] PatientApplication - Starting PatientApplication using Java 1.8.0_312 on fedora with PID 87963 (/home/alex/IdeaProjects/Mediscreen/patient/build/classes/java/main started by alex in /home/alex/IdeaProjects/Mediscreen)
-[INFO ] 2022-01-26 15:57:18.009 [main] PatientApplication - No active profile set, falling back to default profiles: default
-[INFO ] 2022-01-26 15:57:18.420 [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-[INFO ] 2022-01-26 15:57:18.452 [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 26 ms. Found 1 JPA repository interfaces.
-[INFO ] 2022-01-26 15:57:18.808 [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-[INFO ] 2022-01-26 15:57:18.863 [main] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 810 ms
-[INFO ] 2022-01-26 15:57:18.957 [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-[INFO ] 2022-01-26 15:57:18.984 [main] Version - HHH000412: Hibernate ORM core version 5.6.4.Final
-[INFO ] 2022-01-26 15:57:19.075 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-[INFO ] 2022-01-26 15:57:19.270 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
-[INFO ] 2022-01-26 15:57:19.594 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-[INFO ] 2022-01-26 15:57:19.598 [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-[WARN ] 2022-01-26 15:57:19.635 [main] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-[INFO ] 2022-01-26 15:57:20.116 [main] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-[INFO ] 2022-01-26 15:57:20.122 [main] PatientApplication - Started PatientApplication in 2.322 seconds (JVM running for 2.714)
-[INFO ] 2022-01-26 15:57:28.613 [SpringApplicationShutdownHook] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2022-01-27 16:09:28.135 [background-preinit] Version - HV000001: Hibernate Validator 6.2.0.Final
+[INFO ] 2022-01-27 16:09:28.156 [main] PatientApplication - Starting PatientApplication using Java 1.8.0_312 on fedora with PID 13310 (/home/alex/IdeaProjects/Mediscreen/patient/build/classes/java/main started by alex in /home/alex/IdeaProjects/Mediscreen)
+[INFO ] 2022-01-27 16:09:28.158 [main] PatientApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2022-01-27 16:09:28.529 [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2022-01-27 16:09:28.558 [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 24 ms. Found 1 JPA repository interfaces.
+[INFO ] 2022-01-27 16:09:28.917 [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2022-01-27 16:09:28.965 [main] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 786 ms
+[INFO ] 2022-01-27 16:09:29.057 [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2022-01-27 16:09:29.083 [main] Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+[INFO ] 2022-01-27 16:09:29.172 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[WARN ] 2022-01-27 16:09:33.843 [main] JdbcEnvironmentInitiator - HHH000342: Could not obtain connection to query metadata
+org.postgresql.util.PSQLException: The connection attempt failed.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:313) ~[postgresql-42.3.1.jar:42.3.1]
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:51) ~[postgresql-42.3.1.jar:42.3.1]
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:225) ~[postgresql-42.3.1.jar:42.3.1]
+	at org.postgresql.Driver.makeConnection(Driver.java:466) ~[postgresql-42.3.1.jar:42.3.1]
+	at org.postgresql.Driver.connect(Driver.java:265) ~[postgresql-42.3.1.jar:42.3.1]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) ~[HikariCP-4.0.3.jar:?]
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:181) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:175) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:173) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:127) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1460) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1494) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.3.15.jar:5.3.15]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.3.15.jar:5.3.15]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-5.3.15.jar:5.3.15]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-5.3.15.jar:5.3.15]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) [spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) [spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) [spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154) [spring-context-5.3.15.jar:5.3.15]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908) [spring-context-5.3.15.jar:5.3.15]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) [spring-context-5.3.15.jar:5.3.15]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) [spring-boot-2.6.3.jar:2.6.3]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732) [spring-boot-2.6.3.jar:2.6.3]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:414) [spring-boot-2.6.3.jar:2.6.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302) [spring-boot-2.6.3.jar:2.6.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) [spring-boot-2.6.3.jar:2.6.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) [spring-boot-2.6.3.jar:2.6.3]
+	at com.mediscreen.patient.PatientApplication.main(PatientApplication.java:15) [main/:?]
+Caused by: java.net.UnknownHostException: dbpatient
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:184) ~[?:1.8.0_312]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[?:1.8.0_312]
+	at java.net.Socket.connect(Socket.java:607) ~[?:1.8.0_312]
+	at org.postgresql.core.PGStream.createSocket(PGStream.java:238) ~[postgresql-42.3.1.jar:42.3.1]
+	at org.postgresql.core.PGStream.<init>(PGStream.java:98) ~[postgresql-42.3.1.jar:42.3.1]
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:100) ~[postgresql-42.3.1.jar:42.3.1]
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:215) ~[postgresql-42.3.1.jar:42.3.1]
+	... 50 more
+[INFO ] 2022-01-27 16:09:33.858 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+[WARN ] 2022-01-27 16:09:35.146 [main] SqlExceptionHelper - SQL Error: 0, SQLState: 08001
+[ERROR] 2022-01-27 16:09:35.146 [main] SqlExceptionHelper - The connection attempt failed.
+[ERROR] 2022-01-27 16:09:35.154 [main] LocalContainerEntityManagerFactoryBean - Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+[WARN ] 2022-01-27 16:09:35.155 [main] AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+[INFO ] 2022-01-27 16:09:35.164 [main] ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[ERROR] 2022-01-27 16:09:35.172 [main] SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154) ~[spring-context-5.3.15.jar:5.3.15]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908) ~[spring-context-5.3.15.jar:5.3.15]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.15.jar:5.3.15]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.3.jar:2.6.3]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732) [spring-boot-2.6.3.jar:2.6.3]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:414) [spring-boot-2.6.3.jar:2.6.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302) [spring-boot-2.6.3.jar:2.6.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) [spring-boot-2.6.3.jar:2.6.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) [spring-boot-2.6.3.jar:2.6.3]
+	at com.mediscreen.patient.PatientApplication.main(PatientApplication.java:15) [main/:?]
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421) ~[spring-orm-5.3.15.jar:5.3.15]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-5.3.15.jar:5.3.15]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.15.jar:5.3.15]
+	... 16 more
+Caused by: org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:112) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:37) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:99) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:71) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcConnection(ImprovedExtractionContextImpl.java:63) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.tool.schema.extract.spi.ExtractionContext.getQueryResults(ExtractionContext.java:43) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.tool.schema.extract.internal.SequenceInformationExtractorLegacyImpl.extractMetadata(SequenceInformationExtractorLegacyImpl.java:39) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.initializeSequences(DatabaseInformationImpl.java:66) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.<init>(DatabaseInformationImpl.java:60) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.tool.schema.internal.Helper.buildDatabaseInformation(Helper.java:183) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:104) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:192) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:81) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:335) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:471) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1498) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.3.15.jar:5.3.15]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.3.15.jar:5.3.15]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-5.3.15.jar:5.3.15]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-5.3.15.jar:5.3.15]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.15.jar:5.3.15]
+	... 16 more
+Caused by: org.postgresql.util.PSQLException: The connection attempt failed.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:313) ~[postgresql-42.3.1.jar:42.3.1]
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:51) ~[postgresql-42.3.1.jar:42.3.1]
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:225) ~[postgresql-42.3.1.jar:42.3.1]
+	at org.postgresql.Driver.makeConnection(Driver.java:466) ~[postgresql-42.3.1.jar:42.3.1]
+	at org.postgresql.Driver.connect(Driver.java:265) ~[postgresql-42.3.1.jar:42.3.1]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) ~[HikariCP-4.0.3.jar:?]
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:181) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:44) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcConnection(ImprovedExtractionContextImpl.java:63) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.tool.schema.extract.spi.ExtractionContext.getQueryResults(ExtractionContext.java:43) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.tool.schema.extract.internal.SequenceInformationExtractorLegacyImpl.extractMetadata(SequenceInformationExtractorLegacyImpl.java:39) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.initializeSequences(DatabaseInformationImpl.java:66) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.<init>(DatabaseInformationImpl.java:60) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.tool.schema.internal.Helper.buildDatabaseInformation(Helper.java:183) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:104) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:192) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:81) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:335) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:471) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1498) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.3.15.jar:5.3.15]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.3.15.jar:5.3.15]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-5.3.15.jar:5.3.15]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-5.3.15.jar:5.3.15]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.15.jar:5.3.15]
+	... 16 more
+Caused by: java.net.UnknownHostException: dbpatient
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:184) ~[?:1.8.0_312]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[?:1.8.0_312]
+	at java.net.Socket.connect(Socket.java:607) ~[?:1.8.0_312]
+	at org.postgresql.core.PGStream.createSocket(PGStream.java:238) ~[postgresql-42.3.1.jar:42.3.1]
+	at org.postgresql.core.PGStream.<init>(PGStream.java:98) ~[postgresql-42.3.1.jar:42.3.1]
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:100) ~[postgresql-42.3.1.jar:42.3.1]
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:215) ~[postgresql-42.3.1.jar:42.3.1]
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:51) ~[postgresql-42.3.1.jar:42.3.1]
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:225) ~[postgresql-42.3.1.jar:42.3.1]
+	at org.postgresql.Driver.makeConnection(Driver.java:466) ~[postgresql-42.3.1.jar:42.3.1]
+	at org.postgresql.Driver.connect(Driver.java:265) ~[postgresql-42.3.1.jar:42.3.1]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) ~[HikariCP-4.0.3.jar:?]
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:181) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:44) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcConnection(ImprovedExtractionContextImpl.java:63) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.tool.schema.extract.spi.ExtractionContext.getQueryResults(ExtractionContext.java:43) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.tool.schema.extract.internal.SequenceInformationExtractorLegacyImpl.extractMetadata(SequenceInformationExtractorLegacyImpl.java:39) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.initializeSequences(DatabaseInformationImpl.java:66) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.<init>(DatabaseInformationImpl.java:60) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.tool.schema.internal.Helper.buildDatabaseInformation(Helper.java:183) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:104) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:192) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:81) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:335) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:471) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1498) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.3.15.jar:5.3.15]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.3.15.jar:5.3.15]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-5.3.15.jar:5.3.15]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-5.3.15.jar:5.3.15]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.15.jar:5.3.15]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.15.jar:5.3.15]
+	... 16 more
+[INFO ] 2022-01-27 16:09:45.201 [background-preinit] Version - HV000001: Hibernate Validator 6.2.0.Final
+[INFO ] 2022-01-27 16:09:45.221 [main] PatientApplication - Starting PatientApplication using Java 1.8.0_312 on fedora with PID 13451 (/home/alex/IdeaProjects/Mediscreen/patient/build/classes/java/main started by alex in /home/alex/IdeaProjects/Mediscreen)
+[INFO ] 2022-01-27 16:09:45.222 [main] PatientApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2022-01-27 16:09:45.600 [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2022-01-27 16:09:45.635 [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 28 ms. Found 1 JPA repository interfaces.
+[INFO ] 2022-01-27 16:09:45.981 [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2022-01-27 16:09:46.025 [main] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 783 ms
+[INFO ] 2022-01-27 16:09:46.102 [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2022-01-27 16:09:46.128 [main] Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+[INFO ] 2022-01-27 16:09:46.216 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 2022-01-27 16:09:46.368 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+[INFO ] 2022-01-27 16:09:46.681 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2022-01-27 16:09:46.685 [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2022-01-27 16:09:46.690 [main] AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'patientController' defined in file [/home/alex/IdeaProjects/Mediscreen/patient/build/classes/java/main/com/mediscreen/patient/controller/PatientController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.mediscreen.patient.tools.InternalPatients' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+[INFO ] 2022-01-27 16:09:46.691 [main] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2022-01-27 16:09:46.701 [main] ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[ERROR] 2022-01-27 16:09:46.711 [main] LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.mediscreen.patient.controller.PatientController required a bean of type 'com.mediscreen.patient.tools.InternalPatients' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.mediscreen.patient.tools.InternalPatients' in your configuration.
+
+[INFO ] 2022-01-27 16:09:51.097 [background-preinit] Version - HV000001: Hibernate Validator 6.2.0.Final
+[INFO ] 2022-01-27 16:09:51.122 [main] PatientApplication - Starting PatientApplication using Java 1.8.0_312 on fedora with PID 13599 (/home/alex/IdeaProjects/Mediscreen/patient/build/classes/java/main started by alex in /home/alex/IdeaProjects/Mediscreen)
+[INFO ] 2022-01-27 16:09:51.124 [main] PatientApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2022-01-27 16:09:51.516 [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2022-01-27 16:09:51.544 [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 22 ms. Found 1 JPA repository interfaces.
+[INFO ] 2022-01-27 16:09:51.870 [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2022-01-27 16:09:51.913 [main] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 763 ms
+[INFO ] 2022-01-27 16:09:51.997 [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2022-01-27 16:09:52.020 [main] Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+[INFO ] 2022-01-27 16:09:52.098 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 2022-01-27 16:09:52.260 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+[INFO ] 2022-01-27 16:09:52.567 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2022-01-27 16:09:52.571 [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2022-01-27 16:09:52.577 [main] AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'patientController' defined in file [/home/alex/IdeaProjects/Mediscreen/patient/build/classes/java/main/com/mediscreen/patient/controller/PatientController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.mediscreen.patient.tools.InternalPatients' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+[INFO ] 2022-01-27 16:09:52.577 [main] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2022-01-27 16:09:52.591 [main] ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[ERROR] 2022-01-27 16:09:52.602 [main] LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.mediscreen.patient.controller.PatientController required a bean of type 'com.mediscreen.patient.tools.InternalPatients' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.mediscreen.patient.tools.InternalPatients' in your configuration.
+
+[INFO ] 2022-01-27 16:09:56.784 [background-preinit] Version - HV000001: Hibernate Validator 6.2.0.Final
+[INFO ] 2022-01-27 16:09:56.808 [main] PatientApplication - Starting PatientApplication using Java 1.8.0_312 on fedora with PID 13747 (/home/alex/IdeaProjects/Mediscreen/patient/build/classes/java/main started by alex in /home/alex/IdeaProjects/Mediscreen)
+[INFO ] 2022-01-27 16:09:56.811 [main] PatientApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2022-01-27 16:09:57.189 [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2022-01-27 16:09:57.217 [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 22 ms. Found 1 JPA repository interfaces.
+[INFO ] 2022-01-27 16:09:57.561 [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2022-01-27 16:09:57.604 [main] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 751 ms
+[INFO ] 2022-01-27 16:09:57.683 [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2022-01-27 16:09:57.707 [main] Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+[INFO ] 2022-01-27 16:09:57.798 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 2022-01-27 16:09:57.963 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+[INFO ] 2022-01-27 16:09:58.263 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2022-01-27 16:09:58.267 [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2022-01-27 16:09:58.272 [main] AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'patientController' defined in file [/home/alex/IdeaProjects/Mediscreen/patient/build/classes/java/main/com/mediscreen/patient/controller/PatientController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.mediscreen.patient.tools.InternalPatients' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+[INFO ] 2022-01-27 16:09:58.272 [main] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2022-01-27 16:09:58.283 [main] ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[ERROR] 2022-01-27 16:09:58.295 [main] LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.mediscreen.patient.controller.PatientController required a bean of type 'com.mediscreen.patient.tools.InternalPatients' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.mediscreen.patient.tools.InternalPatients' in your configuration.
+
+[INFO ] 2022-01-27 16:10:05.778 [background-preinit] Version - HV000001: Hibernate Validator 6.2.0.Final
+[INFO ] 2022-01-27 16:10:05.800 [main] PatientApplication - Starting PatientApplication using Java 1.8.0_312 on fedora with PID 13898 (/home/alex/IdeaProjects/Mediscreen/patient/build/classes/java/main started by alex in /home/alex/IdeaProjects/Mediscreen)
+[INFO ] 2022-01-27 16:10:05.802 [main] PatientApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2022-01-27 16:10:06.179 [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2022-01-27 16:10:06.212 [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 26 ms. Found 1 JPA repository interfaces.
+[INFO ] 2022-01-27 16:10:06.536 [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2022-01-27 16:10:06.582 [main] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 734 ms
+[INFO ] 2022-01-27 16:10:06.695 [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2022-01-27 16:10:06.722 [main] Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+[INFO ] 2022-01-27 16:10:06.832 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 2022-01-27 16:10:06.989 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+[INFO ] 2022-01-27 16:10:07.321 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2022-01-27 16:10:07.326 [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2022-01-27 16:10:07.331 [main] AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'patientController' defined in file [/home/alex/IdeaProjects/Mediscreen/patient/build/classes/java/main/com/mediscreen/patient/controller/PatientController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.mediscreen.patient.tools.InternalPatients' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+[INFO ] 2022-01-27 16:10:07.331 [main] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2022-01-27 16:10:07.345 [main] ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[ERROR] 2022-01-27 16:10:07.358 [main] LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.mediscreen.patient.controller.PatientController required a bean of type 'com.mediscreen.patient.tools.InternalPatients' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.mediscreen.patient.tools.InternalPatients' in your configuration.
+
+[INFO ] 2022-01-27 16:10:10.906 [background-preinit] Version - HV000001: Hibernate Validator 6.2.0.Final
+[INFO ] 2022-01-27 16:10:10.934 [main] PatientApplication - Starting PatientApplication using Java 1.8.0_312 on fedora with PID 14047 (/home/alex/IdeaProjects/Mediscreen/patient/build/classes/java/main started by alex in /home/alex/IdeaProjects/Mediscreen)
+[INFO ] 2022-01-27 16:10:10.937 [main] PatientApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2022-01-27 16:10:11.351 [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2022-01-27 16:10:11.388 [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 29 ms. Found 1 JPA repository interfaces.
+[INFO ] 2022-01-27 16:10:11.764 [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2022-01-27 16:10:11.811 [main] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 828 ms
+[INFO ] 2022-01-27 16:10:11.896 [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2022-01-27 16:10:11.921 [main] Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+[INFO ] 2022-01-27 16:10:12.013 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 2022-01-27 16:10:12.170 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+[INFO ] 2022-01-27 16:10:12.528 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2022-01-27 16:10:12.533 [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2022-01-27 16:10:12.538 [main] AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'patientController' defined in file [/home/alex/IdeaProjects/Mediscreen/patient/build/classes/java/main/com/mediscreen/patient/controller/PatientController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.mediscreen.patient.tools.InternalPatients' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+[INFO ] 2022-01-27 16:10:12.538 [main] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2022-01-27 16:10:12.552 [main] ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[ERROR] 2022-01-27 16:10:12.567 [main] LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.mediscreen.patient.controller.PatientController required a bean of type 'com.mediscreen.patient.tools.InternalPatients' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.mediscreen.patient.tools.InternalPatients' in your configuration.
+
+[INFO ] 2022-01-27 16:12:42.648 [background-preinit] Version - HV000001: Hibernate Validator 6.2.0.Final
+[INFO ] 2022-01-27 16:12:42.668 [main] PatientApplication - Starting PatientApplication using Java 1.8.0_312 on fedora with PID 14248 (/home/alex/IdeaProjects/Mediscreen/patient/build/classes/java/main started by alex in /home/alex/IdeaProjects/Mediscreen)
+[INFO ] 2022-01-27 16:12:42.670 [main] PatientApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2022-01-27 16:12:43.044 [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2022-01-27 16:12:43.074 [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 24 ms. Found 1 JPA repository interfaces.
+[INFO ] 2022-01-27 16:12:43.424 [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2022-01-27 16:12:43.482 [main] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 793 ms
+[INFO ] 2022-01-27 16:12:43.563 [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2022-01-27 16:12:43.587 [main] Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+[INFO ] 2022-01-27 16:12:43.678 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 2022-01-27 16:12:43.823 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+[INFO ] 2022-01-27 16:12:44.232 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2022-01-27 16:12:44.238 [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2022-01-27 16:12:44.243 [main] AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'patientController' defined in file [/home/alex/IdeaProjects/Mediscreen/patient/build/classes/java/main/com/mediscreen/patient/controller/PatientController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.mediscreen.patient.tools.InternalPatients' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+[INFO ] 2022-01-27 16:12:44.244 [main] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2022-01-27 16:12:44.259 [main] ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[ERROR] 2022-01-27 16:12:44.273 [main] LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.mediscreen.patient.controller.PatientController required a bean of type 'com.mediscreen.patient.tools.InternalPatients' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.mediscreen.patient.tools.InternalPatients' in your configuration.
+
+[INFO ] 2022-01-27 16:14:36.605 [background-preinit] Version - HV000001: Hibernate Validator 6.2.0.Final
+[INFO ] 2022-01-27 16:14:36.627 [main] PatientApplication - Starting PatientApplication using Java 1.8.0_312 on fedora with PID 15370 (/home/alex/IdeaProjects/Mediscreen/patient/build/classes/java/main started by alex in /home/alex/IdeaProjects/Mediscreen)
+[INFO ] 2022-01-27 16:14:36.629 [main] PatientApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2022-01-27 16:14:36.980 [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2022-01-27 16:14:37.008 [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 22 ms. Found 1 JPA repository interfaces.
+[INFO ] 2022-01-27 16:14:37.365 [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2022-01-27 16:14:37.412 [main] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 763 ms
+[INFO ] 2022-01-27 16:14:37.502 [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2022-01-27 16:14:37.529 [main] Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+[INFO ] 2022-01-27 16:14:37.622 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 2022-01-27 16:14:37.792 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+[INFO ] 2022-01-27 16:14:38.119 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2022-01-27 16:14:38.123 [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2022-01-27 16:14:38.129 [main] AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'patientController' defined in file [/home/alex/IdeaProjects/Mediscreen/patient/build/classes/java/main/com/mediscreen/patient/controller/PatientController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.mediscreen.patient.tools.InternalPatients' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+[INFO ] 2022-01-27 16:14:38.129 [main] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2022-01-27 16:14:38.143 [main] ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[ERROR] 2022-01-27 16:14:38.155 [main] LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.mediscreen.patient.controller.PatientController required a bean of type 'com.mediscreen.patient.tools.InternalPatients' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.mediscreen.patient.tools.InternalPatients' in your configuration.
+
+[INFO ] 2022-01-27 16:20:55.874 [background-preinit] Version - HV000001: Hibernate Validator 6.2.0.Final
+[INFO ] 2022-01-27 16:20:55.898 [main] PatientApplication - Starting PatientApplication using Java 1.8.0_312 on fedora with PID 16463 (/home/alex/IdeaProjects/Mediscreen/patient/build/classes/java/main started by alex in /home/alex/IdeaProjects/Mediscreen)
+[INFO ] 2022-01-27 16:20:55.900 [main] PatientApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2022-01-27 16:20:56.270 [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2022-01-27 16:20:56.300 [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 24 ms. Found 1 JPA repository interfaces.
+[INFO ] 2022-01-27 16:20:56.628 [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2022-01-27 16:20:56.673 [main] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 733 ms
+[INFO ] 2022-01-27 16:20:56.755 [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2022-01-27 16:20:56.780 [main] Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+[INFO ] 2022-01-27 16:20:56.861 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 2022-01-27 16:20:57.014 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+[INFO ] 2022-01-27 16:20:57.343 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2022-01-27 16:20:57.348 [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2022-01-27 16:20:57.353 [main] AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'patientController' defined in file [/home/alex/IdeaProjects/Mediscreen/patient/build/classes/java/main/com/mediscreen/patient/controller/PatientController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.mediscreen.patient.tools.InternalPatients' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+[INFO ] 2022-01-27 16:20:57.353 [main] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2022-01-27 16:20:57.364 [main] ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[ERROR] 2022-01-27 16:20:57.374 [main] LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.mediscreen.patient.controller.PatientController required a bean of type 'com.mediscreen.patient.tools.InternalPatients' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.mediscreen.patient.tools.InternalPatients' in your configuration.
+
+[INFO ] 2022-01-27 16:26:42.107 [background-preinit] Version - HV000001: Hibernate Validator 6.2.0.Final
+[INFO ] 2022-01-27 16:26:42.128 [main] PatientApplication - Starting PatientApplication using Java 1.8.0_312 on fedora with PID 17150 (/home/alex/IdeaProjects/Mediscreen/patient/build/classes/java/main started by alex in /home/alex/IdeaProjects/Mediscreen)
+[INFO ] 2022-01-27 16:26:42.130 [main] PatientApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2022-01-27 16:26:42.551 [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2022-01-27 16:26:42.583 [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 26 ms. Found 1 JPA repository interfaces.
+[INFO ] 2022-01-27 16:26:42.925 [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2022-01-27 16:26:42.970 [main] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 813 ms
+[INFO ] 2022-01-27 16:26:43.051 [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2022-01-27 16:26:43.075 [main] Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+[INFO ] 2022-01-27 16:26:43.162 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 2022-01-27 16:26:43.317 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+[INFO ] 2022-01-27 16:26:43.615 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2022-01-27 16:26:43.619 [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2022-01-27 16:26:43.825 [main] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 2022-01-27 16:26:44.128 [main] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO ] 2022-01-27 16:26:44.135 [main] PatientApplication - Started PatientApplication in 2.194 seconds (JVM running for 2.602)
+[INFO ] 2022-01-27 16:27:35.326 [http-nio-8080-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2022-01-27 16:27:35.327 [http-nio-8080-exec-1] DispatcherServlet - Completed initialization in 1 ms
+[INFO ] 2022-01-27 16:33:54.960 [SpringApplicationShutdownHook] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2022-01-27 16:33:56.117 [background-preinit] Version - HV000001: Hibernate Validator 6.2.0.Final
+[INFO ] 2022-01-27 16:33:56.138 [main] PatientApplication - Starting PatientApplication using Java 1.8.0_312 on fedora with PID 17990 (/home/alex/IdeaProjects/Mediscreen/patient/build/classes/java/main started by alex in /home/alex/IdeaProjects/Mediscreen)
+[INFO ] 2022-01-27 16:33:56.140 [main] PatientApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2022-01-27 16:33:56.513 [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2022-01-27 16:33:56.542 [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 23 ms. Found 1 JPA repository interfaces.
+[INFO ] 2022-01-27 16:33:57.009 [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2022-01-27 16:33:57.058 [main] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 898 ms
+[INFO ] 2022-01-27 16:33:57.148 [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2022-01-27 16:33:57.171 [main] Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+[INFO ] 2022-01-27 16:33:57.248 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 2022-01-27 16:33:57.407 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+[INFO ] 2022-01-27 16:33:57.782 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2022-01-27 16:33:57.788 [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2022-01-27 16:33:58.020 [main] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 2022-01-27 16:33:58.366 [main] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO ] 2022-01-27 16:33:58.373 [main] PatientApplication - Started PatientApplication in 2.419 seconds (JVM running for 2.878)
+[INFO ] 2022-01-27 16:34:44.772 [http-nio-8080-exec-2] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2022-01-27 16:34:44.773 [http-nio-8080-exec-2] DispatcherServlet - Completed initialization in 1 ms
+[INFO ] 2022-01-27 16:38:14.895 [SpringApplicationShutdownHook] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2022-01-27 16:38:15.918 [background-preinit] Version - HV000001: Hibernate Validator 6.2.0.Final
+[INFO ] 2022-01-27 16:38:15.940 [main] PatientApplication - Starting PatientApplication using Java 1.8.0_312 on fedora with PID 18266 (/home/alex/IdeaProjects/Mediscreen/patient/build/classes/java/main started by alex in /home/alex/IdeaProjects/Mediscreen)
+[INFO ] 2022-01-27 16:38:15.942 [main] PatientApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2022-01-27 16:38:16.320 [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2022-01-27 16:38:16.350 [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 23 ms. Found 1 JPA repository interfaces.
+[INFO ] 2022-01-27 16:38:16.773 [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2022-01-27 16:38:16.817 [main] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 851 ms
+[INFO ] 2022-01-27 16:38:16.905 [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2022-01-27 16:38:16.935 [main] Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+[INFO ] 2022-01-27 16:38:17.028 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 2022-01-27 16:38:17.202 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+[INFO ] 2022-01-27 16:38:17.522 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2022-01-27 16:38:17.527 [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2022-01-27 16:38:17.748 [main] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 2022-01-27 16:38:18.073 [main] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO ] 2022-01-27 16:38:18.079 [main] PatientApplication - Started PatientApplication in 2.328 seconds (JVM running for 2.77)
+[INFO ] 2022-01-27 16:38:26.874 [http-nio-8080-exec-2] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2022-01-27 16:38:26.875 [http-nio-8080-exec-2] DispatcherServlet - Completed initialization in 1 ms
+[INFO ] 2022-01-27 16:40:19.703 [SpringApplicationShutdownHook] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2022-01-27 16:40:20.829 [background-preinit] Version - HV000001: Hibernate Validator 6.2.0.Final
+[INFO ] 2022-01-27 16:40:20.849 [main] PatientApplication - Starting PatientApplication using Java 1.8.0_312 on fedora with PID 18503 (/home/alex/IdeaProjects/Mediscreen/patient/build/classes/java/main started by alex in /home/alex/IdeaProjects/Mediscreen)
+[INFO ] 2022-01-27 16:40:20.850 [main] PatientApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2022-01-27 16:40:21.239 [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2022-01-27 16:40:21.272 [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 26 ms. Found 1 JPA repository interfaces.
+[INFO ] 2022-01-27 16:40:21.737 [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2022-01-27 16:40:21.804 [main] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 927 ms
+[INFO ] 2022-01-27 16:40:21.939 [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2022-01-27 16:40:21.978 [main] Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+[INFO ] 2022-01-27 16:40:22.073 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 2022-01-27 16:40:22.223 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+[INFO ] 2022-01-27 16:40:22.574 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2022-01-27 16:40:22.579 [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2022-01-27 16:40:22.797 [main] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 2022-01-27 16:40:23.208 [main] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO ] 2022-01-27 16:40:23.216 [main] PatientApplication - Started PatientApplication in 2.588 seconds (JVM running for 3.063)
+[INFO ] 2022-01-27 16:40:25.709 [http-nio-8080-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2022-01-27 16:40:25.710 [http-nio-8080-exec-1] DispatcherServlet - Completed initialization in 1 ms
+[INFO ] 2022-01-27 16:40:54.748 [SpringApplicationShutdownHook] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2022-01-27 16:40:55.768 [background-preinit] Version - HV000001: Hibernate Validator 6.2.0.Final
+[INFO ] 2022-01-27 16:40:55.796 [main] PatientApplication - Starting PatientApplication using Java 1.8.0_312 on fedora with PID 18683 (/home/alex/IdeaProjects/Mediscreen/patient/build/classes/java/main started by alex in /home/alex/IdeaProjects/Mediscreen)
+[INFO ] 2022-01-27 16:40:55.799 [main] PatientApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2022-01-27 16:40:56.205 [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2022-01-27 16:40:56.235 [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 24 ms. Found 1 JPA repository interfaces.
+[INFO ] 2022-01-27 16:40:56.580 [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2022-01-27 16:40:56.628 [main] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 809 ms
+[INFO ] 2022-01-27 16:40:56.748 [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2022-01-27 16:40:56.791 [main] Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+[INFO ] 2022-01-27 16:40:56.916 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 2022-01-27 16:40:57.088 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+[INFO ] 2022-01-27 16:40:57.396 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2022-01-27 16:40:57.401 [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2022-01-27 16:40:57.585 [main] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 2022-01-27 16:40:57.899 [main] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO ] 2022-01-27 16:40:57.904 [main] PatientApplication - Started PatientApplication in 2.328 seconds (JVM running for 2.738)
+[INFO ] 2022-01-27 16:41:00.477 [http-nio-8080-exec-2] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2022-01-27 16:41:00.478 [http-nio-8080-exec-2] DispatcherServlet - Completed initialization in 1 ms
+[INFO ] 2022-01-27 16:50:46.455 [SpringApplicationShutdownHook] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2022-01-27 16:50:47.456 [background-preinit] Version - HV000001: Hibernate Validator 6.2.0.Final
+[INFO ] 2022-01-27 16:50:47.481 [main] PatientApplication - Starting PatientApplication using Java 1.8.0_312 on fedora with PID 19352 (/home/alex/IdeaProjects/Mediscreen/patient/build/classes/java/main started by alex in /home/alex/IdeaProjects/Mediscreen)
+[INFO ] 2022-01-27 16:50:47.483 [main] PatientApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2022-01-27 16:50:47.862 [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2022-01-27 16:50:47.892 [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 24 ms. Found 1 JPA repository interfaces.
+[INFO ] 2022-01-27 16:50:48.275 [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2022-01-27 16:50:48.318 [main] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 810 ms
+[INFO ] 2022-01-27 16:50:48.402 [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2022-01-27 16:50:48.429 [main] Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+[INFO ] 2022-01-27 16:50:48.519 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 2022-01-27 16:50:48.675 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+[INFO ] 2022-01-27 16:50:49.000 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2022-01-27 16:50:49.004 [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2022-01-27 16:50:49.197 [main] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 2022-01-27 16:50:49.490 [main] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO ] 2022-01-27 16:50:49.496 [main] PatientApplication - Started PatientApplication in 2.204 seconds (JVM running for 2.651)
+[INFO ] 2022-01-27 16:52:01.448 [SpringApplicationShutdownHook] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2022-01-27 16:52:02.574 [background-preinit] Version - HV000001: Hibernate Validator 6.2.0.Final
+[INFO ] 2022-01-27 16:52:02.594 [main] PatientApplication - Starting PatientApplication using Java 1.8.0_312 on fedora with PID 19544 (/home/alex/IdeaProjects/Mediscreen/patient/build/classes/java/main started by alex in /home/alex/IdeaProjects/Mediscreen)
+[INFO ] 2022-01-27 16:52:02.597 [main] PatientApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2022-01-27 16:52:03.016 [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2022-01-27 16:52:03.053 [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 29 ms. Found 1 JPA repository interfaces.
+[INFO ] 2022-01-27 16:52:03.393 [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2022-01-27 16:52:03.436 [main] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 795 ms
+[INFO ] 2022-01-27 16:52:03.522 [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2022-01-27 16:52:03.546 [main] Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+[INFO ] 2022-01-27 16:52:03.631 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 2022-01-27 16:52:03.798 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+[INFO ] 2022-01-27 16:52:04.115 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2022-01-27 16:52:04.119 [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2022-01-27 16:52:04.312 [main] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 2022-01-27 16:52:04.679 [main] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO ] 2022-01-27 16:52:04.685 [main] PatientApplication - Started PatientApplication in 2.277 seconds (JVM running for 2.709)
+[INFO ] 2022-01-27 16:52:21.185 [http-nio-8080-exec-2] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2022-01-27 16:52:21.185 [http-nio-8080-exec-2] DispatcherServlet - Completed initialization in 0 ms
+[INFO ] 2022-01-27 16:53:08.545 [SpringApplicationShutdownHook] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2022-01-27 16:53:09.586 [background-preinit] Version - HV000001: Hibernate Validator 6.2.0.Final
+[INFO ] 2022-01-27 16:53:09.609 [main] PatientApplication - Starting PatientApplication using Java 1.8.0_312 on fedora with PID 19744 (/home/alex/IdeaProjects/Mediscreen/patient/build/classes/java/main started by alex in /home/alex/IdeaProjects/Mediscreen)
+[INFO ] 2022-01-27 16:53:09.611 [main] PatientApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2022-01-27 16:53:10.051 [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2022-01-27 16:53:10.095 [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 35 ms. Found 1 JPA repository interfaces.
+[INFO ] 2022-01-27 16:53:10.498 [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2022-01-27 16:53:10.546 [main] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 915 ms
+[INFO ] 2022-01-27 16:53:10.629 [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2022-01-27 16:53:10.655 [main] Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+[INFO ] 2022-01-27 16:53:10.741 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 2022-01-27 16:53:10.893 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+[INFO ] 2022-01-27 16:53:11.249 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2022-01-27 16:53:11.255 [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2022-01-27 16:53:11.485 [main] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 2022-01-27 16:53:11.815 [main] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO ] 2022-01-27 16:53:11.821 [main] PatientApplication - Started PatientApplication in 2.395 seconds (JVM running for 2.847)
+[INFO ] 2022-01-27 16:53:16.481 [http-nio-8080-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2022-01-27 16:53:16.482 [http-nio-8080-exec-1] DispatcherServlet - Completed initialization in 1 ms
+[INFO ] 2022-01-27 16:54:01.573 [SpringApplicationShutdownHook] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
