@@ -62,7 +62,7 @@ public class InternalPatients {
     }
 
     public void resetDb() throws PatientNotFoundException {
-        if (patientRepository.findAll() == null){
+        if (patientRepository.findAll().isEmpty()){
             throw new PatientNotFoundException("No  patient has been found");
         }
         for( Patient patient : patientRepository.findAll()){

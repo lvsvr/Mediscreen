@@ -21,7 +21,7 @@ public class PatientServiceImpl implements PatientService {
 
     @Override
     public List<Patient> getAllPatients() throws PatientNotFoundException {
-        if (patientRepository.findAll().get(0) == null) {
+        if (patientRepository.findAll().isEmpty()) {
             throw new PatientNotFoundException("No patient has been found");
         }
         return patientRepository.findAll();
@@ -89,7 +89,7 @@ public class PatientServiceImpl implements PatientService {
                 patients.add(listedPatient);
             }
         }
-        if (patients.get(0) == null) {
+        if (patients.isEmpty()) {
             throw new PatientNotFoundException("Patient not found");
         }
         return patients;
