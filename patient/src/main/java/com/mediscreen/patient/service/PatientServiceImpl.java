@@ -43,11 +43,14 @@ public class PatientServiceImpl implements PatientService {
 
     @Override
     public Patient addPatient(Patient patient) throws PatientAlreadyExistsException, PatientNotFoundException {
-        if (patientAlreadyExists(patient)) {
-            throw new PatientAlreadyExistsException("Patient " + patient.getFirstName() + " " + patient.getLastName() + " already exists");
+        if(getAllPatients().isEmpty()){
+            return patientRepository.save(patient);
+        }else if(patientAlreadyExists(patient)) {
+                throw new PatientAlreadyExistsException("Patient " + patient.getFirstName() + " " + patient.getLastName() + " already exists");
+            } else {
+                return patientRepository.save(patient);
+            }
         }
-        return patientRepository.save(patient);
-    }
 
     @Override
     public Patient getPatientById(Integer id) throws PatientNotFoundException {
@@ -70,7 +73,7 @@ public class PatientServiceImpl implements PatientService {
         patient.setAddress(updatedPatient.getAddress());
         patient.setPhone(updatedPatient.getPhone());
 
-        return patient;
+        return patientRepository.save(patient);
     }
 
     @Override

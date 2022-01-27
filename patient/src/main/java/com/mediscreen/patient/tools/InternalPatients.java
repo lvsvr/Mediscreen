@@ -28,27 +28,36 @@ public class InternalPatients {
         this.patientRepository = patientRepository;
     }
 
+    /**
+     * Creates a list of internal patients
+     *
+     * @throws PatientAlreadyExistsException
+     */
     public void initializeInternalPatients() throws PatientAlreadyExistsException {
 
-        if(! patientRepository.findAll().isEmpty()){
+        if (!patientRepository.findAll().isEmpty()) {
             throw new PatientAlreadyExistsException("Patient already exists");
         }
-            IntStream.range(0, InternalTestHelper.getInternalPatientNumber()).forEach(i -> {
-                Patient patient = new Patient();
-                patient.setFirstName("internalFirstName" + i);
-                patient.setLastName("internalLastName" + i);
-                patient.setBirthDate(generateRandomLocalDate());
-                patient.setGender("X");
-                patient.setAddress("address: " + i);
-                patient.setPhone("06" + i);
+        IntStream.range(0, InternalTestHelper.getInternalPatientNumber()).forEach(i -> {
+            Patient patient = new Patient();
+            patient.setFirstName("internalFirstName" + i);
+            patient.setLastName("internalLastName" + i);
+            patient.setBirthDate(generateRandomLocalDate());
+            patient.setGender("X");
+            patient.setAddress("address: " + i);
+            patient.setPhone("06" + i);
 
-                patientRepository.save(patient);
+            patientRepository.save(patient);
 
-            });
-                logger.info("Created " + InternalTestHelper.getInternalPatientNumber() + " internal test patients.");
-        }
+        });
+        logger.info("Created " + InternalTestHelper.getInternalPatientNumber() + " internal test patients.");
+    }
 
-
+    /**
+     * Creates a random LocalDate
+     *
+     * @return LocalDate
+     */
     private LocalDate generateRandomLocalDate() {
         LocalDate startDate = LocalDate.of(1922, 1, 1); //start date
         long start = startDate.toEpochDay();
@@ -61,13 +70,19 @@ public class InternalPatients {
 
     }
 
+    /**
+     * Deletes all the patients from the db
+     *
+     * @throws PatientNotFoundException
+     */
     public void resetDb() throws PatientNotFoundException {
-        if (patientRepository.findAll().isEmpty()){
+        if (patientRepository.findAll().isEmpty()) {
             throw new PatientNotFoundException("No  patient has been found");
         }
-        for( Patient patient : patientRepository.findAll()){
+        for (Patient patient : patientRepository.findAll()) {
             patientRepository.delete(patient);
         }
+        logger.info("All the patients have been deleted");
     }
 
 }
