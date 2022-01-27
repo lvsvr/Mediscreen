@@ -2154,3 +2154,22 @@ Consider defining a bean of type 'com.mediscreen.patient.tools.InternalPatients'
 [INFO ] 2022-01-27 20:48:32.735 [main] PatientApplication - Started PatientApplication in 2.4 seconds (JVM running for 2.845)
 [INFO ] 2022-01-27 20:48:42.187 [http-nio-8080-exec-2] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
 [INFO ] 2022-01-27 20:48:42.188 [http-nio-8080-exec-2] DispatcherServlet - Completed initialization in 1 ms
+[INFO ] 2022-01-27 22:08:54.294 [SpringApplicationShutdownHook] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2022-01-27 22:08:55.457 [background-preinit] Version - HV000001: Hibernate Validator 6.2.0.Final
+[INFO ] 2022-01-27 22:08:55.483 [main] PatientApplication - Starting PatientApplication using Java 1.8.0_312 on fedora with PID 35068 (/home/alex/IdeaProjects/Mediscreen/patient/build/classes/java/main started by alex in /home/alex/IdeaProjects/Mediscreen)
+[INFO ] 2022-01-27 22:08:55.485 [main] PatientApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2022-01-27 22:08:55.846 [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2022-01-27 22:08:55.879 [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 26 ms. Found 1 JPA repository interfaces.
+[INFO ] 2022-01-27 22:08:56.241 [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2022-01-27 22:08:56.289 [main] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 761 ms
+[INFO ] 2022-01-27 22:08:56.375 [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2022-01-27 22:08:56.398 [main] Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+[INFO ] 2022-01-27 22:08:56.480 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 2022-01-27 22:08:56.631 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+[INFO ] 2022-01-27 22:08:56.950 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2022-01-27 22:08:56.954 [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2022-01-27 22:08:57.212 [main] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 2022-01-27 22:08:57.501 [main] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO ] 2022-01-27 22:08:57.507 [main] PatientApplication - Started PatientApplication in 2.218 seconds (JVM running for 2.692)
+[INFO ] 2022-01-27 22:09:50.060 [http-nio-8080-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2022-01-27 22:09:50.062 [http-nio-8080-exec-1] DispatcherServlet - Completed initialization in 1 ms

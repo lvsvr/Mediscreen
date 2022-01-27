@@ -42,8 +42,8 @@ public class Patient {
     public Patient() {
     }
 
-    public Patient(int id, String firstName, String lastName, LocalDate birthDate, String gender, String address, String phone) {
-        this.id = id;
+    public Patient(String firstName, String lastName, LocalDate birthDate, String gender, String address, String phone) {
+
         this.firstName = firstName;
         this.lastName = lastName;
         this.birthDate = birthDate;

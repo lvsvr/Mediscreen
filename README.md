@@ -24,30 +24,39 @@ login: root@root.com - psw: root<br>
 
 2-**Testing tools:**<br>
 
-- GET a list of internal patients:<br>
+- GET a list of internal patients:
+<br>
 http://localhost:8080/patient/initializeInternalPatients
 <br>
-- GET all the patients from the db:<br>
+- GET all the patients from the db:
+<br>
 http://localhost:8080/patient/resetDb
+<br>
 <br>
 
 3-**Endpoints:**<br>
 
-- GET a list of all patients:<br>
+- GET a list of all patients:
+<br>
 http://localhost:8080/patient/list
 <br>
-- GET a patient by id:<br>
+- GET a patient by id:
+<br>
 http://localhost:8080/patient/{id}
 <br>
-- GET a list of patients by lastName:<br>
+- GET a list of patients by lastName:
+<br>
 http://localhost:8080/patient/search/{lastName}
 <br>
-- GET a patient deleted by id:<br>
+- GET a patient deleted by id:
+<br>
 http://localhost:8080/patient/delete?id={id}
 <br>
-- POST a new patient to add:<br>
+- POST a new patient to add:
+<br>
 http://localhost:8080/patient/newPatient
 <br>
-- POST a patient to update:<br>
+- POST a patient to update:
+<br>
 http://localhost:8080/updatePatient
 <br>
