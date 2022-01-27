@@ -36,6 +36,11 @@ public class PatientController {
         internalPatients.initializeInternalPatients();
     }
 
+    @GetMapping("/resetDb")
+    public void resetDb() throws PatientNotFoundException {
+        internalPatients.resetDb();
+    }
+
     @GetMapping("/list")
     public List<Patient> getAllPatients() throws PatientNotFoundException {
         return patientService.getAllPatients();

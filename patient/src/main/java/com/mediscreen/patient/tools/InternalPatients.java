@@ -1,6 +1,7 @@
 package com.mediscreen.patient.tools;
 
 import com.mediscreen.patient.exception.PatientAlreadyExistsException;
+import com.mediscreen.patient.exception.PatientNotFoundException;
 import com.mediscreen.patient.model.Patient;
 import com.mediscreen.patient.repository.PatientRepository;
 import org.apache.logging.log4j.LogManager;
@@ -29,9 +30,9 @@ public class InternalPatients {
 
     public void initializeInternalPatients() throws PatientAlreadyExistsException {
 
-        if(patientRepository.findAll() == null){
+        if(patientRepository.findAll() != null){
             throw new PatientAlreadyExistsException("Patient already exists");
-        }        else {
+        }
             IntStream.range(0, InternalTestHelper.getInternalPatientNumber()).forEach(i -> {
                 Patient patient = new Patient();
                 patient.setFirstName("internalFirstName" + i);
@@ -46,7 +47,7 @@ public class InternalPatients {
             });
                 logger.info("Created " + InternalTestHelper.getInternalPatientNumber() + " internal test patients.");
         }
-    }
+
 
     private LocalDate generateRandomLocalDate() {
         LocalDate startDate = LocalDate.of(1922, 1, 1); //start date
@@ -59,4 +60,14 @@ public class InternalPatients {
         return Instant.ofEpochSecond(randomEpochDay).atZone(ZoneId.systemDefault()).toLocalDate();
 
     }
+
+    public void resetDb() throws PatientNotFoundException {
+        if (patientRepository.findAll() == null){
+            throw new PatientNotFoundException("No  patient has been found");
+        }
+        for( Patient patient : patientRepository.findAll()){
+            patientRepository.delete(patient);
+        }
+    }
+
 }
