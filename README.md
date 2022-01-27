@@ -36,27 +36,21 @@ http://localhost:8080/patient/resetDb
 
 3-**Endpoints:**<br>
 
-- GET a list of all patients:
+- GET a list of all patients:<br>
+http://localhost:8080/patient/list <br>
+  <br>
+- GET a patient by id: <br>
+http://localhost:8080/patient/{id} <br>
+  <br>
+- GET a list of patients by lastName: <br>
+http://localhost:8080/patient/search/{lastName} <br>
+  <br>
+- GET a patient deleted by id: <br>
+http://localhost:8080/patient/delete?id={id} <br>
 <br>
-http://localhost:8080/patient/list
+- POST a new patient to add:<br>
+http://localhost:8080/patient/newPatient <br>
 <br>
-- GET a patient by id:
-<br>
-http://localhost:8080/patient/{id}
-<br>
-- GET a list of patients by lastName:
-<br>
-http://localhost:8080/patient/search/{lastName}
-<br>
-- GET a patient deleted by id:
-<br>
-http://localhost:8080/patient/delete?id={id}
-<br>
-- POST a new patient to add:
-<br>
-http://localhost:8080/patient/newPatient
-<br>
-- POST a patient to update:
-<br>
-http://localhost:8080/updatePatient
+- POST a patient to update:<br>
+http://localhost:8080/updatePatient <br>
 <br>
