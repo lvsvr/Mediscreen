@@ -4,7 +4,6 @@ import com.mediscreen.patient.exception.PatientAlreadyExistsException;
 import com.mediscreen.patient.exception.PatientNotFoundException;
 import com.mediscreen.patient.model.Patient;
 import com.mediscreen.patient.service.PatientService;
-import com.mediscreen.patient.tools.InternalPatients;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,34 +22,6 @@ public class PatientController {
 
     @Autowired
     private PatientService patientService;
-    @Autowired
-    private InternalPatients internalPatients;
-
-    public PatientController(InternalPatients internalPatients) {
-        this.internalPatients = internalPatients;
-    }
-
-    /**
-     * Gets internal patients for tests created
-     *
-     * @throws PatientAlreadyExistsException
-     */
-    @GetMapping("/initializeInternalPatients")
-    public void createInternalPatients() throws PatientAlreadyExistsException {
-        internalPatients.initializeInternalPatients();
-        logger.info("REQUEST: /initializeInternalPatients" );
-    }
-
-    /**
-     * Gets all patients deleted from db
-     *
-     * @throws PatientNotFoundException
-     */
-    @GetMapping("/resetDb")
-    public void resetDb() throws PatientNotFoundException {
-        internalPatients.resetDb();
-        logger.info("REQUEST: /resetDb" );
-    }
 
     /**
      * Gets a list of all patients

@@ -24,11 +24,17 @@ login: root@root.com - psw: root<br>
 
 2-**Testing tools:**<br>
 
+- cd /Mediscreen/patient/src/main/java/com/mediscreen/patient/tools <br>
+  uncomment  : <br>
+  internalPatient.java <br>
+  internalTestingController.java <br>
+  internalTestingParameter <br>
+
 - GET a list of internal patients: <br>
-  http://localhost:8080/patient/initializeInternalPatients
+  http://localhost:8080/testing/initializeInternalPatients
   <br>
 - GET all the patients from the db: <br>
-  http://localhost:8080/patient/resetDb
+  http://localhost:8080/testing/resetDb
   <br>
   <br>
 

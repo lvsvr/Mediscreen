@@ -3,7 +3,6 @@ package com.mediscreen.patient.service;
 import com.mediscreen.patient.exception.PatientAlreadyExistsException;
 import com.mediscreen.patient.exception.PatientNotFoundException;
 import com.mediscreen.patient.model.Patient;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
