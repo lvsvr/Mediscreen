@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mediscreen</title>
+    <link href="../static/css/bootstrap.css" th:href="@{/css/bootstrap.css}" rel="stylesheet"/>
+    <link href="../static/css/style.css" th:href="@{/css/style.css}" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+</head>
+<body>
+<header>
+
+    <div class="row align-self-center">
+        <div class="col">
+            <button type="button" class="btn btn-info">Mediscreen</button>
+        </div>
+<!--        <div class="col">-->
+<!--            <ul class="nav">-->
+<!--                &lt;!&ndash;                <li class="nav-item">&ndash;&gt;-->
+<!--                &lt;!&ndash;                    <a class="nav-link" href="./home">Home</a>&ndash;&gt;-->
+<!--                &lt;!&ndash;                </li>&ndash;&gt;-->
+<!--                <li class="nav-item">-->
+<!--                    <a class="nav-link disabled" href="#">home</a>-->
+<!--                </li>-->
+<!--                &lt;!&ndash;                <li class="nav-item">&ndash;&gt;-->
+<!--                &lt;!&ndash;                    <a class="nav-link" href="./profile">Patient</a>&ndash;&gt;-->
+<!--                &lt;!&ndash;                </li>&ndash;&gt;-->
+<!--                &lt;!&ndash;                <li class="nav-item">&ndash;&gt;-->
+<!--                &lt;!&ndash;                    <a class="nav-link" href="./contact">Contact</a>&ndash;&gt;-->
+<!--                &lt;!&ndash;                </li>&ndash;&gt;-->
+<!--                &lt;!&ndash;                <li class="nav-item">&ndash;&gt;-->
+<!--                &lt;!&ndash;                    <a class="nav-link" href="./logout">Log off</a>&ndash;&gt;-->
+<!--                &lt;!&ndash;                </li>&ndash;&gt;-->
+<!--            </ul>-->
+<!--        </div>-->
+        <div class="position1">
+            <div class="row">
+                <nav>
+                    <ol>home</ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="position2">
+    <div class="row"></div>
+    <div class="row">
+        <h4 class="col">Patients' list</h4>
+        <a href="./newPatient" class="btn btn-primary col-1" role="button" aria-pressed="true">Add Patient</a>
+    </div>
+</div>
+<!--<div class="position3">-->
+<!--    <div class="row"></div>-->
+<!--    <div class="row">-->
+<!--        <form th:action="@{/addTransfer}" method="post" th:object="${transactionBuddy}">-->
+<!--            <select class="col-3 form-select-sm" th:field="${transactionBuddy.userBuddy.buddy.email}">-->
+<!--                <option value="">Select a patient</option>-->
+<!--                <option th:each="buddy:${buddies}" th:value="${buddy.email}" th:text="${buddy.email}"></option>-->
+<!--            </select>-->
+<!--            <input class="col-2 form-select-sm" th:field="${transactionBuddy.amount}" type="number" placeholder="id"-->
+<!--                   required autofocus="autofocus">-->
+<!--            <input class="col-3 form-select-sm" th:field="${transactionBuddy.amount}" type="text" placeholder="last name"-->
+<!--                   required autofocus="autofocus">-->
+<!--&lt;!&ndash;            <input class="col-3 form-select-sm" th:field="${transactionBuddy.description}" type="text"&ndash;&gt;-->
+<!--&lt;!&ndash;                   placeholder="description" required autofocus="autofocus">&ndash;&gt;-->
+<!--            <button type="submit" class="col-2 form-select-sm btn btn-primary">Select</button>-->
+<!--        </form>-->
+<!--    </div>-->
+<!--</div>-->
+<!--<h4 class="position2">Patients' list</h4>-->
+<div class="position2">
+    <table id="patientTable" class="table table-fluid table-striped">
+        <thead>
+        <tr class="table1">
+            <th data-field="id" scope="col">id</th>
+            <th data-field="lastName" scope="col">last name</th>
+            <th data-field="firstName" scope="col">first name</th>
+            <th data-field="birthDate" scope="col">birth date</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr th:each="patient:${patients}" style="cursor: pointer"
+                th:onclick="'javascript:rowClicked(\'' + ${patient.id} + '\');'">
+                <th scope="row" th:text="${patient.id}"> </th>
+                <td th:text="${patient.lastName}"></td>
+                <td th:text="${patient.firstName}"></td>
+                <td th:text="${patient.birthDate}"></td>
+        </tr>
+        </tbody>
+    </table>
+
+</div>
+<script>
+$(document).ready(function(){$('#patientTable').DataTable();});
+    function rowClicked(value) {
+        location.href = "./" + value;
+    }
+</script>
+</body>
+</html>

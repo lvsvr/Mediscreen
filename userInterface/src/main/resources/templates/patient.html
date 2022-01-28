@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org" xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity5"
+      lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mediscreen</title>
+    <link href="../static/css/bootstrap.css" th:href="@{/css/bootstrap.css}" rel="stylesheet"/>
+    <link href="../static/css/style.css" th:href="@{/css/style.css}" rel="stylesheet"/>
+</head>
+<body>
+<header>
+    <div class="row align-self-center">
+        <div class="col">
+            <button type="button" class="btn btn-info">Mediscreen</button>
+        </div>
+<!--        <div class="col">-->
+<!--            <ul class="nav">-->
+<!--                <li class="nav-item">-->
+<!--                    <a class="nav-link" href="./">home</a>-->
+<!--                </li>-->
+<!--                &lt;!&ndash;                <li class="nav-item">&ndash;&gt;-->
+<!--                &lt;!&ndash;                    <a class="nav-link" href="./transfer">Transfer</a>&ndash;&gt;-->
+<!--                &lt;!&ndash;                </li>&ndash;&gt;-->
+<!--                <li class="nav-item">-->
+<!--                    <a class="nav-link disabled">patient</a>-->
+<!--                </li>-->
+<!--                &lt;!&ndash;                <li class="nav-item">&ndash;&gt;-->
+<!--                &lt;!&ndash;                    <a class="nav-link" href="./contact">Contact</a>&ndash;&gt;-->
+<!--                &lt;!&ndash;                </li>&ndash;&gt;-->
+<!--                &lt;!&ndash;                <li class="nav-item">&ndash;&gt;-->
+<!--                &lt;!&ndash;                    <a class="nav-link" href="./logout">Log off</a>&ndash;&gt;-->
+<!--                &lt;!&ndash;                </li>&ndash;&gt;-->
+<!--            </ul>-->
+<!--        </div>-->
+        <div class="position1">
+            <div class="row">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="./">home</a></li>
+                        <li class="breadcrumb-item active">patient</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="logBox">
+<!--    <form action="#" th:action="@{/updatePatient}" method="get" th:object="${patient}">-->
+<!--        <fieldset>-->
+            <div class="logBox1">
+                <h2 class="position1">Patient</h2>
+                <br>
+            </div>
+            <br>
+            <div class="logBox1">
+                <div><em>Id:</em>
+                    <th:block th:text="${patient.id}"></th:block>
+                </div>
+                <br>
+                <div><em>first name:</em>
+                    <b><th:block th:text="${patient.firstName}"></th:block></b>
+                </div>
+                <br>
+                <div><em>last name:</em>
+                    <b><th:block th:text="${patient.lastName}"></th:block></b>
+                </div>
+                <br>
+                <div><em>birth-date:</em>
+                    <b><th:block th:text="${patient.birthDate}"></th:block></b>
+                </div>
+                <br>
+                <div><em>gender:</em>
+                    <b> <th:block th:text="${patient.gender}"></th:block></b>
+                </div>
+                <br>
+                <div><em>address:</em>
+                    <b> <th:block th:text="${patient.address}"></th:block></b>
+                </div>
+                <br>
+                <div><em>phone:</em>
+                    <b> <th:block th:text="${patient.phone}"></th:block></b>
+                </div>
+                <br>
+                <br>
+                <div class="form-group">
+                    <a href="./" class="btn btn-secondary col-5" role="button" aria-pressed="true">Cancel</a>
+                    <button type="submit" class="col-5 btn btn-primary">Amend</button>
+                </div>
+            </div>
+<!--        </fieldset>-->
+<!--    </form>-->
+
+</div>
+</body>
+</html>
