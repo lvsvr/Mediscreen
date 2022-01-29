@@ -31,7 +31,7 @@ public class PatientController {
      */
     @GetMapping("/list")
     public List<Patient> getAllPatients() throws PatientNotFoundException {
-        logger.info("REQUEST: /list" );
+        logger.info("REQUEST: GET  /list" );
         return patientService.getAllPatients();
     }
 
@@ -44,7 +44,7 @@ public class PatientController {
      */
     @GetMapping("/{id}")
     public Patient getPatientById(@PathVariable("id") Integer id) throws PatientNotFoundException {
-        logger.info("REQUEST: /{id} : " + id );
+        logger.info("REQUEST: GET /{id} : " + id );
         return patientService.getPatientById(id);
     }
 
@@ -58,7 +58,7 @@ public class PatientController {
      */
     @GetMapping("/search/{lastName}")
     public List<Patient> getPatientsByName(@PathVariable("lastName") String lastName) throws PatientNotFoundException, PatientAlreadyExistsException {
-        logger.info("REQUEST: /search/{lastName} : "+ lastName );
+        logger.info("REQUEST: GET /search/{lastName} : "+ lastName );
         return patientService.getPatientsByName(lastName);
     }
 
@@ -72,7 +72,7 @@ public class PatientController {
     public void getPatientDeletedById(@RequestParam("id") Integer id) throws PatientNotFoundException {
         Patient patient = patientService.getPatientById(id);
         patientService.deletePatient(id);
-        logger.info("REQUEST: /delete?id={id} : "+  patient.toString());
+        logger.info("REQUEST: GET /delete?id={id} : "+  patient.toString());
     }
 
     /**
@@ -85,7 +85,7 @@ public class PatientController {
     @PostMapping("/newPatient")
     public Patient addPatient(@RequestBody @Valid Patient patient) throws PatientNotFoundException, PatientAlreadyExistsException {
         Patient newPatient = patientService.addPatient(patient);
-        logger.info("REQUEST: /newPatient : " + newPatient.toString() );
+        logger.info("REQUEST: POST /newPatient : " + newPatient.toString() );
         return newPatient;
     }
 
@@ -98,7 +98,7 @@ public class PatientController {
      */
     @PostMapping("/updatePatient")
     public Patient updatePatient(@RequestBody @Valid Patient patient) throws PatientNotFoundException {
-        logger.info("REQUEST: /updatePatient :  from " + patientService.getPatientById(patient.getId())+ ", to " + patient.toString() );
+        logger.info("REQUEST: POST /updatePatient :  from " + patientService.getPatientById(patient.getId())+ ", to " + patient.toString() );
         return patientService.updatePatient(patient);
     }
 

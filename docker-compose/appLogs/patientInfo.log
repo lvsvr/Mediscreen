@@ -1,784 +1,228 @@
-[INFO ] 2022-01-28 02:07:22.052 [SpringApplicationShutdownHook] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-[INFO ] 2022-01-28 09:32:27.965 [background-preinit] Version - HV000001: Hibernate Validator 6.2.0.Final
-[INFO ] 2022-01-28 09:32:27.990 [main] PatientApplication - Starting PatientApplication using Java 1.8.0_312 on fedora with PID 7024 (/home/alex/IdeaProjects/Mediscreen/patient/build/classes/java/main started by alex in /home/alex/IdeaProjects/Mediscreen)
-[INFO ] 2022-01-28 09:32:27.993 [main] PatientApplication - No active profile set, falling back to default profiles: default
-[INFO ] 2022-01-28 09:32:28.423 [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-[INFO ] 2022-01-28 09:32:28.465 [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 34 ms. Found 1 JPA repository interfaces.
-[INFO ] 2022-01-28 09:32:28.798 [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-[INFO ] 2022-01-28 09:32:28.852 [main] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 833 ms
-[INFO ] 2022-01-28 09:32:28.937 [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-[INFO ] 2022-01-28 09:32:28.967 [main] Version - HHH000412: Hibernate ORM core version 5.6.4.Final
-[INFO ] 2022-01-28 09:32:29.058 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-[INFO ] 2022-01-28 09:32:29.237 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
-[INFO ] 2022-01-28 09:32:29.597 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-[INFO ] 2022-01-28 09:32:29.602 [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-[WARN ] 2022-01-28 09:32:29.811 [main] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-[INFO ] 2022-01-28 09:32:30.168 [main] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-[INFO ] 2022-01-28 09:32:30.176 [main] PatientApplication - Started PatientApplication in 2.386 seconds (JVM running for 2.83)
-[INFO ] 2022-01-28 09:32:49.897 [http-nio-8080-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-[INFO ] 2022-01-28 09:32:49.898 [http-nio-8080-exec-1] DispatcherServlet - Completed initialization in 1 ms
-[INFO ] 2022-01-28 10:01:03.483 [SpringApplicationShutdownHook] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-[INFO ] 2022-01-28 10:01:06.077 [background-preinit] Version - HV000001: Hibernate Validator 6.2.0.Final
-[INFO ] 2022-01-28 10:01:06.103 [main] PatientApplication - Starting PatientApplication using Java 1.8.0_312 on fedora with PID 9163 (/home/alex/IdeaProjects/Mediscreen/patient/build/classes/java/main started by alex in /home/alex/IdeaProjects/Mediscreen)
-[INFO ] 2022-01-28 10:01:06.105 [main] PatientApplication - No active profile set, falling back to default profiles: default
-[INFO ] 2022-01-28 10:01:06.828 [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-[INFO ] 2022-01-28 10:01:06.856 [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 23 ms. Found 1 JPA repository interfaces.
-[INFO ] 2022-01-28 10:01:07.250 [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-[INFO ] 2022-01-28 10:01:07.314 [main] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1158 ms
-[INFO ] 2022-01-28 10:01:07.409 [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-[INFO ] 2022-01-28 10:01:07.438 [main] Version - HHH000412: Hibernate ORM core version 5.6.4.Final
-[INFO ] 2022-01-28 10:01:07.536 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-[INFO ] 2022-01-28 10:01:07.729 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
-[INFO ] 2022-01-28 10:01:08.084 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-[INFO ] 2022-01-28 10:01:08.089 [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-[WARN ] 2022-01-28 10:01:08.486 [main] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-[INFO ] 2022-01-28 10:01:08.764 [main] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-[WARN ] 2022-01-28 10:01:08.767 [main] AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'documentationPluginsBootstrapper'; nested exception is java.lang.NullPointerException
-[INFO ] 2022-01-28 10:01:08.770 [main] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-[INFO ] 2022-01-28 10:01:08.789 [main] ConditionEvaluationReportLoggingListener - 
+[INFO ] 2022-01-29 15:09:04.039 [background-preinit] Version - HV000001: Hibernate Validator 6.2.0.Final
+[INFO ] 2022-01-29 15:09:04.069 [main] PatientApplication - Starting PatientApplication using Java 1.8.0_312 on fedora with PID 19331 (/home/alex/IdeaProjects/Mediscreen/patient/build/classes/java/main started by alex in /home/alex/IdeaProjects/Mediscreen)
+[INFO ] 2022-01-29 15:09:04.072 [main] PatientApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2022-01-29 15:09:04.576 [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2022-01-29 15:09:04.604 [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 22 ms. Found 1 JPA repository interfaces.
+[INFO ] 2022-01-29 15:09:05.004 [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2022-01-29 15:09:05.057 [main] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 939 ms
+[INFO ] 2022-01-29 15:09:05.149 [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2022-01-29 15:09:05.181 [main] Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+[INFO ] 2022-01-29 15:09:05.293 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 2022-01-29 15:09:05.484 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+[INFO ] 2022-01-29 15:09:05.835 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2022-01-29 15:09:05.839 [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2022-01-29 15:09:06.212 [main] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 2022-01-29 15:09:06.543 [main] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO ] 2022-01-29 15:09:06.715 [main] PatientApplication - Started PatientApplication in 2.857 seconds (JVM running for 3.265)
+[INFO ] 2022-01-29 15:09:09.476 [http-nio-8080-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2022-01-29 15:09:09.477 [http-nio-8080-exec-1] DispatcherServlet - Completed initialization in 1 ms
+[INFO ] 2022-01-29 15:24:28.119 [SpringApplicationShutdownHook] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2022-01-29 15:24:29.668 [background-preinit] Version - HV000001: Hibernate Validator 6.2.0.Final
+[INFO ] 2022-01-29 15:24:29.691 [main] PatientApplication - Starting PatientApplication using Java 1.8.0_312 on fedora with PID 20041 (/home/alex/IdeaProjects/Mediscreen/patient/build/classes/java/main started by alex in /home/alex/IdeaProjects/Mediscreen)
+[INFO ] 2022-01-29 15:24:29.693 [main] PatientApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2022-01-29 15:24:30.143 [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2022-01-29 15:24:30.173 [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 24 ms. Found 1 JPA repository interfaces.
+[INFO ] 2022-01-29 15:24:30.544 [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2022-01-29 15:24:30.592 [main] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 879 ms
+[INFO ] 2022-01-29 15:24:30.678 [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2022-01-29 15:24:30.704 [main] Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+[INFO ] 2022-01-29 15:24:30.789 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 2022-01-29 15:24:30.963 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+[INFO ] 2022-01-29 15:24:31.291 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2022-01-29 15:24:31.296 [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2022-01-29 15:24:31.730 [main] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 2022-01-29 15:24:32.033 [main] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO ] 2022-01-29 15:24:32.209 [main] PatientApplication - Started PatientApplication in 2.699 seconds (JVM running for 3.098)
+[INFO ] 2022-01-29 15:25:08.104 [http-nio-8080-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2022-01-29 15:25:08.106 [http-nio-8080-exec-1] DispatcherServlet - Completed initialization in 2 ms
+[INFO ] 2022-01-29 15:25:41.303 [SpringApplicationShutdownHook] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2022-01-29 15:25:42.632 [background-preinit] Version - HV000001: Hibernate Validator 6.2.0.Final
+[INFO ] 2022-01-29 15:25:42.653 [main] PatientApplication - Starting PatientApplication using Java 1.8.0_312 on fedora with PID 20398 (/home/alex/IdeaProjects/Mediscreen/patient/build/classes/java/main started by alex in /home/alex/IdeaProjects/Mediscreen)
+[INFO ] 2022-01-29 15:25:42.655 [main] PatientApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2022-01-29 15:25:43.204 [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2022-01-29 15:25:43.234 [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 25 ms. Found 1 JPA repository interfaces.
+[INFO ] 2022-01-29 15:25:43.691 [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2022-01-29 15:25:43.753 [main] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1077 ms
+[INFO ] 2022-01-29 15:25:43.867 [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2022-01-29 15:25:43.893 [main] Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+[INFO ] 2022-01-29 15:25:43.987 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 2022-01-29 15:25:44.169 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+[INFO ] 2022-01-29 15:25:44.483 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2022-01-29 15:25:44.488 [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2022-01-29 15:25:44.907 [main] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 2022-01-29 15:25:45.210 [main] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO ] 2022-01-29 15:25:45.378 [main] PatientApplication - Started PatientApplication in 2.922 seconds (JVM running for 3.311)
+[INFO ] 2022-01-29 15:25:52.590 [http-nio-8080-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2022-01-29 15:25:52.591 [http-nio-8080-exec-1] DispatcherServlet - Completed initialization in 1 ms
+[INFO ] 2022-01-29 15:26:46.008 [SpringApplicationShutdownHook] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2022-01-29 15:26:47.303 [background-preinit] Version - HV000001: Hibernate Validator 6.2.0.Final
+[INFO ] 2022-01-29 15:26:47.326 [main] PatientApplication - Starting PatientApplication using Java 1.8.0_312 on fedora with PID 20573 (/home/alex/IdeaProjects/Mediscreen/patient/build/classes/java/main started by alex in /home/alex/IdeaProjects/Mediscreen)
+[INFO ] 2022-01-29 15:26:47.328 [main] PatientApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2022-01-29 15:26:47.791 [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2022-01-29 15:26:47.820 [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 24 ms. Found 1 JPA repository interfaces.
+[INFO ] 2022-01-29 15:26:48.216 [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2022-01-29 15:26:48.263 [main] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 890 ms
+[INFO ] 2022-01-29 15:26:48.350 [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2022-01-29 15:26:48.376 [main] Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+[INFO ] 2022-01-29 15:26:48.463 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 2022-01-29 15:26:48.659 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+[INFO ] 2022-01-29 15:26:48.978 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2022-01-29 15:26:48.982 [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2022-01-29 15:26:49.338 [main] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 2022-01-29 15:26:49.642 [main] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO ] 2022-01-29 15:26:49.806 [main] PatientApplication - Started PatientApplication in 2.678 seconds (JVM running for 3.065)
+[INFO ] 2022-01-29 15:30:35.612 [http-nio-8080-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2022-01-29 15:30:35.613 [http-nio-8080-exec-1] DispatcherServlet - Completed initialization in 1 ms
+[INFO ] 2022-01-29 15:31:27.302 [SpringApplicationShutdownHook] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2022-01-29 15:31:28.544 [background-preinit] Version - HV000001: Hibernate Validator 6.2.0.Final
+[INFO ] 2022-01-29 15:31:28.570 [main] PatientApplication - Starting PatientApplication using Java 1.8.0_312 on fedora with PID 21287 (/home/alex/IdeaProjects/Mediscreen/patient/build/classes/java/main started by alex in /home/alex/IdeaProjects/Mediscreen)
+[INFO ] 2022-01-29 15:31:28.572 [main] PatientApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2022-01-29 15:31:29.064 [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2022-01-29 15:31:29.092 [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 23 ms. Found 1 JPA repository interfaces.
+[INFO ] 2022-01-29 15:31:29.472 [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2022-01-29 15:31:29.530 [main] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 911 ms
+[INFO ] 2022-01-29 15:31:29.626 [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2022-01-29 15:31:29.652 [main] Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+[INFO ] 2022-01-29 15:31:29.744 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 2022-01-29 15:31:29.904 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+[INFO ] 2022-01-29 15:31:30.235 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2022-01-29 15:31:30.239 [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2022-01-29 15:31:30.711 [main] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 2022-01-29 15:31:31.104 [main] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO ] 2022-01-29 15:31:31.311 [main] PatientApplication - Started PatientApplication in 2.933 seconds (JVM running for 3.385)
+[INFO ] 2022-01-29 15:32:43.490 [http-nio-8080-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2022-01-29 15:32:43.492 [http-nio-8080-exec-1] DispatcherServlet - Completed initialization in 2 ms
+[INFO ] 2022-01-29 20:28:47.736 [background-preinit] Version - HV000001: Hibernate Validator 6.2.0.Final
+[INFO ] 2022-01-29 20:28:47.759 [main] PatientApplication - Starting PatientApplication using Java 1.8.0_312 on fedora with PID 30224 (/home/alex/IdeaProjects/Mediscreen/patient/build/classes/java/main started by alex in /home/alex/IdeaProjects/Mediscreen)
+[INFO ] 2022-01-29 20:28:47.761 [main] PatientApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2022-01-29 20:28:48.350 [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2022-01-29 20:28:48.380 [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 24 ms. Found 1 JPA repository interfaces.
+[INFO ] 2022-01-29 20:28:48.820 [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2022-01-29 20:28:48.875 [main] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1087 ms
+[INFO ] 2022-01-29 20:28:48.988 [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2022-01-29 20:28:49.029 [main] Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+[INFO ] 2022-01-29 20:28:49.147 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 2022-01-29 20:28:49.328 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+[INFO ] 2022-01-29 20:28:49.666 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2022-01-29 20:28:49.671 [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2022-01-29 20:28:50.085 [main] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[WARN ] 2022-01-29 20:28:50.392 [main] AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+[INFO ] 2022-01-29 20:28:50.396 [main] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2022-01-29 20:28:50.410 [main] ConditionEvaluationReportLoggingListener - 
 
 Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-[ERROR] 2022-01-28 10:01:08.800 [main] SpringApplication - Application run failed
-org.springframework.context.ApplicationContextException: Failed to start bean 'documentationPluginsBootstrapper'; nested exception is java.lang.NullPointerException
-	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:181) ~[spring-context-5.3.15.jar:5.3.15]
-	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54) ~[spring-context-5.3.15.jar:5.3.15]
-	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356) ~[spring-context-5.3.15.jar:5.3.15]
-	at java.lang.Iterable.forEach(Iterable.java:75) ~[?:1.8.0_312]
-	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155) ~[spring-context-5.3.15.jar:5.3.15]
-	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123) ~[spring-context-5.3.15.jar:5.3.15]
-	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:935) ~[spring-context-5.3.15.jar:5.3.15]
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586) ~[spring-context-5.3.15.jar:5.3.15]
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.3.jar:2.6.3]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732) [spring-boot-2.6.3.jar:2.6.3]
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:414) [spring-boot-2.6.3.jar:2.6.3]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302) [spring-boot-2.6.3.jar:2.6.3]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) [spring-boot-2.6.3.jar:2.6.3]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) [spring-boot-2.6.3.jar:2.6.3]
-	at com.mediscreen.patient.PatientApplication.main(PatientApplication.java:15) [main/:?]
-Caused by: java.lang.NullPointerException
-	at springfox.documentation.spring.web.WebMvcPatternsRequestConditionWrapper.getPatterns(WebMvcPatternsRequestConditionWrapper.java:56) ~[springfox-spring-webmvc-3.0.0.jar:3.0.0]
-	at springfox.documentation.RequestHandler.sortedPaths(RequestHandler.java:113) ~[springfox-core-3.0.0.jar:3.0.0]
-	at springfox.documentation.spi.service.contexts.Orderings.lambda$byPatternsCondition$3(Orderings.java:89) ~[springfox-spi-3.0.0.jar:3.0.0]
-	at java.util.Comparator.lambda$comparing$77a9974f$1(Comparator.java:469) ~[?:1.8.0_312]
-	at java.util.TimSort.countRunAndMakeAscending(TimSort.java:355) ~[?:1.8.0_312]
-	at java.util.TimSort.sort(TimSort.java:220) ~[?:1.8.0_312]
-	at java.util.Arrays.sort(Arrays.java:1512) ~[?:1.8.0_312]
-	at java.util.ArrayList.sort(ArrayList.java:1464) ~[?:1.8.0_312]
-	at java.util.stream.SortedOps$RefSortingSink.end(SortedOps.java:392) ~[?:1.8.0_312]
-	at java.util.stream.Sink$ChainedReference.end(Sink.java:258) ~[?:1.8.0_312]
-	at java.util.stream.Sink$ChainedReference.end(Sink.java:258) ~[?:1.8.0_312]
-	at java.util.stream.Sink$ChainedReference.end(Sink.java:258) ~[?:1.8.0_312]
-	at java.util.stream.Sink$ChainedReference.end(Sink.java:258) ~[?:1.8.0_312]
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:483) ~[?:1.8.0_312]
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472) ~[?:1.8.0_312]
-	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708) ~[?:1.8.0_312]
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:1.8.0_312]
-	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:566) ~[?:1.8.0_312]
-	at springfox.documentation.spring.web.plugins.WebMvcRequestHandlerProvider.requestHandlers(WebMvcRequestHandlerProvider.java:81) ~[springfox-spring-webmvc-3.0.0.jar:3.0.0]
-	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193) ~[?:1.8.0_312]
-	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1384) ~[?:1.8.0_312]
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482) ~[?:1.8.0_312]
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472) ~[?:1.8.0_312]
-	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708) ~[?:1.8.0_312]
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:1.8.0_312]
-	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:566) ~[?:1.8.0_312]
-	at springfox.documentation.spring.web.plugins.AbstractDocumentationPluginsBootstrapper.withDefaults(AbstractDocumentationPluginsBootstrapper.java:107) ~[springfox-spring-web-3.0.0.jar:3.0.0]
-	at springfox.documentation.spring.web.plugins.AbstractDocumentationPluginsBootstrapper.buildContext(AbstractDocumentationPluginsBootstrapper.java:91) ~[springfox-spring-web-3.0.0.jar:3.0.0]
-	at springfox.documentation.spring.web.plugins.AbstractDocumentationPluginsBootstrapper.bootstrapDocumentationPlugins(AbstractDocumentationPluginsBootstrapper.java:82) ~[springfox-spring-web-3.0.0.jar:3.0.0]
-	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:100) ~[springfox-spring-web-3.0.0.jar:3.0.0]
-	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178) ~[spring-context-5.3.15.jar:5.3.15]
-	... 14 more
-[INFO ] 2022-01-28 10:01:19.611 [background-preinit] Version - HV000001: Hibernate Validator 6.2.0.Final
-[INFO ] 2022-01-28 10:01:19.635 [main] PatientApplication - Starting PatientApplication using Java 1.8.0_312 on fedora with PID 9330 (/home/alex/IdeaProjects/Mediscreen/patient/build/classes/java/main started by alex in /home/alex/IdeaProjects/Mediscreen)
-[INFO ] 2022-01-28 10:01:19.637 [main] PatientApplication - No active profile set, falling back to default profiles: default
-[INFO ] 2022-01-28 10:01:20.154 [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-[INFO ] 2022-01-28 10:01:20.187 [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 27 ms. Found 1 JPA repository interfaces.
-[INFO ] 2022-01-28 10:01:20.622 [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-[INFO ] 2022-01-28 10:01:20.677 [main] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1018 ms
-[INFO ] 2022-01-28 10:01:20.770 [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-[INFO ] 2022-01-28 10:01:20.798 [main] Version - HHH000412: Hibernate ORM core version 5.6.4.Final
-[INFO ] 2022-01-28 10:01:20.897 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-[INFO ] 2022-01-28 10:01:21.086 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
-[INFO ] 2022-01-28 10:01:21.486 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-[INFO ] 2022-01-28 10:01:21.490 [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-[WARN ] 2022-01-28 10:01:21.933 [main] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-[INFO ] 2022-01-28 10:01:22.208 [main] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-[WARN ] 2022-01-28 10:01:22.212 [main] AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'documentationPluginsBootstrapper'; nested exception is java.lang.NullPointerException
-[INFO ] 2022-01-28 10:01:22.216 [main] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-[INFO ] 2022-01-28 10:01:22.238 [main] ConditionEvaluationReportLoggingListener - 
+[ERROR] 2022-01-29 20:28:50.421 [main] LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+[WARN ] 2022-01-29 20:30:11.041 [http-nio-8080-exec-7] DefaultHandlerExceptionResolver - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: "internalLastName1"]
+[WARN ] 2022-01-29 20:30:37.775 [http-nio-8080-exec-9] DefaultHandlerExceptionResolver - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: "initializeInternalPatients"]
+[INFO ] 2022-01-29 21:19:11.375 [background-preinit] Version - HV000001: Hibernate Validator 6.2.0.Final
+[INFO ] 2022-01-29 21:19:11.403 [main] PatientApplication - Starting PatientApplication using Java 1.8.0_312 on fedora with PID 32669 (/home/alex/IdeaProjects/Mediscreen/patient/build/classes/java/main started by alex in /home/alex/IdeaProjects/Mediscreen)
+[INFO ] 2022-01-29 21:19:11.405 [main] PatientApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2022-01-29 21:19:11.900 [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2022-01-29 21:19:11.932 [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 25 ms. Found 1 JPA repository interfaces.
+[INFO ] 2022-01-29 21:19:12.369 [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2022-01-29 21:19:12.416 [main] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 986 ms
+[INFO ] 2022-01-29 21:19:12.507 [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2022-01-29 21:19:12.532 [main] Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+[INFO ] 2022-01-29 21:19:12.628 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 2022-01-29 21:19:12.795 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+[INFO ] 2022-01-29 21:19:13.114 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2022-01-29 21:19:13.119 [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2022-01-29 21:19:13.537 [main] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[WARN ] 2022-01-29 21:19:13.827 [main] AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+[INFO ] 2022-01-29 21:19:13.830 [main] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2022-01-29 21:19:13.843 [main] ConditionEvaluationReportLoggingListener - 
 
 Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-[ERROR] 2022-01-28 10:01:22.249 [main] SpringApplication - Application run failed
-org.springframework.context.ApplicationContextException: Failed to start bean 'documentationPluginsBootstrapper'; nested exception is java.lang.NullPointerException
-	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:181) ~[spring-context-5.3.15.jar:5.3.15]
-	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54) ~[spring-context-5.3.15.jar:5.3.15]
-	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356) ~[spring-context-5.3.15.jar:5.3.15]
-	at java.lang.Iterable.forEach(Iterable.java:75) ~[?:1.8.0_312]
-	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155) ~[spring-context-5.3.15.jar:5.3.15]
-	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123) ~[spring-context-5.3.15.jar:5.3.15]
-	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:935) ~[spring-context-5.3.15.jar:5.3.15]
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586) ~[spring-context-5.3.15.jar:5.3.15]
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.3.jar:2.6.3]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732) [spring-boot-2.6.3.jar:2.6.3]
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:414) [spring-boot-2.6.3.jar:2.6.3]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302) [spring-boot-2.6.3.jar:2.6.3]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) [spring-boot-2.6.3.jar:2.6.3]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) [spring-boot-2.6.3.jar:2.6.3]
-	at com.mediscreen.patient.PatientApplication.main(PatientApplication.java:15) [main/:?]
-Caused by: java.lang.NullPointerException
-	at springfox.documentation.spring.web.WebMvcPatternsRequestConditionWrapper.getPatterns(WebMvcPatternsRequestConditionWrapper.java:56) ~[springfox-spring-webmvc-3.0.0.jar:3.0.0]
-	at springfox.documentation.RequestHandler.sortedPaths(RequestHandler.java:113) ~[springfox-core-3.0.0.jar:3.0.0]
-	at springfox.documentation.spi.service.contexts.Orderings.lambda$byPatternsCondition$3(Orderings.java:89) ~[springfox-spi-3.0.0.jar:3.0.0]
-	at java.util.Comparator.lambda$comparing$77a9974f$1(Comparator.java:469) ~[?:1.8.0_312]
-	at java.util.TimSort.countRunAndMakeAscending(TimSort.java:355) ~[?:1.8.0_312]
-	at java.util.TimSort.sort(TimSort.java:220) ~[?:1.8.0_312]
-	at java.util.Arrays.sort(Arrays.java:1512) ~[?:1.8.0_312]
-	at java.util.ArrayList.sort(ArrayList.java:1464) ~[?:1.8.0_312]
-	at java.util.stream.SortedOps$RefSortingSink.end(SortedOps.java:392) ~[?:1.8.0_312]
-	at java.util.stream.Sink$ChainedReference.end(Sink.java:258) ~[?:1.8.0_312]
-	at java.util.stream.Sink$ChainedReference.end(Sink.java:258) ~[?:1.8.0_312]
-	at java.util.stream.Sink$ChainedReference.end(Sink.java:258) ~[?:1.8.0_312]
-	at java.util.stream.Sink$ChainedReference.end(Sink.java:258) ~[?:1.8.0_312]
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:483) ~[?:1.8.0_312]
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472) ~[?:1.8.0_312]
-	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708) ~[?:1.8.0_312]
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:1.8.0_312]
-	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:566) ~[?:1.8.0_312]
-	at springfox.documentation.spring.web.plugins.WebMvcRequestHandlerProvider.requestHandlers(WebMvcRequestHandlerProvider.java:81) ~[springfox-spring-webmvc-3.0.0.jar:3.0.0]
-	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193) ~[?:1.8.0_312]
-	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1384) ~[?:1.8.0_312]
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482) ~[?:1.8.0_312]
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472) ~[?:1.8.0_312]
-	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708) ~[?:1.8.0_312]
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:1.8.0_312]
-	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:566) ~[?:1.8.0_312]
-	at springfox.documentation.spring.web.plugins.AbstractDocumentationPluginsBootstrapper.withDefaults(AbstractDocumentationPluginsBootstrapper.java:107) ~[springfox-spring-web-3.0.0.jar:3.0.0]
-	at springfox.documentation.spring.web.plugins.AbstractDocumentationPluginsBootstrapper.buildContext(AbstractDocumentationPluginsBootstrapper.java:91) ~[springfox-spring-web-3.0.0.jar:3.0.0]
-	at springfox.documentation.spring.web.plugins.AbstractDocumentationPluginsBootstrapper.bootstrapDocumentationPlugins(AbstractDocumentationPluginsBootstrapper.java:82) ~[springfox-spring-web-3.0.0.jar:3.0.0]
-	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:100) ~[springfox-spring-web-3.0.0.jar:3.0.0]
-	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178) ~[spring-context-5.3.15.jar:5.3.15]
-	... 14 more
-[INFO ] 2022-01-28 10:01:47.415 [background-preinit] Version - HV000001: Hibernate Validator 6.2.0.Final
-[INFO ] 2022-01-28 10:01:47.440 [main] PatientApplication - Starting PatientApplication using Java 1.8.0_312 on fedora with PID 9499 (/home/alex/IdeaProjects/Mediscreen/patient/build/classes/java/main started by alex in /home/alex/IdeaProjects/Mediscreen)
-[INFO ] 2022-01-28 10:01:47.443 [main] PatientApplication - No active profile set, falling back to default profiles: default
-[INFO ] 2022-01-28 10:01:47.822 [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-[INFO ] 2022-01-28 10:01:47.852 [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 24 ms. Found 1 JPA repository interfaces.
-[INFO ] 2022-01-28 10:01:48.214 [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-[INFO ] 2022-01-28 10:01:48.274 [main] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 789 ms
-[INFO ] 2022-01-28 10:01:48.365 [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-[INFO ] 2022-01-28 10:01:48.391 [main] Version - HHH000412: Hibernate ORM core version 5.6.4.Final
-[INFO ] 2022-01-28 10:01:48.484 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-[INFO ] 2022-01-28 10:01:48.646 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
-[INFO ] 2022-01-28 10:01:48.967 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-[INFO ] 2022-01-28 10:01:48.971 [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-[WARN ] 2022-01-28 10:01:49.185 [main] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-[INFO ] 2022-01-28 10:01:49.494 [main] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-[INFO ] 2022-01-28 10:01:49.501 [main] PatientApplication - Started PatientApplication in 2.253 seconds (JVM running for 2.635)
-[INFO ] 2022-01-28 10:02:11.363 [SpringApplicationShutdownHook] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-[INFO ] 2022-01-28 10:02:12.743 [background-preinit] Version - HV000001: Hibernate Validator 6.2.0.Final
-[INFO ] 2022-01-28 10:02:12.770 [main] PatientApplication - Starting PatientApplication using Java 1.8.0_312 on fedora with PID 9667 (/home/alex/IdeaProjects/Mediscreen/patient/build/classes/java/main started by alex in /home/alex/IdeaProjects/Mediscreen)
-[INFO ] 2022-01-28 10:02:12.772 [main] PatientApplication - No active profile set, falling back to default profiles: default
-[INFO ] 2022-01-28 10:02:13.279 [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-[INFO ] 2022-01-28 10:02:13.305 [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21 ms. Found 1 JPA repository interfaces.
-[INFO ] 2022-01-28 10:02:13.689 [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-[INFO ] 2022-01-28 10:02:13.738 [main] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 924 ms
-[INFO ] 2022-01-28 10:02:13.852 [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-[INFO ] 2022-01-28 10:02:13.888 [main] Version - HHH000412: Hibernate ORM core version 5.6.4.Final
-[INFO ] 2022-01-28 10:02:13.991 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-[INFO ] 2022-01-28 10:02:14.216 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
-[INFO ] 2022-01-28 10:02:14.553 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-[INFO ] 2022-01-28 10:02:14.558 [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-[WARN ] 2022-01-28 10:02:14.955 [main] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-[INFO ] 2022-01-28 10:02:15.215 [main] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-[WARN ] 2022-01-28 10:02:15.218 [main] AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'documentationPluginsBootstrapper'; nested exception is java.lang.NullPointerException
-[INFO ] 2022-01-28 10:02:15.220 [main] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-[INFO ] 2022-01-28 10:02:15.234 [main] ConditionEvaluationReportLoggingListener - 
+[ERROR] 2022-01-29 21:19:13.853 [main] LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+[INFO ] 2022-01-29 23:10:12.579 [background-preinit] Version - HV000001: Hibernate Validator 6.2.0.Final
+[INFO ] 2022-01-29 23:10:12.604 [main] PatientApplication - Starting PatientApplication using Java 1.8.0_312 on fedora with PID 38516 (/home/alex/IdeaProjects/Mediscreen/patient/build/classes/java/main started by alex in /home/alex/IdeaProjects/Mediscreen)
+[INFO ] 2022-01-29 23:10:12.606 [main] PatientApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2022-01-29 23:10:13.216 [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2022-01-29 23:10:13.251 [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 30 ms. Found 1 JPA repository interfaces.
+[INFO ] 2022-01-29 23:10:13.695 [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2022-01-29 23:10:13.744 [main] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1115 ms
+[INFO ] 2022-01-29 23:10:13.834 [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2022-01-29 23:10:13.863 [main] Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+[INFO ] 2022-01-29 23:10:13.958 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 2022-01-29 23:10:14.158 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+[INFO ] 2022-01-29 23:10:14.492 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2022-01-29 23:10:14.498 [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2022-01-29 23:10:14.893 [main] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[WARN ] 2022-01-29 23:10:15.193 [main] AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+[INFO ] 2022-01-29 23:10:15.197 [main] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2022-01-29 23:10:15.209 [main] ConditionEvaluationReportLoggingListener - 
 
 Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-[ERROR] 2022-01-28 10:02:15.244 [main] SpringApplication - Application run failed
-org.springframework.context.ApplicationContextException: Failed to start bean 'documentationPluginsBootstrapper'; nested exception is java.lang.NullPointerException
-	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:181) ~[spring-context-5.3.15.jar:5.3.15]
-	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54) ~[spring-context-5.3.15.jar:5.3.15]
-	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356) ~[spring-context-5.3.15.jar:5.3.15]
-	at java.lang.Iterable.forEach(Iterable.java:75) ~[?:1.8.0_312]
-	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155) ~[spring-context-5.3.15.jar:5.3.15]
-	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123) ~[spring-context-5.3.15.jar:5.3.15]
-	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:935) ~[spring-context-5.3.15.jar:5.3.15]
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586) ~[spring-context-5.3.15.jar:5.3.15]
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.3.jar:2.6.3]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732) [spring-boot-2.6.3.jar:2.6.3]
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:414) [spring-boot-2.6.3.jar:2.6.3]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302) [spring-boot-2.6.3.jar:2.6.3]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) [spring-boot-2.6.3.jar:2.6.3]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) [spring-boot-2.6.3.jar:2.6.3]
-	at com.mediscreen.patient.PatientApplication.main(PatientApplication.java:15) [main/:?]
-Caused by: java.lang.NullPointerException
-	at springfox.documentation.spring.web.WebMvcPatternsRequestConditionWrapper.getPatterns(WebMvcPatternsRequestConditionWrapper.java:56) ~[springfox-spring-webmvc-3.0.0.jar:3.0.0]
-	at springfox.documentation.RequestHandler.sortedPaths(RequestHandler.java:113) ~[springfox-core-3.0.0.jar:3.0.0]
-	at springfox.documentation.spi.service.contexts.Orderings.lambda$byPatternsCondition$3(Orderings.java:89) ~[springfox-spi-3.0.0.jar:3.0.0]
-	at java.util.Comparator.lambda$comparing$77a9974f$1(Comparator.java:469) ~[?:1.8.0_312]
-	at java.util.TimSort.countRunAndMakeAscending(TimSort.java:355) ~[?:1.8.0_312]
-	at java.util.TimSort.sort(TimSort.java:220) ~[?:1.8.0_312]
-	at java.util.Arrays.sort(Arrays.java:1512) ~[?:1.8.0_312]
-	at java.util.ArrayList.sort(ArrayList.java:1464) ~[?:1.8.0_312]
-	at java.util.stream.SortedOps$RefSortingSink.end(SortedOps.java:392) ~[?:1.8.0_312]
-	at java.util.stream.Sink$ChainedReference.end(Sink.java:258) ~[?:1.8.0_312]
-	at java.util.stream.Sink$ChainedReference.end(Sink.java:258) ~[?:1.8.0_312]
-	at java.util.stream.Sink$ChainedReference.end(Sink.java:258) ~[?:1.8.0_312]
-	at java.util.stream.Sink$ChainedReference.end(Sink.java:258) ~[?:1.8.0_312]
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:483) ~[?:1.8.0_312]
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472) ~[?:1.8.0_312]
-	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708) ~[?:1.8.0_312]
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:1.8.0_312]
-	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:566) ~[?:1.8.0_312]
-	at springfox.documentation.spring.web.plugins.WebMvcRequestHandlerProvider.requestHandlers(WebMvcRequestHandlerProvider.java:81) ~[springfox-spring-webmvc-3.0.0.jar:3.0.0]
-	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193) ~[?:1.8.0_312]
-	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1384) ~[?:1.8.0_312]
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482) ~[?:1.8.0_312]
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472) ~[?:1.8.0_312]
-	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708) ~[?:1.8.0_312]
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:1.8.0_312]
-	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:566) ~[?:1.8.0_312]
-	at springfox.documentation.spring.web.plugins.AbstractDocumentationPluginsBootstrapper.withDefaults(AbstractDocumentationPluginsBootstrapper.java:107) ~[springfox-spring-web-3.0.0.jar:3.0.0]
-	at springfox.documentation.spring.web.plugins.AbstractDocumentationPluginsBootstrapper.buildContext(AbstractDocumentationPluginsBootstrapper.java:91) ~[springfox-spring-web-3.0.0.jar:3.0.0]
-	at springfox.documentation.spring.web.plugins.AbstractDocumentationPluginsBootstrapper.bootstrapDocumentationPlugins(AbstractDocumentationPluginsBootstrapper.java:82) ~[springfox-spring-web-3.0.0.jar:3.0.0]
-	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:100) ~[springfox-spring-web-3.0.0.jar:3.0.0]
-	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178) ~[spring-context-5.3.15.jar:5.3.15]
-	... 14 more
-[INFO ] 2022-01-28 10:03:19.404 [background-preinit] Version - HV000001: Hibernate Validator 6.2.0.Final
-[INFO ] 2022-01-28 10:03:19.430 [main] PatientApplication - Starting PatientApplication using Java 1.8.0_312 on fedora with PID 9942 (/home/alex/IdeaProjects/Mediscreen/patient/build/classes/java/main started by alex in /home/alex/IdeaProjects/Mediscreen)
-[INFO ] 2022-01-28 10:03:19.433 [main] PatientApplication - No active profile set, falling back to default profiles: default
-[INFO ] 2022-01-28 10:03:19.925 [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-[INFO ] 2022-01-28 10:03:19.953 [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 22 ms. Found 1 JPA repository interfaces.
-[INFO ] 2022-01-28 10:03:20.346 [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-[INFO ] 2022-01-28 10:03:20.396 [main] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 918 ms
-[INFO ] 2022-01-28 10:03:20.510 [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-[INFO ] 2022-01-28 10:03:20.536 [main] Version - HHH000412: Hibernate ORM core version 5.6.4.Final
-[INFO ] 2022-01-28 10:03:20.626 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-[INFO ] 2022-01-28 10:03:20.827 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
-[INFO ] 2022-01-28 10:03:21.163 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-[INFO ] 2022-01-28 10:03:21.168 [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-[WARN ] 2022-01-28 10:03:21.538 [main] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-[INFO ] 2022-01-28 10:03:21.778 [main] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-[WARN ] 2022-01-28 10:03:21.781 [main] AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'documentationPluginsBootstrapper'; nested exception is java.lang.NullPointerException
-[INFO ] 2022-01-28 10:03:21.784 [main] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-[INFO ] 2022-01-28 10:03:21.801 [main] ConditionEvaluationReportLoggingListener - 
+[ERROR] 2022-01-29 23:10:15.219 [main] LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+[INFO ] 2022-01-29 23:10:24.898 [background-preinit] Version - HV000001: Hibernate Validator 6.2.0.Final
+[INFO ] 2022-01-29 23:10:24.924 [main] PatientApplication - Starting PatientApplication using Java 1.8.0_312 on fedora with PID 38689 (/home/alex/IdeaProjects/Mediscreen/patient/build/classes/java/main started by alex in /home/alex/IdeaProjects/Mediscreen)
+[INFO ] 2022-01-29 23:10:24.926 [main] PatientApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2022-01-29 23:10:25.431 [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2022-01-29 23:10:25.457 [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21 ms. Found 1 JPA repository interfaces.
+[INFO ] 2022-01-29 23:10:25.838 [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2022-01-29 23:10:25.898 [main] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 943 ms
+[INFO ] 2022-01-29 23:10:26.004 [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2022-01-29 23:10:26.030 [main] Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+[INFO ] 2022-01-29 23:10:26.119 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 2022-01-29 23:10:26.292 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+[INFO ] 2022-01-29 23:10:26.663 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2022-01-29 23:10:26.668 [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2022-01-29 23:10:27.080 [main] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[WARN ] 2022-01-29 23:10:27.385 [main] AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+[INFO ] 2022-01-29 23:10:27.387 [main] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2022-01-29 23:10:27.402 [main] ConditionEvaluationReportLoggingListener - 
 
 Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-[ERROR] 2022-01-28 10:03:21.814 [main] SpringApplication - Application run failed
-org.springframework.context.ApplicationContextException: Failed to start bean 'documentationPluginsBootstrapper'; nested exception is java.lang.NullPointerException
-	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:181) ~[spring-context-5.3.15.jar:5.3.15]
-	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54) ~[spring-context-5.3.15.jar:5.3.15]
-	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356) ~[spring-context-5.3.15.jar:5.3.15]
-	at java.lang.Iterable.forEach(Iterable.java:75) ~[?:1.8.0_312]
-	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155) ~[spring-context-5.3.15.jar:5.3.15]
-	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123) ~[spring-context-5.3.15.jar:5.3.15]
-	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:935) ~[spring-context-5.3.15.jar:5.3.15]
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586) ~[spring-context-5.3.15.jar:5.3.15]
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.3.jar:2.6.3]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732) [spring-boot-2.6.3.jar:2.6.3]
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:414) [spring-boot-2.6.3.jar:2.6.3]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302) [spring-boot-2.6.3.jar:2.6.3]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) [spring-boot-2.6.3.jar:2.6.3]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) [spring-boot-2.6.3.jar:2.6.3]
-	at com.mediscreen.patient.PatientApplication.main(PatientApplication.java:15) [main/:?]
-Caused by: java.lang.NullPointerException
-	at springfox.documentation.spring.web.WebMvcPatternsRequestConditionWrapper.getPatterns(WebMvcPatternsRequestConditionWrapper.java:56) ~[springfox-spring-webmvc-3.0.0.jar:3.0.0]
-	at springfox.documentation.RequestHandler.sortedPaths(RequestHandler.java:113) ~[springfox-core-3.0.0.jar:3.0.0]
-	at springfox.documentation.spi.service.contexts.Orderings.lambda$byPatternsCondition$3(Orderings.java:89) ~[springfox-spi-3.0.0.jar:3.0.0]
-	at java.util.Comparator.lambda$comparing$77a9974f$1(Comparator.java:469) ~[?:1.8.0_312]
-	at java.util.TimSort.countRunAndMakeAscending(TimSort.java:355) ~[?:1.8.0_312]
-	at java.util.TimSort.sort(TimSort.java:220) ~[?:1.8.0_312]
-	at java.util.Arrays.sort(Arrays.java:1512) ~[?:1.8.0_312]
-	at java.util.ArrayList.sort(ArrayList.java:1464) ~[?:1.8.0_312]
-	at java.util.stream.SortedOps$RefSortingSink.end(SortedOps.java:392) ~[?:1.8.0_312]
-	at java.util.stream.Sink$ChainedReference.end(Sink.java:258) ~[?:1.8.0_312]
-	at java.util.stream.Sink$ChainedReference.end(Sink.java:258) ~[?:1.8.0_312]
-	at java.util.stream.Sink$ChainedReference.end(Sink.java:258) ~[?:1.8.0_312]
-	at java.util.stream.Sink$ChainedReference.end(Sink.java:258) ~[?:1.8.0_312]
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:483) ~[?:1.8.0_312]
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472) ~[?:1.8.0_312]
-	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708) ~[?:1.8.0_312]
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:1.8.0_312]
-	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:566) ~[?:1.8.0_312]
-	at springfox.documentation.spring.web.plugins.WebMvcRequestHandlerProvider.requestHandlers(WebMvcRequestHandlerProvider.java:81) ~[springfox-spring-webmvc-3.0.0.jar:3.0.0]
-	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193) ~[?:1.8.0_312]
-	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1384) ~[?:1.8.0_312]
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482) ~[?:1.8.0_312]
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472) ~[?:1.8.0_312]
-	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708) ~[?:1.8.0_312]
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:1.8.0_312]
-	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:566) ~[?:1.8.0_312]
-	at springfox.documentation.spring.web.plugins.AbstractDocumentationPluginsBootstrapper.withDefaults(AbstractDocumentationPluginsBootstrapper.java:107) ~[springfox-spring-web-3.0.0.jar:3.0.0]
-	at springfox.documentation.spring.web.plugins.AbstractDocumentationPluginsBootstrapper.buildContext(AbstractDocumentationPluginsBootstrapper.java:91) ~[springfox-spring-web-3.0.0.jar:3.0.0]
-	at springfox.documentation.spring.web.plugins.AbstractDocumentationPluginsBootstrapper.bootstrapDocumentationPlugins(AbstractDocumentationPluginsBootstrapper.java:82) ~[springfox-spring-web-3.0.0.jar:3.0.0]
-	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:100) ~[springfox-spring-web-3.0.0.jar:3.0.0]
-	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178) ~[spring-context-5.3.15.jar:5.3.15]
-	... 14 more
-[INFO ] 2022-01-28 10:04:22.593 [background-preinit] Version - HV000001: Hibernate Validator 6.2.0.Final
-[INFO ] 2022-01-28 10:04:22.624 [main] PatientApplication - Starting PatientApplication using Java 1.8.0_312 on fedora with PID 10163 (/home/alex/IdeaProjects/Mediscreen/patient/build/classes/java/main started by alex in /home/alex/IdeaProjects/Mediscreen)
-[INFO ] 2022-01-28 10:04:22.626 [main] PatientApplication - No active profile set, falling back to default profiles: default
-[INFO ] 2022-01-28 10:04:23.182 [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-[INFO ] 2022-01-28 10:04:23.222 [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 34 ms. Found 1 JPA repository interfaces.
-[INFO ] 2022-01-28 10:04:23.681 [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-[INFO ] 2022-01-28 10:04:23.744 [main] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1068 ms
-[INFO ] 2022-01-28 10:04:23.884 [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-[INFO ] 2022-01-28 10:04:23.924 [main] Version - HHH000412: Hibernate ORM core version 5.6.4.Final
-[INFO ] 2022-01-28 10:04:24.039 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-[INFO ] 2022-01-28 10:04:24.264 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
-[INFO ] 2022-01-28 10:04:24.610 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-[INFO ] 2022-01-28 10:04:24.615 [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-[WARN ] 2022-01-28 10:04:25.034 [main] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-[INFO ] 2022-01-28 10:04:25.311 [main] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-[WARN ] 2022-01-28 10:04:25.314 [main] AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'documentationPluginsBootstrapper'; nested exception is java.lang.NullPointerException
-[INFO ] 2022-01-28 10:04:25.317 [main] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-[INFO ] 2022-01-28 10:04:25.338 [main] ConditionEvaluationReportLoggingListener - 
+[ERROR] 2022-01-29 23:10:27.413 [main] LoggingFailureAnalysisReporter - 
 
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-[ERROR] 2022-01-28 10:04:25.353 [main] SpringApplication - Application run failed
-org.springframework.context.ApplicationContextException: Failed to start bean 'documentationPluginsBootstrapper'; nested exception is java.lang.NullPointerException
-	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:181) ~[spring-context-5.3.15.jar:5.3.15]
-	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54) ~[spring-context-5.3.15.jar:5.3.15]
-	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356) ~[spring-context-5.3.15.jar:5.3.15]
-	at java.lang.Iterable.forEach(Iterable.java:75) ~[?:1.8.0_312]
-	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155) ~[spring-context-5.3.15.jar:5.3.15]
-	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123) ~[spring-context-5.3.15.jar:5.3.15]
-	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:935) ~[spring-context-5.3.15.jar:5.3.15]
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586) ~[spring-context-5.3.15.jar:5.3.15]
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.3.jar:2.6.3]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732) [spring-boot-2.6.3.jar:2.6.3]
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:414) [spring-boot-2.6.3.jar:2.6.3]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302) [spring-boot-2.6.3.jar:2.6.3]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) [spring-boot-2.6.3.jar:2.6.3]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) [spring-boot-2.6.3.jar:2.6.3]
-	at com.mediscreen.patient.PatientApplication.main(PatientApplication.java:15) [main/:?]
-Caused by: java.lang.NullPointerException
-	at springfox.documentation.spring.web.WebMvcPatternsRequestConditionWrapper.getPatterns(WebMvcPatternsRequestConditionWrapper.java:56) ~[springfox-spring-webmvc-3.0.0.jar:3.0.0]
-	at springfox.documentation.RequestHandler.sortedPaths(RequestHandler.java:113) ~[springfox-core-3.0.0.jar:3.0.0]
-	at springfox.documentation.spi.service.contexts.Orderings.lambda$byPatternsCondition$3(Orderings.java:89) ~[springfox-spi-3.0.0.jar:3.0.0]
-	at java.util.Comparator.lambda$comparing$77a9974f$1(Comparator.java:469) ~[?:1.8.0_312]
-	at java.util.TimSort.countRunAndMakeAscending(TimSort.java:355) ~[?:1.8.0_312]
-	at java.util.TimSort.sort(TimSort.java:220) ~[?:1.8.0_312]
-	at java.util.Arrays.sort(Arrays.java:1512) ~[?:1.8.0_312]
-	at java.util.ArrayList.sort(ArrayList.java:1464) ~[?:1.8.0_312]
-	at java.util.stream.SortedOps$RefSortingSink.end(SortedOps.java:392) ~[?:1.8.0_312]
-	at java.util.stream.Sink$ChainedReference.end(Sink.java:258) ~[?:1.8.0_312]
-	at java.util.stream.Sink$ChainedReference.end(Sink.java:258) ~[?:1.8.0_312]
-	at java.util.stream.Sink$ChainedReference.end(Sink.java:258) ~[?:1.8.0_312]
-	at java.util.stream.Sink$ChainedReference.end(Sink.java:258) ~[?:1.8.0_312]
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:483) ~[?:1.8.0_312]
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472) ~[?:1.8.0_312]
-	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708) ~[?:1.8.0_312]
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:1.8.0_312]
-	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:566) ~[?:1.8.0_312]
-	at springfox.documentation.spring.web.plugins.WebMvcRequestHandlerProvider.requestHandlers(WebMvcRequestHandlerProvider.java:81) ~[springfox-spring-webmvc-3.0.0.jar:3.0.0]
-	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193) ~[?:1.8.0_312]
-	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1384) ~[?:1.8.0_312]
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482) ~[?:1.8.0_312]
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472) ~[?:1.8.0_312]
-	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708) ~[?:1.8.0_312]
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:1.8.0_312]
-	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:566) ~[?:1.8.0_312]
-	at springfox.documentation.spring.web.plugins.AbstractDocumentationPluginsBootstrapper.withDefaults(AbstractDocumentationPluginsBootstrapper.java:107) ~[springfox-spring-web-3.0.0.jar:3.0.0]
-	at springfox.documentation.spring.web.plugins.AbstractDocumentationPluginsBootstrapper.buildContext(AbstractDocumentationPluginsBootstrapper.java:91) ~[springfox-spring-web-3.0.0.jar:3.0.0]
-	at springfox.documentation.spring.web.plugins.AbstractDocumentationPluginsBootstrapper.bootstrapDocumentationPlugins(AbstractDocumentationPluginsBootstrapper.java:82) ~[springfox-spring-web-3.0.0.jar:3.0.0]
-	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:100) ~[springfox-spring-web-3.0.0.jar:3.0.0]
-	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178) ~[spring-context-5.3.15.jar:5.3.15]
-	... 14 more
-[INFO ] 2022-01-28 10:06:20.342 [background-preinit] Version - HV000001: Hibernate Validator 6.2.0.Final
-[INFO ] 2022-01-28 10:06:20.364 [main] PatientApplication - Starting PatientApplication using Java 1.8.0_312 on fedora with PID 10666 (/home/alex/IdeaProjects/Mediscreen/patient/build/classes/java/main started by alex in /home/alex/IdeaProjects/Mediscreen)
-[INFO ] 2022-01-28 10:06:20.366 [main] PatientApplication - No active profile set, falling back to default profiles: default
-[INFO ] 2022-01-28 10:06:20.852 [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-[INFO ] 2022-01-28 10:06:20.889 [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 28 ms. Found 1 JPA repository interfaces.
-[INFO ] 2022-01-28 10:06:21.283 [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-[INFO ] 2022-01-28 10:06:21.330 [main] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 940 ms
-[INFO ] 2022-01-28 10:06:21.464 [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-[INFO ] 2022-01-28 10:06:21.501 [main] Version - HHH000412: Hibernate ORM core version 5.6.4.Final
-[INFO ] 2022-01-28 10:06:21.591 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-[INFO ] 2022-01-28 10:06:21.754 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
-[INFO ] 2022-01-28 10:06:22.090 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-[INFO ] 2022-01-28 10:06:22.095 [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-[WARN ] 2022-01-28 10:06:22.440 [main] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-[INFO ] 2022-01-28 10:06:22.536 [main] PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-[INFO ] 2022-01-28 10:06:22.732 [main] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-[WARN ] 2022-01-28 10:06:22.745 [main] AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'documentationPluginsBootstrapper'; nested exception is java.lang.NullPointerException
-[INFO ] 2022-01-28 10:06:22.747 [main] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-[INFO ] 2022-01-28 10:06:22.763 [main] ConditionEvaluationReportLoggingListener - 
+***************************
+APPLICATION FAILED TO START
+***************************
 
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-[ERROR] 2022-01-28 10:06:22.773 [main] SpringApplication - Application run failed
-org.springframework.context.ApplicationContextException: Failed to start bean 'documentationPluginsBootstrapper'; nested exception is java.lang.NullPointerException
-	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:181) ~[spring-context-5.3.15.jar:5.3.15]
-	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54) ~[spring-context-5.3.15.jar:5.3.15]
-	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356) ~[spring-context-5.3.15.jar:5.3.15]
-	at java.lang.Iterable.forEach(Iterable.java:75) ~[?:1.8.0_312]
-	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155) ~[spring-context-5.3.15.jar:5.3.15]
-	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123) ~[spring-context-5.3.15.jar:5.3.15]
-	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:935) ~[spring-context-5.3.15.jar:5.3.15]
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586) ~[spring-context-5.3.15.jar:5.3.15]
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.3.jar:2.6.3]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732) [spring-boot-2.6.3.jar:2.6.3]
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:414) [spring-boot-2.6.3.jar:2.6.3]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302) [spring-boot-2.6.3.jar:2.6.3]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) [spring-boot-2.6.3.jar:2.6.3]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) [spring-boot-2.6.3.jar:2.6.3]
-	at com.mediscreen.patient.PatientApplication.main(PatientApplication.java:15) [main/:?]
-Caused by: java.lang.NullPointerException
-	at springfox.documentation.spi.service.contexts.Orderings$8.compare(Orderings.java:112) ~[springfox-spi-2.9.2.jar:null]
-	at springfox.documentation.spi.service.contexts.Orderings$8.compare(Orderings.java:109) ~[springfox-spi-2.9.2.jar:null]
-	at com.google.common.collect.ComparatorOrdering.compare(ComparatorOrdering.java:37) ~[guava-20.0.jar:?]
-	at java.util.TimSort.countRunAndMakeAscending(TimSort.java:355) ~[?:1.8.0_312]
-	at java.util.TimSort.sort(TimSort.java:220) ~[?:1.8.0_312]
-	at java.util.Arrays.sort(Arrays.java:1438) ~[?:1.8.0_312]
-	at com.google.common.collect.Ordering.sortedCopy(Ordering.java:855) ~[guava-20.0.jar:?]
-	at springfox.documentation.spring.web.plugins.WebMvcRequestHandlerProvider.requestHandlers(WebMvcRequestHandlerProvider.java:57) ~[springfox-spring-web-2.9.2.jar:null]
-	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper$2.apply(DocumentationPluginsBootstrapper.java:138) ~[springfox-spring-web-2.9.2.jar:null]
-	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper$2.apply(DocumentationPluginsBootstrapper.java:135) ~[springfox-spring-web-2.9.2.jar:null]
-	at com.google.common.collect.Iterators$7.transform(Iterators.java:750) ~[guava-20.0.jar:?]
-	at com.google.common.collect.TransformedIterator.next(TransformedIterator.java:47) ~[guava-20.0.jar:?]
-	at com.google.common.collect.TransformedIterator.next(TransformedIterator.java:47) ~[guava-20.0.jar:?]
-	at com.google.common.collect.MultitransformedIterator.hasNext(MultitransformedIterator.java:52) ~[guava-20.0.jar:?]
-	at com.google.common.collect.MultitransformedIterator.hasNext(MultitransformedIterator.java:50) ~[guava-20.0.jar:?]
-	at com.google.common.collect.ImmutableList.copyOf(ImmutableList.java:249) ~[guava-20.0.jar:?]
-	at com.google.common.collect.ImmutableList.copyOf(ImmutableList.java:209) ~[guava-20.0.jar:?]
-	at com.google.common.collect.FluentIterable.toList(FluentIterable.java:614) ~[guava-20.0.jar:?]
-	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.defaultContextBuilder(DocumentationPluginsBootstrapper.java:111) ~[springfox-spring-web-2.9.2.jar:null]
-	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.buildContext(DocumentationPluginsBootstrapper.java:96) ~[springfox-spring-web-2.9.2.jar:null]
-	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:167) ~[springfox-spring-web-2.9.2.jar:null]
-	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178) ~[spring-context-5.3.15.jar:5.3.15]
-	... 14 more
-[INFO ] 2022-01-28 10:08:01.956 [background-preinit] Version - HV000001: Hibernate Validator 6.2.0.Final
-[INFO ] 2022-01-28 10:08:01.980 [main] PatientApplication - Starting PatientApplication using Java 1.8.0_312 on fedora with PID 11302 (/home/alex/IdeaProjects/Mediscreen/patient/build/classes/java/main started by alex in /home/alex/IdeaProjects/Mediscreen)
-[INFO ] 2022-01-28 10:08:01.982 [main] PatientApplication - No active profile set, falling back to default profiles: default
-[INFO ] 2022-01-28 10:08:02.480 [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-[INFO ] 2022-01-28 10:08:02.512 [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 24 ms. Found 1 JPA repository interfaces.
-[INFO ] 2022-01-28 10:08:02.879 [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-[INFO ] 2022-01-28 10:08:02.926 [main] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 924 ms
-[INFO ] 2022-01-28 10:08:03.017 [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-[INFO ] 2022-01-28 10:08:03.044 [main] Version - HHH000412: Hibernate ORM core version 5.6.4.Final
-[INFO ] 2022-01-28 10:08:03.130 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-[INFO ] 2022-01-28 10:08:03.303 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
-[INFO ] 2022-01-28 10:08:03.600 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-[INFO ] 2022-01-28 10:08:03.604 [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-[WARN ] 2022-01-28 10:08:03.955 [main] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-[INFO ] 2022-01-28 10:08:04.052 [main] PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-[INFO ] 2022-01-28 10:08:04.272 [main] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-[WARN ] 2022-01-28 10:08:04.285 [main] AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'documentationPluginsBootstrapper'; nested exception is java.lang.NullPointerException
-[INFO ] 2022-01-28 10:08:04.287 [main] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-[INFO ] 2022-01-28 10:08:04.304 [main] ConditionEvaluationReportLoggingListener - 
+Description:
 
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-[ERROR] 2022-01-28 10:08:04.316 [main] SpringApplication - Application run failed
-org.springframework.context.ApplicationContextException: Failed to start bean 'documentationPluginsBootstrapper'; nested exception is java.lang.NullPointerException
-	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:181) ~[spring-context-5.3.15.jar:5.3.15]
-	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54) ~[spring-context-5.3.15.jar:5.3.15]
-	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356) ~[spring-context-5.3.15.jar:5.3.15]
-	at java.lang.Iterable.forEach(Iterable.java:75) ~[?:1.8.0_312]
-	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155) ~[spring-context-5.3.15.jar:5.3.15]
-	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123) ~[spring-context-5.3.15.jar:5.3.15]
-	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:935) ~[spring-context-5.3.15.jar:5.3.15]
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586) ~[spring-context-5.3.15.jar:5.3.15]
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.3.jar:2.6.3]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732) [spring-boot-2.6.3.jar:2.6.3]
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:414) [spring-boot-2.6.3.jar:2.6.3]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302) [spring-boot-2.6.3.jar:2.6.3]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) [spring-boot-2.6.3.jar:2.6.3]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) [spring-boot-2.6.3.jar:2.6.3]
-	at com.mediscreen.patient.PatientApplication.main(PatientApplication.java:15) [main/:?]
-Caused by: java.lang.NullPointerException
-	at springfox.documentation.spi.service.contexts.Orderings$8.compare(Orderings.java:113) ~[springfox-spi-2.8.0.jar:2.8.0]
-	at springfox.documentation.spi.service.contexts.Orderings$8.compare(Orderings.java:110) ~[springfox-spi-2.8.0.jar:2.8.0]
-	at com.google.common.collect.ComparatorOrdering.compare(ComparatorOrdering.java:37) ~[guava-20.0.jar:?]
-	at java.util.TimSort.countRunAndMakeAscending(TimSort.java:355) ~[?:1.8.0_312]
-	at java.util.TimSort.sort(TimSort.java:220) ~[?:1.8.0_312]
-	at java.util.Arrays.sort(Arrays.java:1438) ~[?:1.8.0_312]
-	at com.google.common.collect.Ordering.sortedCopy(Ordering.java:855) ~[guava-20.0.jar:?]
-	at springfox.documentation.spring.web.plugins.WebMvcRequestHandlerProvider.requestHandlers(WebMvcRequestHandlerProvider.java:57) ~[springfox-spring-web-2.8.0.jar:2.8.0]
-	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper$2.apply(DocumentationPluginsBootstrapper.java:133) ~[springfox-spring-web-2.8.0.jar:2.8.0]
-	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper$2.apply(DocumentationPluginsBootstrapper.java:130) ~[springfox-spring-web-2.8.0.jar:2.8.0]
-	at com.google.common.collect.Iterators$7.transform(Iterators.java:750) ~[guava-20.0.jar:?]
-	at com.google.common.collect.TransformedIterator.next(TransformedIterator.java:47) ~[guava-20.0.jar:?]
-	at com.google.common.collect.TransformedIterator.next(TransformedIterator.java:47) ~[guava-20.0.jar:?]
-	at com.google.common.collect.MultitransformedIterator.hasNext(MultitransformedIterator.java:52) ~[guava-20.0.jar:?]
-	at com.google.common.collect.MultitransformedIterator.hasNext(MultitransformedIterator.java:50) ~[guava-20.0.jar:?]
-	at com.google.common.collect.ImmutableList.copyOf(ImmutableList.java:249) ~[guava-20.0.jar:?]
-	at com.google.common.collect.ImmutableList.copyOf(ImmutableList.java:209) ~[guava-20.0.jar:?]
-	at com.google.common.collect.FluentIterable.toList(FluentIterable.java:614) ~[guava-20.0.jar:?]
-	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.defaultContextBuilder(DocumentationPluginsBootstrapper.java:104) ~[springfox-spring-web-2.8.0.jar:2.8.0]
-	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.buildContext(DocumentationPluginsBootstrapper.java:91) ~[springfox-spring-web-2.8.0.jar:2.8.0]
-	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:158) ~[springfox-spring-web-2.8.0.jar:2.8.0]
-	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178) ~[spring-context-5.3.15.jar:5.3.15]
-	... 14 more
-[INFO ] 2022-01-28 10:14:54.124 [background-preinit] Version - HV000001: Hibernate Validator 6.2.0.Final
-[INFO ] 2022-01-28 10:14:54.150 [main] PatientApplication - Starting PatientApplication using Java 1.8.0_312 on fedora with PID 12410 (/home/alex/IdeaProjects/Mediscreen/patient/build/classes/java/main started by alex in /home/alex/IdeaProjects/Mediscreen)
-[INFO ] 2022-01-28 10:14:54.152 [main] PatientApplication - No active profile set, falling back to default profiles: default
-[INFO ] 2022-01-28 10:14:54.667 [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-[INFO ] 2022-01-28 10:14:54.695 [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 23 ms. Found 1 JPA repository interfaces.
-[INFO ] 2022-01-28 10:14:55.120 [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-[INFO ] 2022-01-28 10:14:55.187 [main] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 990 ms
-[INFO ] 2022-01-28 10:14:55.268 [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-[INFO ] 2022-01-28 10:14:55.294 [main] Version - HHH000412: Hibernate ORM core version 5.6.4.Final
-[INFO ] 2022-01-28 10:14:55.381 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-[INFO ] 2022-01-28 10:14:55.549 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
-[INFO ] 2022-01-28 10:14:55.871 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-[INFO ] 2022-01-28 10:14:55.876 [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-[WARN ] 2022-01-28 10:14:56.275 [main] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-[INFO ] 2022-01-28 10:14:56.533 [main] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-[WARN ] 2022-01-28 10:14:56.537 [main] AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'documentationPluginsBootstrapper'; nested exception is java.lang.NullPointerException
-[INFO ] 2022-01-28 10:14:56.540 [main] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-[INFO ] 2022-01-28 10:14:56.555 [main] ConditionEvaluationReportLoggingListener - 
+Web server failed to start. Port 8080 was already in use.
 
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-[ERROR] 2022-01-28 10:14:56.565 [main] SpringApplication - Application run failed
-org.springframework.context.ApplicationContextException: Failed to start bean 'documentationPluginsBootstrapper'; nested exception is java.lang.NullPointerException
-	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:181) ~[spring-context-5.3.15.jar:5.3.15]
-	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54) ~[spring-context-5.3.15.jar:5.3.15]
-	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356) ~[spring-context-5.3.15.jar:5.3.15]
-	at java.lang.Iterable.forEach(Iterable.java:75) ~[?:1.8.0_312]
-	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155) ~[spring-context-5.3.15.jar:5.3.15]
-	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123) ~[spring-context-5.3.15.jar:5.3.15]
-	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:935) ~[spring-context-5.3.15.jar:5.3.15]
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586) ~[spring-context-5.3.15.jar:5.3.15]
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.3.jar:2.6.3]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732) [spring-boot-2.6.3.jar:2.6.3]
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:414) [spring-boot-2.6.3.jar:2.6.3]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302) [spring-boot-2.6.3.jar:2.6.3]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) [spring-boot-2.6.3.jar:2.6.3]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) [spring-boot-2.6.3.jar:2.6.3]
-	at com.mediscreen.patient.PatientApplication.main(PatientApplication.java:15) [main/:?]
-Caused by: java.lang.NullPointerException
-	at springfox.documentation.spring.web.WebMvcPatternsRequestConditionWrapper.getPatterns(WebMvcPatternsRequestConditionWrapper.java:56) ~[springfox-spring-webmvc-3.0.0.jar:3.0.0]
-	at springfox.documentation.RequestHandler.sortedPaths(RequestHandler.java:113) ~[springfox-core-3.0.0.jar:3.0.0]
-	at springfox.documentation.spi.service.contexts.Orderings.lambda$byPatternsCondition$3(Orderings.java:89) ~[springfox-spi-3.0.0.jar:3.0.0]
-	at java.util.Comparator.lambda$comparing$77a9974f$1(Comparator.java:469) ~[?:1.8.0_312]
-	at java.util.TimSort.countRunAndMakeAscending(TimSort.java:355) ~[?:1.8.0_312]
-	at java.util.TimSort.sort(TimSort.java:220) ~[?:1.8.0_312]
-	at java.util.Arrays.sort(Arrays.java:1512) ~[?:1.8.0_312]
-	at java.util.ArrayList.sort(ArrayList.java:1464) ~[?:1.8.0_312]
-	at java.util.stream.SortedOps$RefSortingSink.end(SortedOps.java:392) ~[?:1.8.0_312]
-	at java.util.stream.Sink$ChainedReference.end(Sink.java:258) ~[?:1.8.0_312]
-	at java.util.stream.Sink$ChainedReference.end(Sink.java:258) ~[?:1.8.0_312]
-	at java.util.stream.Sink$ChainedReference.end(Sink.java:258) ~[?:1.8.0_312]
-	at java.util.stream.Sink$ChainedReference.end(Sink.java:258) ~[?:1.8.0_312]
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:483) ~[?:1.8.0_312]
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472) ~[?:1.8.0_312]
-	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708) ~[?:1.8.0_312]
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:1.8.0_312]
-	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:566) ~[?:1.8.0_312]
-	at springfox.documentation.spring.web.plugins.WebMvcRequestHandlerProvider.requestHandlers(WebMvcRequestHandlerProvider.java:81) ~[springfox-spring-webmvc-3.0.0.jar:3.0.0]
-	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193) ~[?:1.8.0_312]
-	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1384) ~[?:1.8.0_312]
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482) ~[?:1.8.0_312]
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472) ~[?:1.8.0_312]
-	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708) ~[?:1.8.0_312]
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:1.8.0_312]
-	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:566) ~[?:1.8.0_312]
-	at springfox.documentation.spring.web.plugins.AbstractDocumentationPluginsBootstrapper.withDefaults(AbstractDocumentationPluginsBootstrapper.java:107) ~[springfox-spring-web-3.0.0.jar:3.0.0]
-	at springfox.documentation.spring.web.plugins.AbstractDocumentationPluginsBootstrapper.buildContext(AbstractDocumentationPluginsBootstrapper.java:91) ~[springfox-spring-web-3.0.0.jar:3.0.0]
-	at springfox.documentation.spring.web.plugins.AbstractDocumentationPluginsBootstrapper.bootstrapDocumentationPlugins(AbstractDocumentationPluginsBootstrapper.java:82) ~[springfox-spring-web-3.0.0.jar:3.0.0]
-	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:100) ~[springfox-spring-web-3.0.0.jar:3.0.0]
-	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178) ~[spring-context-5.3.15.jar:5.3.15]
-	... 14 more
-[INFO ] 2022-01-28 10:26:23.244 [background-preinit] Version - HV000001: Hibernate Validator 6.2.0.Final
-[INFO ] 2022-01-28 10:26:23.270 [main] PatientApplication - Starting PatientApplication using Java 1.8.0_312 on fedora with PID 13686 (/home/alex/IdeaProjects/Mediscreen/patient/build/classes/java/main started by alex in /home/alex/IdeaProjects/Mediscreen)
-[INFO ] 2022-01-28 10:26:23.271 [main] PatientApplication - No active profile set, falling back to default profiles: default
-[INFO ] 2022-01-28 10:26:23.830 [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-[INFO ] 2022-01-28 10:26:23.861 [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 24 ms. Found 1 JPA repository interfaces.
-[INFO ] 2022-01-28 10:26:24.247 [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-[INFO ] 2022-01-28 10:26:24.300 [main] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1007 ms
-[INFO ] 2022-01-28 10:26:24.387 [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-[INFO ] 2022-01-28 10:26:24.412 [main] Version - HHH000412: Hibernate ORM core version 5.6.4.Final
-[INFO ] 2022-01-28 10:26:24.500 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-[INFO ] 2022-01-28 10:26:24.672 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
-[INFO ] 2022-01-28 10:26:25.031 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-[INFO ] 2022-01-28 10:26:25.035 [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-[WARN ] 2022-01-28 10:26:25.406 [main] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-[INFO ] 2022-01-28 10:26:25.635 [main] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-[INFO ] 2022-01-28 10:26:25.820 [main] PatientApplication - Started PatientApplication in 2.751 seconds (JVM running for 3.155)
-[INFO ] 2022-01-28 10:36:56.932 [http-nio-8080-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-[INFO ] 2022-01-28 10:36:56.933 [http-nio-8080-exec-1] DispatcherServlet - Completed initialization in 1 ms
-[INFO ] 2022-01-28 10:37:20.755 [SpringApplicationShutdownHook] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-[INFO ] 2022-01-28 10:37:21.981 [background-preinit] Version - HV000001: Hibernate Validator 6.2.0.Final
-[INFO ] 2022-01-28 10:37:22.007 [main] PatientApplication - Starting PatientApplication using Java 1.8.0_312 on fedora with PID 14208 (/home/alex/IdeaProjects/Mediscreen/patient/build/classes/java/main started by alex in /home/alex/IdeaProjects/Mediscreen)
-[INFO ] 2022-01-28 10:37:22.009 [main] PatientApplication - No active profile set, falling back to default profiles: default
-[INFO ] 2022-01-28 10:37:22.481 [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-[INFO ] 2022-01-28 10:37:22.509 [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 22 ms. Found 1 JPA repository interfaces.
-[INFO ] 2022-01-28 10:37:22.852 [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-[INFO ] 2022-01-28 10:37:22.900 [main] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 847 ms
-[INFO ] 2022-01-28 10:37:22.998 [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-[INFO ] 2022-01-28 10:37:23.025 [main] Version - HHH000412: Hibernate ORM core version 5.6.4.Final
-[INFO ] 2022-01-28 10:37:23.114 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-[INFO ] 2022-01-28 10:37:23.281 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
-[INFO ] 2022-01-28 10:37:23.604 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-[INFO ] 2022-01-28 10:37:23.608 [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-[WARN ] 2022-01-28 10:37:24.021 [main] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-[INFO ] 2022-01-28 10:37:24.334 [main] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-[INFO ] 2022-01-28 10:37:24.483 [main] PatientApplication - Started PatientApplication in 2.687 seconds (JVM running for 3.123)
-[INFO ] 2022-01-28 10:37:32.277 [http-nio-8080-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-[INFO ] 2022-01-28 10:37:32.278 [http-nio-8080-exec-1] DispatcherServlet - Completed initialization in 1 ms
-[INFO ] 2022-01-28 10:38:54.889 [SpringApplicationShutdownHook] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-[INFO ] 2022-01-28 10:38:55.880 [background-preinit] Version - HV000001: Hibernate Validator 6.2.0.Final
-[INFO ] 2022-01-28 10:38:55.906 [main] PatientApplication - Starting PatientApplication using Java 1.8.0_312 on fedora with PID 14568 (/home/alex/IdeaProjects/Mediscreen/patient/build/classes/java/main started by alex in /home/alex/IdeaProjects/Mediscreen)
-[INFO ] 2022-01-28 10:38:55.907 [main] PatientApplication - No active profile set, falling back to default profiles: default
-[INFO ] 2022-01-28 10:38:56.406 [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-[INFO ] 2022-01-28 10:38:56.433 [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21 ms. Found 1 JPA repository interfaces.
-[INFO ] 2022-01-28 10:38:56.814 [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-[INFO ] 2022-01-28 10:38:56.863 [main] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 933 ms
-[INFO ] 2022-01-28 10:38:56.950 [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-[INFO ] 2022-01-28 10:38:56.976 [main] Version - HHH000412: Hibernate ORM core version 5.6.4.Final
-[INFO ] 2022-01-28 10:38:57.064 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-[INFO ] 2022-01-28 10:38:57.234 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
-[INFO ] 2022-01-28 10:38:57.573 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-[INFO ] 2022-01-28 10:38:57.578 [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-[WARN ] 2022-01-28 10:38:57.957 [main] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-[INFO ] 2022-01-28 10:38:58.198 [main] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-[INFO ] 2022-01-28 10:38:58.367 [main] PatientApplication - Started PatientApplication in 2.656 seconds (JVM running for 3.072)
-[INFO ] 2022-01-28 10:39:03.803 [http-nio-8080-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-[INFO ] 2022-01-28 10:39:03.804 [http-nio-8080-exec-1] DispatcherServlet - Completed initialization in 1 ms
-[INFO ] 2022-01-28 10:44:25.031 [SpringApplicationShutdownHook] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-[INFO ] 2022-01-28 10:44:26.090 [background-preinit] Version - HV000001: Hibernate Validator 6.2.0.Final
-[INFO ] 2022-01-28 10:44:26.119 [main] PatientApplication - Starting PatientApplication using Java 1.8.0_312 on fedora with PID 14948 (/home/alex/IdeaProjects/Mediscreen/patient/build/classes/java/main started by alex in /home/alex/IdeaProjects/Mediscreen)
-[INFO ] 2022-01-28 10:44:26.121 [main] PatientApplication - No active profile set, falling back to default profiles: default
-[INFO ] 2022-01-28 10:44:26.608 [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-[INFO ] 2022-01-28 10:44:26.637 [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 23 ms. Found 1 JPA repository interfaces.
-[INFO ] 2022-01-28 10:44:26.984 [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-[INFO ] 2022-01-28 10:44:27.034 [main] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 888 ms
-[INFO ] 2022-01-28 10:44:27.127 [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-[INFO ] 2022-01-28 10:44:27.151 [main] Version - HHH000412: Hibernate ORM core version 5.6.4.Final
-[INFO ] 2022-01-28 10:44:27.237 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-[INFO ] 2022-01-28 10:44:27.409 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
-[INFO ] 2022-01-28 10:44:27.727 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-[INFO ] 2022-01-28 10:44:27.733 [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-[WARN ] 2022-01-28 10:44:28.197 [main] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-[INFO ] 2022-01-28 10:44:28.449 [main] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-[INFO ] 2022-01-28 10:44:28.591 [main] PatientApplication - Started PatientApplication in 2.673 seconds (JVM running for 3.067)
-[INFO ] 2022-01-28 10:44:38.223 [http-nio-8080-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-[INFO ] 2022-01-28 10:44:38.225 [http-nio-8080-exec-1] DispatcherServlet - Completed initialization in 1 ms
-[INFO ] 2022-01-28 10:51:21.258 [SpringApplicationShutdownHook] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-[INFO ] 2022-01-28 10:51:52.296 [background-preinit] Version - HV000001: Hibernate Validator 6.2.0.Final
-[INFO ] 2022-01-28 10:51:52.319 [main] PatientApplication - Starting PatientApplication using Java 1.8.0_312 on fedora with PID 15849 (/home/alex/IdeaProjects/Mediscreen/patient/build/classes/java/main started by alex in /home/alex/IdeaProjects/Mediscreen)
-[INFO ] 2022-01-28 10:51:52.321 [main] PatientApplication - No active profile set, falling back to default profiles: default
-[INFO ] 2022-01-28 10:51:52.793 [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-[INFO ] 2022-01-28 10:51:52.820 [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21 ms. Found 1 JPA repository interfaces.
-[INFO ] 2022-01-28 10:51:53.205 [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-[INFO ] 2022-01-28 10:51:53.254 [main] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 889 ms
-[INFO ] 2022-01-28 10:51:53.348 [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-[INFO ] 2022-01-28 10:51:53.376 [main] Version - HHH000412: Hibernate ORM core version 5.6.4.Final
-[INFO ] 2022-01-28 10:51:53.467 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-[INFO ] 2022-01-28 10:51:53.671 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
-[INFO ] 2022-01-28 10:51:53.985 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-[INFO ] 2022-01-28 10:51:53.990 [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-[WARN ] 2022-01-28 10:51:54.361 [main] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-[INFO ] 2022-01-28 10:51:54.660 [main] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-[INFO ] 2022-01-28 10:51:54.824 [main] PatientApplication - Started PatientApplication in 2.683 seconds (JVM running for 3.059)
-[INFO ] 2022-01-28 10:52:05.394 [http-nio-8080-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-[INFO ] 2022-01-28 10:52:05.396 [http-nio-8080-exec-1] DispatcherServlet - Completed initialization in 2 ms
-[INFO ] 2022-01-28 10:52:57.133 [SpringApplicationShutdownHook] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-[INFO ] 2022-01-28 10:52:58.385 [background-preinit] Version - HV000001: Hibernate Validator 6.2.0.Final
-[INFO ] 2022-01-28 10:52:58.412 [main] PatientApplication - Starting PatientApplication using Java 1.8.0_312 on fedora with PID 16200 (/home/alex/IdeaProjects/Mediscreen/patient/build/classes/java/main started by alex in /home/alex/IdeaProjects/Mediscreen)
-[INFO ] 2022-01-28 10:52:58.414 [main] PatientApplication - No active profile set, falling back to default profiles: default
-[INFO ] 2022-01-28 10:52:58.945 [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-[INFO ] 2022-01-28 10:52:58.971 [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21 ms. Found 1 JPA repository interfaces.
-[INFO ] 2022-01-28 10:52:59.353 [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-[INFO ] 2022-01-28 10:52:59.407 [main] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 947 ms
-[INFO ] 2022-01-28 10:52:59.497 [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-[INFO ] 2022-01-28 10:52:59.523 [main] Version - HHH000412: Hibernate ORM core version 5.6.4.Final
-[INFO ] 2022-01-28 10:52:59.621 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-[INFO ] 2022-01-28 10:52:59.837 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
-[INFO ] 2022-01-28 10:53:00.191 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-[INFO ] 2022-01-28 10:53:00.196 [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-[WARN ] 2022-01-28 10:53:00.568 [main] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-[INFO ] 2022-01-28 10:53:00.876 [main] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-[WARN ] 2022-01-28 10:53:00.879 [main] AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'documentationPluginsBootstrapper'; nested exception is java.lang.NullPointerException
-[INFO ] 2022-01-28 10:53:00.881 [main] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-[INFO ] 2022-01-28 10:53:00.898 [main] ConditionEvaluationReportLoggingListener - 
+Action:
 
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-[ERROR] 2022-01-28 10:53:00.908 [main] SpringApplication - Application run failed
-org.springframework.context.ApplicationContextException: Failed to start bean 'documentationPluginsBootstrapper'; nested exception is java.lang.NullPointerException
-	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:181) ~[spring-context-5.3.15.jar:5.3.15]
-	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54) ~[spring-context-5.3.15.jar:5.3.15]
-	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356) ~[spring-context-5.3.15.jar:5.3.15]
-	at java.lang.Iterable.forEach(Iterable.java:75) ~[?:1.8.0_312]
-	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155) ~[spring-context-5.3.15.jar:5.3.15]
-	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123) ~[spring-context-5.3.15.jar:5.3.15]
-	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:935) ~[spring-context-5.3.15.jar:5.3.15]
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586) ~[spring-context-5.3.15.jar:5.3.15]
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.3.jar:2.6.3]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732) [spring-boot-2.6.3.jar:2.6.3]
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:414) [spring-boot-2.6.3.jar:2.6.3]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302) [spring-boot-2.6.3.jar:2.6.3]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) [spring-boot-2.6.3.jar:2.6.3]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) [spring-boot-2.6.3.jar:2.6.3]
-	at com.mediscreen.patient.PatientApplication.main(PatientApplication.java:15) [main/:?]
-Caused by: java.lang.NullPointerException
-	at springfox.documentation.spring.web.WebMvcPatternsRequestConditionWrapper.getPatterns(WebMvcPatternsRequestConditionWrapper.java:56) ~[springfox-spring-webmvc-3.0.0.jar:3.0.0]
-	at springfox.documentation.RequestHandler.sortedPaths(RequestHandler.java:113) ~[springfox-core-3.0.0.jar:3.0.0]
-	at springfox.documentation.spi.service.contexts.Orderings.lambda$byPatternsCondition$3(Orderings.java:89) ~[springfox-spi-3.0.0.jar:3.0.0]
-	at java.util.Comparator.lambda$comparing$77a9974f$1(Comparator.java:469) ~[?:1.8.0_312]
-	at java.util.TimSort.countRunAndMakeAscending(TimSort.java:355) ~[?:1.8.0_312]
-	at java.util.TimSort.sort(TimSort.java:220) ~[?:1.8.0_312]
-	at java.util.Arrays.sort(Arrays.java:1512) ~[?:1.8.0_312]
-	at java.util.ArrayList.sort(ArrayList.java:1464) ~[?:1.8.0_312]
-	at java.util.stream.SortedOps$RefSortingSink.end(SortedOps.java:392) ~[?:1.8.0_312]
-	at java.util.stream.Sink$ChainedReference.end(Sink.java:258) ~[?:1.8.0_312]
-	at java.util.stream.Sink$ChainedReference.end(Sink.java:258) ~[?:1.8.0_312]
-	at java.util.stream.Sink$ChainedReference.end(Sink.java:258) ~[?:1.8.0_312]
-	at java.util.stream.Sink$ChainedReference.end(Sink.java:258) ~[?:1.8.0_312]
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:483) ~[?:1.8.0_312]
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472) ~[?:1.8.0_312]
-	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708) ~[?:1.8.0_312]
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:1.8.0_312]
-	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:566) ~[?:1.8.0_312]
-	at springfox.documentation.spring.web.plugins.WebMvcRequestHandlerProvider.requestHandlers(WebMvcRequestHandlerProvider.java:81) ~[springfox-spring-webmvc-3.0.0.jar:3.0.0]
-	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193) ~[?:1.8.0_312]
-	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1384) ~[?:1.8.0_312]
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482) ~[?:1.8.0_312]
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472) ~[?:1.8.0_312]
-	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708) ~[?:1.8.0_312]
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:1.8.0_312]
-	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:566) ~[?:1.8.0_312]
-	at springfox.documentation.spring.web.plugins.AbstractDocumentationPluginsBootstrapper.withDefaults(AbstractDocumentationPluginsBootstrapper.java:107) ~[springfox-spring-web-3.0.0.jar:3.0.0]
-	at springfox.documentation.spring.web.plugins.AbstractDocumentationPluginsBootstrapper.buildContext(AbstractDocumentationPluginsBootstrapper.java:91) ~[springfox-spring-web-3.0.0.jar:3.0.0]
-	at springfox.documentation.spring.web.plugins.AbstractDocumentationPluginsBootstrapper.bootstrapDocumentationPlugins(AbstractDocumentationPluginsBootstrapper.java:82) ~[springfox-spring-web-3.0.0.jar:3.0.0]
-	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:100) ~[springfox-spring-web-3.0.0.jar:3.0.0]
-	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178) ~[spring-context-5.3.15.jar:5.3.15]
-	... 14 more
-[INFO ] 2022-01-28 10:53:33.719 [background-preinit] Version - HV000001: Hibernate Validator 6.2.0.Final
-[INFO ] 2022-01-28 10:53:33.747 [main] PatientApplication - Starting PatientApplication using Java 1.8.0_312 on fedora with PID 16365 (/home/alex/IdeaProjects/Mediscreen/patient/build/classes/java/main started by alex in /home/alex/IdeaProjects/Mediscreen)
-[INFO ] 2022-01-28 10:53:33.749 [main] PatientApplication - No active profile set, falling back to default profiles: default
-[INFO ] 2022-01-28 10:53:34.286 [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-[INFO ] 2022-01-28 10:53:34.312 [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21 ms. Found 1 JPA repository interfaces.
-[INFO ] 2022-01-28 10:53:34.705 [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-[INFO ] 2022-01-28 10:53:34.755 [main] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 961 ms
-[INFO ] 2022-01-28 10:53:34.840 [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-[INFO ] 2022-01-28 10:53:34.865 [main] Version - HHH000412: Hibernate ORM core version 5.6.4.Final
-[INFO ] 2022-01-28 10:53:34.956 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-[INFO ] 2022-01-28 10:53:35.141 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
-[INFO ] 2022-01-28 10:53:35.472 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-[INFO ] 2022-01-28 10:53:35.476 [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-[WARN ] 2022-01-28 10:53:35.894 [main] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-[INFO ] 2022-01-28 10:53:36.258 [main] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-[INFO ] 2022-01-28 10:53:36.430 [main] PatientApplication - Started PatientApplication in 2.887 seconds (JVM running for 3.289)
-[INFO ] 2022-01-28 10:53:39.647 [http-nio-8080-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-[INFO ] 2022-01-28 10:53:39.648 [http-nio-8080-exec-1] DispatcherServlet - Completed initialization in 1 ms
-[INFO ] 2022-01-28 18:29:22.497 [SpringApplicationShutdownHook] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-[INFO ] 2022-01-28 18:36:22.950 [background-preinit] Version - HV000001: Hibernate Validator 6.2.0.Final
-[INFO ] 2022-01-28 18:36:22.976 [main] PatientApplication - Starting PatientApplication using Java 1.8.0_312 on fedora with PID 36889 (/home/alex/IdeaProjects/Mediscreen/patient/build/classes/java/main started by alex in /home/alex/IdeaProjects/Mediscreen)
-[INFO ] 2022-01-28 18:36:22.978 [main] PatientApplication - No active profile set, falling back to default profiles: default
-[INFO ] 2022-01-28 18:36:23.512 [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-[INFO ] 2022-01-28 18:36:23.538 [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21 ms. Found 1 JPA repository interfaces.
-[INFO ] 2022-01-28 18:36:23.914 [main] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-[INFO ] 2022-01-28 18:36:23.966 [main] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 959 ms
-[INFO ] 2022-01-28 18:36:24.063 [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-[INFO ] 2022-01-28 18:36:24.104 [main] Version - HHH000412: Hibernate ORM core version 5.6.4.Final
-[INFO ] 2022-01-28 18:36:24.211 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-[INFO ] 2022-01-28 18:36:24.397 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
-[INFO ] 2022-01-28 18:36:24.735 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-[INFO ] 2022-01-28 18:36:24.739 [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-[WARN ] 2022-01-28 18:36:25.112 [main] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-[INFO ] 2022-01-28 18:36:25.502 [main] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-[INFO ] 2022-01-28 18:36:25.736 [main] PatientApplication - Started PatientApplication in 2.957 seconds (JVM running for 3.368)
-[INFO ] 2022-01-28 18:36:26.455 [http-nio-8080-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-[INFO ] 2022-01-28 18:36:26.457 [http-nio-8080-exec-1] DispatcherServlet - Completed initialization in 1 ms
-[INFO ] 2022-01-28 21:10:24.441 [SpringApplicationShutdownHook] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
