@@ -1,14 +1,14 @@
 //package com.mediscreen.patient.tools;
 //
 ///**
-// * The type InternalTestHelper - parameter for InternalPatient (testing tool)
+// * The type InternalTestingParameter - parameter for InternalPatient (testing tool)
 // */
-//public class InternalTestHelper {
+//public class InternalTestingParameter {
 //
 //    private static int internalPatientNumber = 10;
 //
 //    public static void setInternalPatientNumber(int internalPatientNumber) {
-//        InternalTestHelper.internalPatientNumber = internalPatientNumber;
+//        InternalTestingParameter.internalPatientNumber = internalPatientNumber;
 //    }
 //
 //    public static int getInternalPatientNumber() {

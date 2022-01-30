@@ -60,7 +60,7 @@ public interface PatientProxy {
      *
      * @return the patient
      */
-    @PostMapping("/updatePatient")
-    Patient updatePatient(@RequestBody @Valid Patient patient);
+    @PostMapping("/update/{id}")
+    Patient updatePatient(@PathVariable("id") Integer id, @RequestBody @Valid Patient patient);
 
 }

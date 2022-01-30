@@ -36,7 +36,7 @@
             <div class="row">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="./home">home</a></li>
+                        <li class="breadcrumb-item"><a href="/patient/home">home</a></li>
                         <li class="breadcrumb-item active"><a th:href="@{'/patient/' + ${patient.id}}">patient</a></li>
                         <li class="breadcrumb-item active" >updatePatient</li>
                     </ol>
@@ -46,7 +46,7 @@
     </div>
 </header>
 <div class="logBox">
-    <form action="#" th:action="@{/update}" method="post" th:object="${patient}">
+    <form action="#" th:action="@{'/patient/update/' + ${patient.id}}" method="post" th:object="${patient}">
         <fieldset>
             <div class="logBox1">
                 <!--                <button type="button" class="col-gd-6 btn btn-success">Pay My Buddy</button>-->
@@ -65,10 +65,10 @@
                 <input type="text" class="form-control" th:placeholder="${patient.lastName}" th:field="*{lastName}" required
                        autofocus="autofocus">
                 <br>
-                <input type="date" class="form-control" th:placeholder="${patient.birthDate}" th:field="*{birthDate}" required
+                <input type="date" class="form-control" th:placeholder="${patient.dateOfBirth}" th:field="*{dateOfBirth}" required
                        autofocus="autofocus">
                 <br>
-                <input type="text" class="form-control" th:placeholder="${patient.gender}" th:field="*{gender}" required
+                <input type="text" class="form-control" th:placeholder="${patient.sex}" th:field="*{sex}" required
                        autofocus="autofocus">
                 <br>
                 <input type="text" class="form-control" th:placeholder="${patient.address}" th:field="*{address}" required

@@ -96,8 +96,8 @@ public class PatientController {
      * @throws PatientAlreadyExistsException
      * @return the patient
      */
-    @PostMapping("/updatePatient")
-    public Patient updatePatient(@RequestBody @Valid Patient patient) throws PatientNotFoundException {
+    @PostMapping("/update/{id}")
+    public Patient updatePatient(@PathVariable("id") Integer id, @RequestBody @Valid Patient patient) throws PatientNotFoundException {
         logger.info("REQUEST: POST /updatePatient :  from " + patientService.getPatientById(patient.getId())+ ", to " + patient.toString() );
         return patientService.updatePatient(patient);
     }

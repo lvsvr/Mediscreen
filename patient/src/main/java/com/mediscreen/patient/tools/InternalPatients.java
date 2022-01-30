@@ -38,19 +38,19 @@
 //        if (!patientRepository.findAll().isEmpty()) {
 //            throw new PatientAlreadyExistsException("Patient already exists");
 //        }
-//        IntStream.range(0, InternalTestHelper.getInternalPatientNumber()).forEach(i -> {
+//        IntStream.range(0, InternalTestingParameter.getInternalPatientNumber()).forEach(i -> {
 //            Patient patient = new Patient();
 //            patient.setFirstName("internalFirstName" + i);
 //            patient.setLastName("internalLastName" + i);
-//            patient.setBirthDate(generateRandomLocalDate());
-//            patient.setGender("X");
+//            patient.setDateOfBirth(generateRandomLocalDate());
+//            patient.setSex("X");
 //            patient.setAddress("address: " + i);
 //            patient.setPhone("06" + i);
 //
 //            patientRepository.save(patient);
 //
 //        });
-//        logger.info("Created " + InternalTestHelper.getInternalPatientNumber() + " internal test patients.");
+//        logger.info("Created " + InternalTestingParameter.getInternalPatientNumber() + " internal test patients.");
 //    }
 //
 //    /**

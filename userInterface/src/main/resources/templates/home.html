@@ -77,19 +77,20 @@
     <table id="patientTable" class="table table-fluid table-striped">
         <thead>
         <tr class="table1">
-            <th data-field="id" scope="col">id</th>
+            <th data-field="id" scope="col">id</th><
             <th data-field="lastName" scope="col">last name</th>
             <th data-field="firstName" scope="col">first name</th>
-            <th data-field="birthDate" scope="col">birth date</th>
+            <th data-field="dateOfBirth" scope="col">date of birth</th>
+            <th data-field="birthDate" scope="col">link</th>
         </tr>
         </thead>
         <tbody>
-            <tr th:each="patient:${patients}" style="cursor: pointer"
-                th:onclick="'javascript:rowClicked(\'' + ${patient.id} + '\');'">
+            <tr th:each="patient:${patients}" style="cursor: pointer" >
                 <th scope="row" th:text="${patient.id}"> </th>
                 <td th:text="${patient.lastName}"></td>
                 <td th:text="${patient.firstName}"></td>
-                <td th:text="${patient.birthDate}"></td>
+                <td th:text="${patient.dateOfBirth}"></td>
+                <td><a th:href="@{'/patient/' + ${patient.id}}" class="btn btn-secondary col-5" role="button" aria-pressed="true">select</a></td>
         </tr>
         </tbody>
     </table>
@@ -97,9 +98,6 @@
 </div>
 <script>
 $(document).ready(function(){$('#patientTable').DataTable();});
-    function rowClicked(value) {
-        location.href = "./" + value;
-    }
 </script>
 </body>
 </html>

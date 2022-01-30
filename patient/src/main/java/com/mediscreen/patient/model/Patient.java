@@ -25,13 +25,13 @@ public class Patient {
     @Column(name = "lastName")
     @NotBlank
     private String lastName;
-    @Column(name = "birthDate")
+    @Column(name = "dateOfBirth")
     @NotNull
     @DateTimeFormat(pattern = "yyyy-MM-dd")
-    private LocalDate birthDate;
-    @Column(name = "gender")
+    private LocalDate dateOfBirth;
+    @Column(name = "sex")
     @NotBlank
-    private String gender;
+    private String sex;
     @Column(name = "address")
     @NotBlank
     private String address;
@@ -42,12 +42,12 @@ public class Patient {
     public Patient() {
     }
 
-    public Patient(String firstName, String lastName, LocalDate birthDate, String gender, String address, String phone) {
+    public Patient(String firstName, String lastName, LocalDate dateOfBirth, String sex, String address, String phone) {
 
         this.firstName = firstName;
         this.lastName = lastName;
-        this.birthDate = birthDate;
-        this.gender = gender;
+        this.dateOfBirth = dateOfBirth;
+        this.sex = sex;
         this.address = address;
         this.phone = phone;
     }
@@ -76,20 +76,20 @@ public class Patient {
         this.lastName = lastName;
     }
 
-    public LocalDate getBirthDate() {
-        return birthDate;
+    public LocalDate getDateOfBirth() {
+        return dateOfBirth;
     }
 
-    public void setBirthDate(LocalDate birthDate) {
-        this.birthDate = birthDate;
+    public void setDateOfBirth(LocalDate dateOfBirth) {
+        this.dateOfBirth = dateOfBirth;
     }
 
-    public String getGender() {
-        return gender;
+    public String getSex() {
+        return sex;
     }
 
-    public void setGender(String gender) {
-        this.gender = gender;
+    public void setSex(String gender) {
+        this.sex = gender;
     }
 
     public String getAddress() {
@@ -114,8 +114,8 @@ public class Patient {
                 "id=" + id +
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
-                ", birthDate=" + birthDate +
-                ", gender='" + gender + '\'' +
+                ", birthDate=" + dateOfBirth +
+                ", gender='" + sex + '\'' +
                 ", address='" + address + '\'' +
                 ", phone='" + phone + '\'' +
                 '}';

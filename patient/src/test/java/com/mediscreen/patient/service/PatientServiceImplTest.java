@@ -61,8 +61,8 @@ class PatientServiceImplTest {
         Patient addedPatient = patientService.addPatient(testPatient);
         testPatient.setFirstName("testFirstName2");
         testPatient.setLastName("testFirstName2");
-        testPatient.setBirthDate(LocalDate.of(1790, 7, 14));
-        testPatient.setGender("Y");
+        testPatient.setDateOfBirth(LocalDate.of(1790, 7, 14));
+        testPatient.setSex("Y");
         testPatient.setAddress("address2");
         testPatient.setPhone("phone2");
 

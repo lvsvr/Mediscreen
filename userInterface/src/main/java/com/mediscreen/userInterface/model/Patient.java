@@ -17,25 +17,25 @@ public class Patient {
     private String firstName;
     @NotEmpty(message = "Last name is mandatory")
     private String lastName;
-    @NotNull(message = "Birth-date is mandatory")
+    @NotNull(message = "date of birth is mandatory")
     @DateTimeFormat(pattern = "yyyy-MM-dd")
-    private LocalDate birthDate;
-    @NotEmpty(message = "Last name is mandatory")
-    private String gender;
-    @NotEmpty(message = "Last name is mandatory")
+    private LocalDate dateOfBirth;
+    @NotEmpty(message = "sex is mandatory")
+    private String sex;
+    @NotEmpty(message = "address is mandatory")
     private String address;
-    @NotEmpty(message = "Last name is mandatory")
+    @NotEmpty(message = "phone is mandatory")
     private String phone;
 
     public Patient() {
     }
 
-    public Patient(String firstName, String lastName, LocalDate birthDate, String gender, String address, String phone) {
+    public Patient(String firstName, String lastName, LocalDate dateOfBirth, String sex, String address, String phone) {
 
         this.firstName = firstName;
         this.lastName = lastName;
-        this.birthDate = birthDate;
-        this.gender = gender;
+        this.dateOfBirth = dateOfBirth;
+        this.sex = sex;
         this.address = address;
         this.phone = phone;
     }
@@ -64,20 +64,20 @@ public class Patient {
         this.lastName = lastName;
     }
 
-    public LocalDate getBirthDate() {
-        return birthDate;
+    public LocalDate getDateOfBirth() {
+        return dateOfBirth;
     }
 
-    public void setBirthDate(LocalDate birthDate) {
-        this.birthDate = birthDate;
+    public void setDateOfBirth(LocalDate dateOfBirth) {
+        this.dateOfBirth = dateOfBirth;
     }
 
-    public String getGender() {
-        return gender;
+    public String getSex() {
+        return sex;
     }
 
-    public void setGender(String gender) {
-        this.gender = gender;
+    public void setSex(String sex) {
+        this.sex = sex;
     }
 
     public String getAddress() {
@@ -102,8 +102,8 @@ public class Patient {
                 "id=" + id +
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
-                ", birthDate=" + birthDate +
-                ", gender='" + gender + '\'' +
+                ", birthDate=" + dateOfBirth +
+                ", gender='" + sex + '\'' +
                 ", address='" + address + '\'' +
                 ", phone='" + phone + '\'' +
                 '}';

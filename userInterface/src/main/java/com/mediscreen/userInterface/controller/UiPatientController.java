@@ -9,6 +9,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.List;
 
 /**
@@ -51,16 +52,17 @@ public class UiPatientController {
     }
 
     @GetMapping("/update/{id}")
-    public String patientToUpdate (Model model, @PathVariable("id") int id){
-        model.addAttribute("patient", patientProxy.getPatientById(id));
+    public String patientToUpdate (Model model, @PathVariable("id") int id, @ModelAttribute Patient patient){
+        patient = patientProxy.getPatientById(id);
+        model.addAttribute("patient", patient);
         logger.info("REQUEST: GET /patientToUpdate");
         return "updatePatient";
     }
 
-    @PostMapping("/update")
-    public String updatePatient (@ModelAttribute Patient patient ){
-        Patient updatedPatient = patientProxy.updatePatient(patient);
-        return "home";
+    @PostMapping("/update/{id}")
+    public String updatePatient (@PathVariable("id") int id, @ModelAttribute @RequestBody @Valid Patient patient){
+        patient = patientProxy.updatePatient(patient.getId(), patient);
+        return "redirect:/patient/home";
     }
 
 

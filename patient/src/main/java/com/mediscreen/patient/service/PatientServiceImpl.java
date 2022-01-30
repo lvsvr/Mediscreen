@@ -30,7 +30,7 @@ public class PatientServiceImpl implements PatientService {
     @Override
     public boolean patientAlreadyExists(Patient patient) throws PatientNotFoundException {
         for (Patient listedPatient : getAllPatients()) {
-            if (patient.getBirthDate().equals(listedPatient.getBirthDate())) {
+            if (patient.getDateOfBirth().equals(listedPatient.getDateOfBirth())) {
                 if (patient.getLastName().equals(listedPatient.getLastName())) {
                     if (patient.getFirstName().equals(patient.getFirstName())) {
                         return true;
@@ -68,8 +68,8 @@ public class PatientServiceImpl implements PatientService {
         Patient patient = patientRepository.findById(updatedPatient.getId()).get();
         patient.setFirstName(updatedPatient.getFirstName());
         patient.setLastName(updatedPatient.getLastName());
-        patient.setBirthDate(updatedPatient.getBirthDate());
-        patient.setGender(updatedPatient.getGender());
+        patient.setDateOfBirth(updatedPatient.getDateOfBirth());
+        patient.setSex(updatedPatient.getSex());
         patient.setAddress(updatedPatient.getAddress());
         patient.setPhone(updatedPatient.getPhone());
 
