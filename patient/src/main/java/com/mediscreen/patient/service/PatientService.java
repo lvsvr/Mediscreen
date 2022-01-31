@@ -62,9 +62,9 @@ public interface PatientService {
     boolean patientAlreadyExists(Patient patient) throws PatientAlreadyExistsException, PatientNotFoundException;
     /**
      * Finds patients by name
-     * @param lastName
+     * @param family
      * throws PatientNotFoundException
      * @return boolean
      */
-    List<Patient> getPatientsByName(String lastName) throws PatientNotFoundException, PatientAlreadyExistsException;
+    List<Patient> getPatientsByFamily(String family) throws PatientNotFoundException, PatientAlreadyExistsException;
 }

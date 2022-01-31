@@ -40,9 +40,9 @@
 //        }
 //        IntStream.range(0, InternalTestingParameter.getInternalPatientNumber()).forEach(i -> {
 //            Patient patient = new Patient();
-//            patient.setFirstName("internalFirstName" + i);
-//            patient.setLastName("internalLastName" + i);
-//            patient.setDateOfBirth(generateRandomLocalDate());
+//            patient.setGiven("internalGiven" + i);
+//            patient.setFamily("internalFamily" + i);
+//            patient.setDob(generateRandomLocalDate());
 //            patient.setSex("X");
 //            patient.setAddress("address: " + i);
 //            patient.setPhone("06" + i);

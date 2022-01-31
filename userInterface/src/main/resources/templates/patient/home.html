@@ -32,7 +32,7 @@
     <div class="row"></div>
     <div class="row">
         <h4 class="col">Patients' list</h4>
-        <a href="./newPatient" class="btn btn-primary col-1" role="button" aria-pressed="true">Add Patient</a>
+        <a href="/patient/add" class="btn btn-primary col-1" role="button" aria-pressed="true">Add Patient</a>
     </div>
 </div>
 <div class="position2">
@@ -41,18 +41,18 @@
         <tr class="table1">
             <th data-field="id" scope="col">id</th>
             <
-            <th data-field="lastName" scope="col">last name</th>
-            <th data-field="firstName" scope="col">first name</th>
-            <th data-field="dateOfBirth" scope="col">date of birth</th>
-            <th data-field="birthDate" scope="col">link</th>
+            <th data-field="family" scope="col">family name</th>
+            <th data-field="given" scope="col">given name</th>
+            <th data-field="dob" scope="col">date of birth</th>
+            <th data-field="link" scope="col">access</th>
         </tr>
         </thead>
         <tbody>
         <tr th:each="patient:${patients}" style="cursor: pointer">
             <th scope="row" th:text="${patient.id}"></th>
-            <td th:text="${patient.lastName}"></td>
-            <td th:text="${patient.firstName}"></td>
-            <td th:text="${patient.dateOfBirth}"></td>
+            <td th:text="${patient.family}"></td>
+            <td th:text="${patient.given}"></td>
+            <td th:text="${patient.dob}"></td>
             <td><a th:href="@{'/patient/' + ${patient.id}}" class="btn btn-info col-5" role="button"
                    aria-pressed="true">select</a></td>
         </tr>

@@ -13,28 +13,26 @@ import java.time.LocalDate;
 public class Patient {
 
     private int id;
-    @NotEmpty(message = "First name is mandatory")
-    private String firstName;
-    @NotEmpty(message = "Last name is mandatory")
-    private String lastName;
+    @NotEmpty(message = "Family name is mandatory")
+    private String family;
+    @NotEmpty(message = "Given name is mandatory")
+    private String given;
     @NotNull(message = "date of birth is mandatory")
     @DateTimeFormat(pattern = "yyyy-MM-dd")
-    private LocalDate dateOfBirth;
+    private LocalDate dob;
     @NotEmpty(message = "sex is mandatory")
     private String sex;
-    @NotEmpty(message = "address is mandatory")
     private String address;
-    @NotEmpty(message = "phone is mandatory")
     private String phone;
 
     public Patient() {
     }
 
-    public Patient(String firstName, String lastName, LocalDate dateOfBirth, String sex, String address, String phone) {
+    public Patient(String family, String given, LocalDate dob, String sex, String address, String phone) {
 
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.dateOfBirth = dateOfBirth;
+        this.given = family;
+        this.family = given;
+        this.dob = dob;
         this.sex = sex;
         this.address = address;
         this.phone = phone;
@@ -48,28 +46,28 @@ public class Patient {
         this.id = id;
     }
 
-    public String getFirstName() {
-        return firstName;
+    public String getFamily() {
+        return family;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
+    public void setFamily(String family) {
+        this.family= family;
     }
 
-    public String getLastName() {
-        return lastName;
+    public String getGiven() {
+        return given;
     }
 
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
+    public void setGiven(String given) {
+        this.given = given;
     }
 
-    public LocalDate getDateOfBirth() {
-        return dateOfBirth;
+    public LocalDate getDob() {
+        return dob;
     }
 
-    public void setDateOfBirth(LocalDate dateOfBirth) {
-        this.dateOfBirth = dateOfBirth;
+    public void setDob(LocalDate dob) {
+        this.dob = dob;
     }
 
     public String getSex() {
@@ -100,9 +98,9 @@ public class Patient {
     public String toString() {
         return "Patient{" +
                 "id=" + id +
-                ", firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
-                ", birthDate=" + dateOfBirth +
+                ", family='" + family+ '\'' +
+                ", given='" + given + '\'' +
+                ", birthDate=" + dob +
                 ", gender='" + sex + '\'' +
                 ", address='" + address + '\'' +
                 ", phone='" + phone + '\'' +

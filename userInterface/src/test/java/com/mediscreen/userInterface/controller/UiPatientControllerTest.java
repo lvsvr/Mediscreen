@@ -10,13 +10,9 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
-import org.springframework.test.web.servlet.MvcResult;
-import org.springframework.test.web.servlet.RequestBuilder;
-import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 
 import java.time.LocalDate;
 
-import static org.mockito.Mockito.doThrow;
 import static org.mockito.Mockito.when;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
@@ -51,7 +47,7 @@ public class UiPatientControllerTest {
 
     @Test
     public void shouldReturnNewPatientForm() throws Exception {
-        mockMvc.perform(get("/patient/newPatient"))
+        mockMvc.perform(get("/patient/add"))
                 .andExpect(status().isOk())
                 .andReturn();
     }
@@ -60,7 +56,7 @@ public class UiPatientControllerTest {
     public void shouldAddNewPatient() throws Exception {
         when(patientProxy.addPatient(patient2)).thenReturn(patient2);
 
-        mockMvc.perform(post("/patient/newPatient")
+        mockMvc.perform(post("/patient/add")
                         .flashAttr("patient", patient2))
                 .andExpect(status().is(302))
                 .andReturn();

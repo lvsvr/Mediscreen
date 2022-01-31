@@ -116,7 +116,7 @@ public class UiPatientController {
      *
      * @return a form
      */
-    @GetMapping("/newPatient")
+    @GetMapping("/add")
     public String addPatient(Model model, @ModelAttribute Patient patient) {
         model.addAttribute("patient", patient);
         return "patient/newPatient";
@@ -128,7 +128,7 @@ public class UiPatientController {
      * @param patient
      * @return the patient home page
      */
-    @PostMapping("/newPatient")
+    @PostMapping("/add")
     public String postNewPatient(@ModelAttribute @RequestBody @Valid Patient patient) {
         patient = patientProxy.addPatient(patient);
         logger.info("REQUEST: POST  /newPatient : " + patient.toString());

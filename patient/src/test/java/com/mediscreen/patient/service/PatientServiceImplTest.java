@@ -17,13 +17,13 @@ class PatientServiceImplTest {
     @Autowired
     private PatientServiceImpl patientService;
 
-    private String firstName = "testFirstName";
-    private String lastName = "testLastName";
-    private LocalDate bDate = LocalDate.of(1789, 7, 14);
-    private String gender = "X";
+    private String family = "testFamily";
+    private String given = "testGiven";
+    private LocalDate dob = LocalDate.of(1789, 7, 14);
+    private String sex = "X";
     private String address = "address: ";
     private String phone = "06";
-    private Patient testPatient = new Patient(firstName, lastName, bDate, gender, address, phone);
+    private Patient testPatient = new Patient(family, given, dob, sex, address, phone);
 
     @Test
     public void shouldReturnAllPatients() throws PatientNotFoundException {
@@ -51,17 +51,17 @@ class PatientServiceImplTest {
     @Test
     public void shouldGetPatientByName() throws PatientNotFoundException, PatientAlreadyExistsException {
         Patient addedPatient = patientService.addPatient(testPatient);
-        assertEquals(patientService.getPatientsByName("testLastName").get(0).getLastName(), addedPatient.getLastName());
-        assertThrows(PatientNotFoundException.class, () -> patientService.getPatientsByName("tttttt"));
+        assertEquals(patientService.getPatientsByFamily("testFamily").get(0).getFamily(), addedPatient.getFamily());
+        assertThrows(PatientNotFoundException.class, () -> patientService.getPatientsByFamily("tttttt"));
         patientService.deletePatient(addedPatient.getId());
     }
 
     @Test
     public void shouldUpdatePatient() throws PatientNotFoundException, PatientAlreadyExistsException {
         Patient addedPatient = patientService.addPatient(testPatient);
-        testPatient.setFirstName("testFirstName2");
-        testPatient.setLastName("testFirstName2");
-        testPatient.setDateOfBirth(LocalDate.of(1790, 7, 14));
+        testPatient.setFamily("testFamily2");
+        testPatient.setGiven("testGiven2");
+        testPatient.setDob(LocalDate.of(1790, 7, 14));
         testPatient.setSex("Y");
         testPatient.setAddress("address2");
         testPatient.setPhone("phone2");

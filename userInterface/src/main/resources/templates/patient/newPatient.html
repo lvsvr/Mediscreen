@@ -30,7 +30,7 @@
 </div>
 <div class="logBox">
     <br>
-    <form action="#" th:action="@{/patient/newPatient}" method="post" th:object="${patient}">
+    <form action="#" th:action="@{/patient/add}" method="post" th:object="${patient}">
         <fieldset>
             <div class="logBox1">
                 <h2 class="position1">Patient</h2>
@@ -38,22 +38,28 @@
             </div>
 
             <div class="logBox1">
-                <input type="text" class="form-control" placeholder="first name" th:field="*{firstName}" required
+                <em>given name:</em><br>
+                <input type="text" class="form-control" placeholder="given name" th:field="*{given}" required
                        autofocus="autofocus">
                 <br>
-                <input type="text" class="form-control" placeholder="last name" th:field="*{lastName}" required
+                <em>family name:</em><br>
+                <input type="text" class="form-control" placeholder="family name" th:field="*{family}" required
                        autofocus="autofocus">
                 <br>
-                <input type="date" class="form-control" th:placeholder="${patient.dateOfBirth}"
-                       th:field="*{dateOfBirth}" required
+                <em>date of birth:</em><br>
+                <input type="date" class="form-control" th:placeholder="${patient.dob}"
+                       th:field="*{dob}" required
                        autofocus="autofocus">
                 <br>
+                <em>sex:</em><br>
                 <input type="text" class="form-control" placeholder="sex" th:field="*{sex}" required
                        autofocus="autofocus">
                 <br>
+                <em>address:</em><br>
                 <input type="text" class="form-control" placeholder="address" th:field="*{address}" required
                        autofocus="autofocus">
                 <br>
+                <em>phone:</em><br>
                 <input type="text" class="form-control" placeholder="phone" th:field="*{phone}" required
                        autofocus="autofocus">
                 <br>

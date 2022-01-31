@@ -1,4 +1,4 @@
-//package com.mediscreen.patient.controller;
+//package com.mediscreen.patient.tools;
 //
 //import com.mediscreen.patient.exception.PatientAlreadyExistsException;
 //import com.mediscreen.patient.exception.PatientNotFoundException;

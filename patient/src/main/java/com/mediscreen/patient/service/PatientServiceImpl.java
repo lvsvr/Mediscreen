@@ -30,9 +30,9 @@ public class PatientServiceImpl implements PatientService {
     @Override
     public boolean patientAlreadyExists(Patient patient) throws PatientNotFoundException {
         for (Patient listedPatient : getAllPatients()) {
-            if (patient.getDateOfBirth().equals(listedPatient.getDateOfBirth())) {
-                if (patient.getLastName().equals(listedPatient.getLastName())) {
-                    if (patient.getFirstName().equals(patient.getFirstName())) {
+            if (patient.getDob().equals(listedPatient.getDob())) {
+                if (patient.getFamily().equals(listedPatient.getFamily())) {
+                    if (patient.getGiven().equals(patient.getGiven())) {
                         return true;
                     }
                 }
@@ -46,7 +46,7 @@ public class PatientServiceImpl implements PatientService {
         if(getAllPatients().isEmpty()){
             return patientRepository.save(patient);
         }else if(patientAlreadyExists(patient)) {
-                throw new PatientAlreadyExistsException("Patient " + patient.getFirstName() + " " + patient.getLastName() + " already exists");
+                throw new PatientAlreadyExistsException("Patient " + patient.getGiven() + " " + patient.getFamily() + " already exists");
             } else {
                 return patientRepository.save(patient);
             }
@@ -66,9 +66,9 @@ public class PatientServiceImpl implements PatientService {
             throw new PatientNotFoundException("Patient not found");
         }
         Patient patient = patientRepository.findById(updatedPatient.getId()).get();
-        patient.setFirstName(updatedPatient.getFirstName());
-        patient.setLastName(updatedPatient.getLastName());
-        patient.setDateOfBirth(updatedPatient.getDateOfBirth());
+        patient.setGiven(updatedPatient.getGiven());
+        patient.setFamily(updatedPatient.getFamily());
+        patient.setDob(updatedPatient.getDob());
         patient.setSex(updatedPatient.getSex());
         patient.setAddress(updatedPatient.getAddress());
         patient.setPhone(updatedPatient.getPhone());
@@ -85,10 +85,10 @@ public class PatientServiceImpl implements PatientService {
     }
 
     @Override
-    public List<Patient> getPatientsByName(String lastName) throws PatientNotFoundException, PatientAlreadyExistsException {
+    public List<Patient> getPatientsByFamily(String family) throws PatientNotFoundException, PatientAlreadyExistsException {
         List<Patient> patients = new ArrayList<Patient>();
         for (Patient listedPatient : getAllPatients()) {
-            if (listedPatient.getLastName().equals(lastName)) {
+            if (listedPatient.getFamily().equals(family)) {
                 patients.add(listedPatient);
             }
         }

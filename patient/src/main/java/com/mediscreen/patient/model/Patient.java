@@ -19,34 +19,32 @@ public class Patient {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "patient_id")
     private int id;
-    @Column(name = "firstName")
+    @Column(name = "family")
     @NotBlank
-    private String firstName;
-    @Column(name = "lastName")
+    private String family;
+    @Column(name = "given")
     @NotBlank
-    private String lastName;
-    @Column(name = "dateOfBirth")
+    private String given;
+    @Column(name = "dob")
     @NotNull
     @DateTimeFormat(pattern = "yyyy-MM-dd")
-    private LocalDate dateOfBirth;
+    private LocalDate dob;
     @Column(name = "sex")
     @NotBlank
     private String sex;
     @Column(name = "address")
-    @NotBlank
     private String address;
     @Column(name = "phone")
-    @NotBlank
     private String phone;
 
     public Patient() {
     }
 
-    public Patient(String firstName, String lastName, LocalDate dateOfBirth, String sex, String address, String phone) {
+    public Patient(String family, String given, LocalDate dob, String sex, String address, String phone) {
 
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.dateOfBirth = dateOfBirth;
+        this.family = family;
+        this.given = given;
+        this.dob = dob;
         this.sex = sex;
         this.address = address;
         this.phone = phone;
@@ -60,28 +58,28 @@ public class Patient {
         this.id = id;
     }
 
-    public String getFirstName() {
-        return firstName;
+    public String getFamily() {
+        return family;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
+    public void setFamily(String family) {
+        this.family= family;
     }
 
-    public String getLastName() {
-        return lastName;
+    public String getGiven() {
+        return given;
     }
 
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
+    public void setGiven(String given) {
+        this.given = given;
     }
 
-    public LocalDate getDateOfBirth() {
-        return dateOfBirth;
+    public LocalDate getDob() {
+        return dob;
     }
 
-    public void setDateOfBirth(LocalDate dateOfBirth) {
-        this.dateOfBirth = dateOfBirth;
+    public void setDob(LocalDate dob) {
+        this.dob= dob;
     }
 
     public String getSex() {
@@ -112,9 +110,9 @@ public class Patient {
     public String toString() {
         return "Patient{" +
                 "id=" + id +
-                ", firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
-                ", birthDate=" + dateOfBirth +
+                ", firstName='" + family+ '\'' +
+                ", lastName='" + given + '\'' +
+                ", birthDate=" + dob +
                 ", gender='" + sex + '\'' +
                 ", address='" + address + '\'' +
                 ", phone='" + phone + '\'' +

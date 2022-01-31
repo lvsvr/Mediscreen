@@ -49,17 +49,17 @@ public class PatientController {
     }
 
     /**
-     * Gets patients by lastname
+     * Gets patients by family
      *
-     * @param lastName
+     * @param family
      * @throws PatientAlreadyExistsException
      * @throws PatientNotFoundException
-     * @return list of patients with the same last name
+     * @return list of patients with the same family name
      */
-    @GetMapping("/search/{lastName}")
-    public List<Patient> getPatientsByName(@PathVariable("lastName") String lastName) throws PatientNotFoundException, PatientAlreadyExistsException {
-        logger.info("REQUEST: GET /search/{lastName} : "+ lastName );
-        return patientService.getPatientsByName(lastName);
+    @GetMapping("/search/{family}")
+    public List<Patient> getPatientsByName(@PathVariable(name = "family") String family) throws PatientNotFoundException, PatientAlreadyExistsException {
+        logger.info("REQUEST: GET /search/{family} : "+ family );
+        return patientService.getPatientsByFamily(family);
     }
 
     /**
@@ -82,10 +82,10 @@ public class PatientController {
      * @throws PatientAlreadyExistsException
      * @return the patient
      */
-    @PostMapping("/newPatient")
+    @PostMapping("/add")
     public Patient addPatient(@RequestBody @Valid Patient patient) throws PatientNotFoundException, PatientAlreadyExistsException {
         Patient newPatient = patientService.addPatient(patient);
-        logger.info("REQUEST: POST /newPatient : " + newPatient.toString() );
+        logger.info("REQUEST: POST /add : " + newPatient.toString() );
         return newPatient;
     }
 

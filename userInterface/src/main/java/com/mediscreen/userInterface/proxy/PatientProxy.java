@@ -2,9 +2,7 @@ package com.mediscreen.userInterface.proxy;
 
 import com.mediscreen.userInterface.model.Patient;
 import org.springframework.cloud.openfeign.FeignClient;
-import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.*;
-
 
 import javax.validation.Valid;
 import java.util.List;
@@ -33,13 +31,13 @@ public interface PatientProxy {
     Patient getPatientById(@PathVariable("id") Integer id);
 
     /**
-     * Gets patients by lastname
+     * Gets patients by family
      *
-     * @param lastName
-     * @return list of patients with the same last name
+     * @param family
+     * @return list of patients with the same family name
      */
-    @GetMapping("/search/{lastName}")
-    List<Patient> getPatientsByName(@PathVariable("lastName") String lastName);
+    @GetMapping("/search/{family}")
+    List<Patient> getPatientsByName(@PathVariable("family") String family);
 
     /**
      * Gets patient deleted by id
@@ -54,7 +52,7 @@ public interface PatientProxy {
      *
      * @return the patient
      */
-    @PostMapping("/newPatient")
+    @PostMapping("/add")
     Patient addPatient(@RequestBody @Valid Patient patient);
 
     /**

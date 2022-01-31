@@ -32,35 +32,35 @@ login: root@root.com - psw: root<br>
   internalTestingParameter <br>
 
 - GET a list of internal patients: <br>
-  http://localhost:8080/testing/initializeInternalPatients
+  http://localhost:8081/testing/initializeInternalPatients
   <br>
 - GET all the patients from the db: <br>
-  http://localhost:8080/testing/resetDb
+  http://localhost:8081/testing/resetDb
   <br>
   <br>
 
 3-**Endpoints:**<br>
 
 - GET a list of all patients:<br>
-  http://localhost:8080/patient/list <br>
+  http://localhost:8081/patient/list <br>
   <br>
 - GET a patient by id: <br>
-  http://localhost:8080/patient/{id} <br>
+  http://localhost:8081/patient/{id} <br>
   <br>
-- GET a list of patients by lastName: <br>
-  http://localhost:8080/patient/search/{lastName} <br>
+- GET a list of patients by family name: <br>
+  http://localhost:8081/patient/search/family} <br>
   <br>
 - GET a patient deleted by id: <br>
-  http://localhost:8080/patient/delete?id={id} <br>
+  http://localhost:8081/patient/delete?id={id} <br>
   <br>
 - POST a new patient to add:<br>
-  http://localhost:8080/patient/newPatient <br>
+  http://localhost:8081/patient/add <br>
   <br>
 - POST a patient to update:<br>
-  http://localhost:8080/updatePatient <br>
+  http://localhost:8081/updatePatient <br>
   <br>
 
 bonus:<br>
 - connect to Swagger3: <br>
-  http://localhost:8080/swagger-ui/ <br>
+  http://localhost:8081/swagger-ui/ <br>
   <br>

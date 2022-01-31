@@ -28,13 +28,13 @@ class PatientControllerTest {
     @Autowired
     private PatientServiceImpl patientService;
 
-    private String firstName = "cTestFirstName";
-    private String lastName = "cTestLastName";
-    private LocalDate bDate = LocalDate.of(1214, 7, 14);
-    private String gender = "X";
+    private String family = "cTestFamily";
+    private String given = "cTestLGiven";
+    private LocalDate dob = LocalDate.of(1214, 7, 14);
+    private String sex = "X";
     private String address = "address";
     private String phone = "06";
-    private Patient testPatient = new Patient(firstName, lastName, bDate, gender, address, phone);
+    private Patient testPatient = new Patient(family, given, dob, sex, address, phone);
 
 
     @Test
@@ -58,7 +58,7 @@ class PatientControllerTest {
     public void ShouldReturnPatientByName() throws Exception {
         List<Patient> patients = patientService.getAllPatients();
         Patient patient = patients.get(0);
-        mockMvc.perform(get("/patient/search/" + patient.getLastName())
+        mockMvc.perform(get("/patient/search/" + patient.getFamily())
                         .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk());
     }
@@ -74,9 +74,9 @@ class PatientControllerTest {
     @Test
     public void ShouldAddPatient() throws Exception {
         RequestBuilder request = MockMvcRequestBuilders
-                .post("/patient/newPatient")
+                .post("/patient/add")
                 .accept(MediaType.APPLICATION_JSON)
-                .content("{\"firstName\": \"firstNameTest\", \"lastName\": \"lastNameTest\", \"birthDate\": \"1970-01-01\",\"gender\": \"X\", \"address\": \"address: 0\", \"phone\": \"060\"}")
+                .content("{\"family\": \"familyTest\", \"given\": \"givenTest\", \"dob\": \"1970-01-01\",\"sex\": \"X\", \"address\": \"address: 0\", \"phone\": \"060\"}")
                 .contentType(MediaType.APPLICATION_JSON);
 
         MvcResult result = mockMvc.perform(request)
@@ -90,9 +90,9 @@ class PatientControllerTest {
     public void ShouldUpdatePatient() throws Exception {
         Patient addedPatient = patientService.addPatient(testPatient);
         RequestBuilder request = MockMvcRequestBuilders
-                .post("/patient/updatePatient")
+                .post("/patient/update/" +addedPatient.getId())
                 .accept(MediaType.APPLICATION_JSON)
-                .content("{\"id\":\""+ addedPatient.getId() +"\", \"firstName\": \"firstNameTest\", \"lastName\": \"lastNameTest\", \"birthDate\": \"1970-01-01\",\"gender\": \"X\", \"address\": \"address: 0\", \"phone\": \"060\"}")
+                .content("{\"id\":\""+ addedPatient.getId() +"\", \"family\": \"familyTest\", \"given\": \"givenTest\", \"dob\": \"1970-01-01\",\"sex\": \"X\", \"address\": \"address: 0\", \"phone\": \"060\"}")
                 .contentType(MediaType.APPLICATION_JSON);
 
         MvcResult result = mockMvc.perform(request)
