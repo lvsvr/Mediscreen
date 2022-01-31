@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org" xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity5"
+      lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mediscreen</title>
+    <link href="../static/css/bootstrap.css" th:href="@{/css/bootstrap.css}" rel="stylesheet"/>
+    <link href="../static/css/style.css" th:href="@{/css/style.css}" rel="stylesheet"/>
+</head>
+<body>
+<header>
+    <div class="row align-self-center">
+        <div class="col">
+            <button type="button" class="btn btn-dark">Mediscreen</button>
+        </div>
+        <div class="position1">
+            <div class="row">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="./home">home</a></li>
+                        <li class="breadcrumb-item"><a th:href="@{'/patient/' + ${patient.id}}">patient</a></li>
+                        <li class="breadcrumb-item active">delete</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="logBox">
+    <br>
+    <br>
+    <form action="#" th:action="@{'/patient/deletePatient/' + ${patient.id}}" method="get" th:object="${patient}">
+        <fieldset>
+            <div class="logBox1">
+                <h2 class="position1">Patient</h2>
+                <br>
+            </div>
+            <br>
+            <div class="logBox1">
+                <div><em>Id:</em>
+                    <th:block th:text="${patient.id}"></th:block>
+                </div>
+                <br>
+                <div><em>first name:</em>
+                    <b>
+                        <th:block th:text="${patient.firstName}"></th:block>
+                    </b>
+                </div>
+                <br>
+                <div><em>last name:</em>
+                    <b>
+                        <th:block th:text="${patient.lastName}"></th:block>
+                    </b>
+                </div>
+                <br>
+                <div><em>birth-date:</em>
+                    <b>
+                        <th:block th:text="${patient.dateOfBirth}"></th:block>
+                    </b>
+                </div>
+                <br>
+                <div><em>gender:</em>
+                    <b>
+                        <th:block th:text="${patient.sex}"></th:block>
+                    </b>
+                </div>
+                <br>
+                <div><em>address:</em>
+                    <b>
+                        <th:block th:text="${patient.address}"></th:block>
+                    </b>
+                </div>
+                <br>
+                <div><em>phone:</em>
+                    <b>
+                        <th:block th:text="${patient.phone}"></th:block>
+                    </b>
+                </div>
+                <br>
+                <br>
+                <div class="form-group">
+                    <a href="/patient/home" class="btn btn-secondary col-5" role="button" aria-pressed="true">Cancel</a>
+                    <button type="submit" class="col-5 btn btn-danger">Delete</button>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+
+</div>
+</body>
+</html>

@@ -2,7 +2,9 @@ package com.mediscreen.userInterface.proxy;
 
 import com.mediscreen.userInterface.model.Patient;
 import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.*;
+
 
 import javax.validation.Valid;
 import java.util.List;

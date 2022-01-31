@@ -6,14 +6,14 @@
         </Property>
     </Properties>
     <Appenders>
-        <RollingFile name="fileLogger" fileName="docker-compose/appLogs/patientInfo.log" filePattern="docker-compose/appLogs/patientInfo-%d{yyyy-MM-dd}.log">
-            <PatternLayout>
-                <pattern>[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n</pattern>
-            </PatternLayout>
-            <Policies>
-                <TimeBasedTriggeringPolicy interval="1" modulate="true" />
-            </Policies>
-        </RollingFile>
+<!--        <RollingFile name="fileLogger" fileName="docker-compose/appLogs/patientInfo.log" filePattern="docker-compose/appLogs/patientInfo-%d{yyyy-MM-dd}.log">-->
+<!--            <PatternLayout>-->
+<!--                <pattern>[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n</pattern>-->
+<!--            </PatternLayout>-->
+<!--            <Policies>-->
+<!--                <TimeBasedTriggeringPolicy interval="1" modulate="true" />-->
+<!--            </Policies>-->
+<!--        </RollingFile>-->
         <Console name="ConsoleAppender" target="SYSTEM_OUT" follow="true">
             <PatternLayout pattern="${LOG_PATTERN}"/>
         </Console>
@@ -26,7 +26,7 @@
 
         <Root level="info">
             <AppenderRef ref="ConsoleAppender" />
-            <AppenderRef ref="fileLogger" />
+<!--            <AppenderRef ref="fileLogger" />-->
         </Root>
     </Loggers>
 </Configuration>

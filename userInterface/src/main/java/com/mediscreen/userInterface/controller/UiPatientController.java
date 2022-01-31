@@ -1,7 +1,10 @@
 package com.mediscreen.userInterface.controller;
 
+
+
 import com.mediscreen.userInterface.model.Patient;
 import com.mediscreen.userInterface.proxy.PatientProxy;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -34,7 +37,7 @@ public class UiPatientController {
         List<Patient> patients = patientProxy.getAllPatients();
         model.addAttribute("patients", patientProxy.getAllPatients());
         logger.info("REQUEST: GET /patient/home - patient's list");
-        return "home";
+        return "patient/home";
     }
 
     /**
@@ -48,22 +51,87 @@ public class UiPatientController {
         Patient patient = patientProxy.getPatientById(id);
         model.addAttribute("patient", patient);
         logger.info("REQUEST: GET /patient/{id} - patient's information");
-        return "patient";
+        return "patient/patient";
     }
 
+    /**
+     * Gets a form to update patient by id
+     *
+     * @param id
+     * @param patient
+     * @return a form to update a patient
+     */
     @GetMapping("/update/{id}")
-    public String patientToUpdate (Model model, @PathVariable("id") int id, @ModelAttribute Patient patient){
+    public String getPatientToUpdateById(Model model, @PathVariable("id") int id, @ModelAttribute Patient patient) {
         patient = patientProxy.getPatientById(id);
         model.addAttribute("patient", patient);
-        logger.info("REQUEST: GET /patientToUpdate");
-        return "updatePatient";
+        logger.info("REQUEST: GET /update/{id} : " + patient.toString());
+        return "patient/updatePatient";
     }
 
+    /**
+     * Updates patient by id
+     *
+     * @param id
+     * @param patient
+     * @return the patient home page
+     */
     @PostMapping("/update/{id}")
-    public String updatePatient (@PathVariable("id") int id, @ModelAttribute @RequestBody @Valid Patient patient){
+    public String postUpdatedPatientById(@PathVariable("id") int id, @ModelAttribute @RequestBody @Valid Patient patient) {
         patient = patientProxy.updatePatient(patient.getId(), patient);
+        logger.info("REQUEST: POST /update/{id} : " + patient.toString());
         return "redirect:/patient/home";
     }
 
+    /**
+     * Gets a warning page before get a patient deleted by id
+     *
+     * @param id
+     * @return patient's information
+     */
+    @GetMapping("/toBeDeleted/{id}")
+    public String getPatientToDeleteById(@PathVariable("id") int id, Model model) {
+        Patient patient = patientProxy.getPatientById(id);
+        model.addAttribute("patient", patient);
+        return "patient/deletePatient";
+    }
 
+    /**
+     * Gets a patient deleted by id
+     *
+     * @param id
+     * @return the patient home page
+     */
+    @GetMapping("/deletePatient/{id}")
+    public String getPatientDeletedById(@PathVariable("id") int id, Model model) {
+        Patient patient = patientProxy.getPatientById(id);
+        model.addAttribute("patient", patient);
+        patientProxy.getPatientDeletedById(id);
+        logger.info("REQUEST: GET /deletePatient/{id} : " + patient.toString());
+        return "redirect:/patient/home";
+    }
+
+    /**
+     * Gets a form to create a new patient
+     *
+     * @return a form
+     */
+    @GetMapping("/newPatient")
+    public String addPatient(Model model, @ModelAttribute Patient patient) {
+        model.addAttribute("patient", patient);
+        return "patient/newPatient";
+    }
+
+    /**
+     * Gets a new patient created
+     *
+     * @param patient
+     * @return the patient home page
+     */
+    @PostMapping("/newPatient")
+    public String postNewPatient(@ModelAttribute @RequestBody @Valid Patient patient) {
+        patient = patientProxy.addPatient(patient);
+        logger.info("REQUEST: POST  /newPatient : " + patient.toString());
+        return "redirect:/patient/home";
+    }
 }
