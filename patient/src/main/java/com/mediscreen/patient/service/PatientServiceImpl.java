@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * The type PatientServiceImpl.
+ * The type PatientServiceImpl
  */
 @Service
 public class PatientServiceImpl implements PatientService {

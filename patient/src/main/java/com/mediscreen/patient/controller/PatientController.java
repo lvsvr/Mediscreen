@@ -13,7 +13,7 @@ import javax.validation.Valid;
 import java.util.List;
 
 /**
- * The type PatientController.
+ * The type PatientController
  */
 @RestController
 @RequestMapping("/patient")
@@ -98,7 +98,7 @@ public class PatientController {
      */
     @PostMapping("/update/{id}")
     public Patient updatePatient(@PathVariable("id") Integer id, @RequestBody @Valid Patient patient) throws PatientNotFoundException {
-        logger.info("REQUEST: POST /updatePatient :  from " + patientService.getPatientById(patient.getId())+ ", to " + patient.toString() );
+        logger.info("REQUEST: POST /update/{id}:  from " + patientService.getPatientById(patient.getId())+ ", to " + patient.toString() );
         return patientService.updatePatient(patient);
     }
 

@@ -7,7 +7,7 @@ import com.mediscreen.patient.model.Patient;
 import java.util.List;
 
 /**
- * The interface PatientService.
+ * The interface PatientService
  */
 public interface PatientService {
 
