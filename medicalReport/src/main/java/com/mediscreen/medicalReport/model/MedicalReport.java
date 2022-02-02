@@ -8,7 +8,7 @@ import javax.validation.constraints.NotNull;
 import java.time.LocalDate;
 
 @Document(collection = "report")
-public class Report {
+public class MedicalReport {
     @Id
     private String id;
     @Field("patientId")
@@ -19,7 +19,7 @@ public class Report {
     @Field("content")
     private String content;
 
-    public Report(int patientId, String content) {
+    public MedicalReport(int patientId, String content) {
         this.patientId = patientId;
         this.content = content;
     }
@@ -54,7 +54,7 @@ public class Report {
 
     @Override
     public String toString() {
-        return "Report{" +
+        return "MedicalReport{" +
                 "id=" + id +
                 ", patientId=" + patientId +
                 ", reportDate=" + reportDate +

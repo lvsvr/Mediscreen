@@ -1,6 +1,6 @@
 package com.mediscreen.medicalReport.controller;
 
-import com.mediscreen.medicalReport.model.Report;
+import com.mediscreen.medicalReport.model.MedicalReport;
 import com.mediscreen.medicalReport.repository.MedicalReportRepository;
 import com.mediscreen.medicalReport.service.MedicalReportService;
 import org.apache.logging.log4j.LogManager;
@@ -25,16 +25,16 @@ public class MedicalReportController {
     private MedicalReportRepository repo;
 
     /**
-     * Gets a new medical report added to the db
+     * Gets a new medical medicalReport added to the db
      *
-     * @param report
+     * @param medicalReport
      * @return the patient
      */
     @PostMapping("/add")
-    public Report addMedicalReport(@RequestBody @Valid Report report) {
-        Report newReport = medicalReportService.addReport(report);
-        logger.info("REQUEST: POST /add : " + newReport.toString());
-        return newReport;
+    public MedicalReport addMedicalReport(@RequestBody @Valid MedicalReport medicalReport) {
+        MedicalReport newMedicalReport = medicalReportService.addReport(medicalReport);
+        logger.info("REQUEST: POST /add : " + newMedicalReport.toString());
+        return newMedicalReport;
     }
 
     /**
@@ -43,7 +43,7 @@ public class MedicalReportController {
      * @return a list of all reports
      */
     @GetMapping("/list")
-    public List<Report> getAllReports() {
+    public List<MedicalReport> getAllReports() {
         logger.info("REQUEST: GET  /list");
         return repo.findAll();
     }
@@ -55,7 +55,7 @@ public class MedicalReportController {
      * @return a report
      */
     @GetMapping("/{id}")
-    public Report getMedicalReportById(@PathVariable("id") String id) {
+    public MedicalReport getMedicalReportById(@PathVariable("id") String id) {
         logger.info("REQUEST: GET /{id} : " + id);
         return medicalReportService.getReportById(id);
 
@@ -63,16 +63,16 @@ public class MedicalReportController {
     }
 
     /**
-     * Gets a medical report updated
+     * Gets a medical medicalReport updated
      *
      * @param id
-     * @param report
-     * @return the report
+     * @param medicalReport
+     * @return the medicalReport
      */
     @PostMapping("/update/{id}")
-    public Report updateMedicalReport(@PathVariable("id") String id, @RequestBody @Valid Report report) {
-        logger.info("REQUEST: POST /updateP/{id}:  from " + medicalReportService.getReportById(report.getId()) + ", to " + report.toString());
-        return medicalReportService.updateReport(report);
+    public MedicalReport updateMedicalReport(@PathVariable("id") String id, @RequestBody @Valid MedicalReport medicalReport) {
+        logger.info("REQUEST: POST /updateP/{id}:  from " + medicalReportService.getReportById(medicalReport.getId()) + ", to " + medicalReport.toString());
+        return medicalReportService.updateReport(medicalReport);
     }
 
     /**
@@ -82,7 +82,7 @@ public class MedicalReportController {
      * @parm id
      */
     @GetMapping("/list/{id}")
-    public List<Report> getAllReportsByPatientId(@PathVariable("id") int id) {
+    public List<MedicalReport> getAllReportsByPatientId(@PathVariable("id") int id) {
         logger.info("REQUEST: GET  /list/{id} : " + id);
         return medicalReportService.getAllReportsByPatientId(id);
     }

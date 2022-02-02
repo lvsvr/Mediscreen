@@ -1,6 +1,6 @@
 package com.mediscreen.medicalReport.service;
 
-import com.mediscreen.medicalReport.model.Report;
+import com.mediscreen.medicalReport.model.MedicalReport;
 import com.mediscreen.medicalReport.repository.MedicalReportRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -20,21 +20,22 @@ public class MedicalReportServiceImpl implements MedicalReportService{
     private MedicalReportRepository medicalReportRepository;
 
     @Override
-    public Report addReport(Report report) {
-        report.setReportDate(LocalDate.now());
-        return medicalReportRepository.save(report);
+    public MedicalReport addReport(MedicalReport medicalReport) {
+        medicalReport.setReportDate(LocalDate.now());
+        return medicalReportRepository.save(medicalReport);
     }
 
     @Override
-    public Report getReportById(String id) {
+    public MedicalReport getReportById(String id) {
         return medicalReportRepository.findById(id).get();
     }
 
     @Override
-    public Report updateReport(Report updatedReport) {
-        Report report = getReportById(updatedReport.getId());
-        report.setContent(updatedReport.getContent());
-        return report;
+    public MedicalReport updateReport(MedicalReport updatedMedicalReport) {
+        MedicalReport medicalReport = getReportById(updatedMedicalReport.getId());
+        medicalReport.setContent(updatedMedicalReport.getContent());
+        medicalReportRepository.save(medicalReport);
+        return medicalReport;
     }
 
     @Override
@@ -43,12 +44,12 @@ public class MedicalReportServiceImpl implements MedicalReportService{
     }
 
     @Override
-    public List<Report> getAllReportsByPatientId(int patientId) {
-        List<Report> reports =  medicalReportRepository.findAll();
-        List<Report> reportsByPatientId = new ArrayList();
-        for ( Report report:reports){
-            if(report.getPatientId() == patientId){
-                reportsByPatientId.add(report);
+    public List<MedicalReport> getAllReportsByPatientId(int patientId) {
+        List<MedicalReport> medicalReports =  medicalReportRepository.findAll();
+        List<MedicalReport> reportsByPatientId = new ArrayList();
+        for ( MedicalReport medicalReport : medicalReports){
+            if(medicalReport.getPatientId() == patientId){
+                reportsByPatientId.add(medicalReport);
             }
         }
         Collections.reverse(reportsByPatientId);
@@ -57,9 +58,9 @@ public class MedicalReportServiceImpl implements MedicalReportService{
 
     @Override
     public void deleteAllReportsByPatientId(int patientId) {
-        List<Report> reports = getAllReportsByPatientId(patientId);
-        for ( Report report:reports){
-            medicalReportRepository.delete(report);
+        List<MedicalReport> medicalReports = getAllReportsByPatientId(patientId);
+        for ( MedicalReport medicalReport : medicalReports){
+            medicalReportRepository.delete(medicalReport);
         }
     }
 }

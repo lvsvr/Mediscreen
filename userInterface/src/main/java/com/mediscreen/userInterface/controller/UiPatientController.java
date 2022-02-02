@@ -16,7 +16,7 @@ import javax.validation.Valid;
 import java.util.List;
 
 /**
- * The type UiPatientController.
+ * The type UiPatientController
  */
 @Controller
 @RequestMapping("/patient")

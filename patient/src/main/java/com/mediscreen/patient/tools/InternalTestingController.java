@@ -1,3 +1,17 @@
+//=========================================
+//  uncomment  :
+//
+//     internalPatient
+//  + internalTestingController
+//  + internalTestingParameter
+//  =
+// GET a list of internal patients:
+// http://localhost:9001/testing/initializeInternalPatients
+//
+// GET all the patients from the db:
+// http://localhost:9001/testing/resetDb
+//=========================================
+
 //package com.mediscreen.patient.tools;
 //
 //import com.mediscreen.patient.exception.PatientAlreadyExistsException;

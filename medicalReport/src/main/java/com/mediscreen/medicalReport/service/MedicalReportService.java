@@ -1,6 +1,6 @@
 package com.mediscreen.medicalReport.service;
 
-import com.mediscreen.medicalReport.model.Report;
+import com.mediscreen.medicalReport.model.MedicalReport;
 
 import java.util.List;
 
@@ -10,12 +10,12 @@ import java.util.List;
 public interface MedicalReportService {
 
     /**
-     * Creates medical report
+     * Creates medical medicalReport
      *
-     * @param report
-     * @return report
+     * @param medicalReport
+     * @return medicalReport
      */
-    Report addReport(Report report);
+    MedicalReport addReport(MedicalReport medicalReport);
 
     /**
      * Reads medical report
@@ -23,15 +23,15 @@ public interface MedicalReportService {
      * @param id
      * @return report
      */
-    Report getReportById(String id);
+    MedicalReport getReportById(String id);
 
     /**
-     * Updates medical report
+     * Updates medical medicalReport
      *
-     * @param report
-     * @return report
+     * @param medicalReport
+     * @return medicalReport
      */
-    Report updateReport(Report report);
+    MedicalReport updateReport(MedicalReport medicalReport);
 
     /**
      * Deletes medical report
@@ -47,7 +47,7 @@ public interface MedicalReportService {
      * @param patientId
      * @return report
      */
-    List<Report> getAllReportsByPatientId(int patientId);
+    List<MedicalReport> getAllReportsByPatientId(int patientId);
 
     /**
      * Deletes all medical reports of a patient
