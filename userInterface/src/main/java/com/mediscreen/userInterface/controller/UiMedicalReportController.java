@@ -43,7 +43,7 @@ public class UiMedicalReportController {
         patient = patientProxy.getPatientById(patientId);
         medicalReport = medicalReportProxy.addMedicalReport(medicalReport);
         logger.info("REQUEST: POST  medicalRecord/newMedicalReport : " + medicalReport.toString());
-        return "redirect:/patient/home";
+        return "redirect:/patient/" + medicalReport.getPatientId();
     }
 
     @GetMapping("/medicalReport/update/{id}")
@@ -60,7 +60,6 @@ public class UiMedicalReportController {
     public String postUpdatedMedicalReport(@PathVariable("id") String id,  @ModelAttribute @Valid  MedicalReport medicalReport){
         medicalReport = medicalReportProxy.updateMedicalReport(id, medicalReport);
         logger.info("REQUEST: POST medicalRecord/update/{id} : " + medicalReport.toString());
-//        return "redirect:/patient/home";
         return "redirect:/patient/" + medicalReport.getPatientId();
     }
 }
