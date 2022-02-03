@@ -28,10 +28,11 @@ public interface MedicalReportService {
     /**
      * Updates medical medicalReport
      *
-     * @param medicalReport
+     * @param id
+     * @param updatedReport
      * @return medicalReport
      */
-    MedicalReport updateReport(MedicalReport medicalReport);
+    MedicalReport updateReport(String id, MedicalReport updatedReport);
 
     /**
      * Deletes medical report

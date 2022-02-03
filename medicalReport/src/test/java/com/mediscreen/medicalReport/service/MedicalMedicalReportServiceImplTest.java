@@ -33,13 +33,12 @@ class MedicalMedicalReportServiceImplTest {
 
     @Test
     public void shouldUpdateAReport(){
-        MedicalReport medicalMedicalReport3 = new MedicalReport(patientId, content);
-        MedicalReport medicalMedicalReport4 = new MedicalReport(patientId, content);
-        MedicalReport medicalReport = underTest.addReport(medicalMedicalReport3);
-        MedicalReport medicalReport2 = underTest.addReport(medicalMedicalReport4);
-        medicalReport.setContent("disease");
-        underTest.updateReport(medicalReport);
-        assertFalse(medicalReport.getContent().equals(medicalReport2.getContent()));
+        MedicalReport medicalReport3 = new MedicalReport(patientId, content);
+        MedicalReport updatedMedicalReport = underTest.addReport(medicalReport3);
+        updatedMedicalReport.setContent("disease");
+        String id = updatedMedicalReport .getId();
+        underTest.updateReport(id, updatedMedicalReport);
+        assertEquals("disease", underTest.getReportById(id).getContent());
     }
 
     @Test

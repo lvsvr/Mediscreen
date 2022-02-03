@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Mediscreen</title>
-    <link href="../static/css/bootstrap.css" th:href="@{/css/bootstrap.css}" rel="stylesheet"/>
-    <link href="../static/css/style.css" th:href="@{/css/style.css}" rel="stylesheet"/>
+    <link href="/static/css/bootstrap.css" th:href="@{/css/bootstrap.css}" rel="stylesheet"/>
+    <link href="/static/css/style.css" th:href="@{/css/style.css}" rel="stylesheet"/>
 </head>
 <body>
 <header>
@@ -19,7 +19,7 @@
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="/patient/home">home</a></li>
                         <li class="breadcrumb-item active"><a th:href="@{'/patient/' + ${patient.id}}">patient</a></li>
-                        <li class="breadcrumb-item active">updatePatient</li>
+                        <li class="breadcrumb-item active">update patient</li>
                     </ol>
                 </nav>
             </div>

@@ -31,11 +31,10 @@ public class MedicalReportServiceImpl implements MedicalReportService{
     }
 
     @Override
-    public MedicalReport updateReport(MedicalReport updatedMedicalReport) {
-        MedicalReport medicalReport = getReportById(updatedMedicalReport.getId());
-        medicalReport.setContent(updatedMedicalReport.getContent());
-        medicalReportRepository.save(medicalReport);
-        return medicalReport;
+    public MedicalReport updateReport(String id, MedicalReport updatedReport) {
+        MedicalReport medicalReport = getReportById(id);
+        medicalReport.setContent(updatedReport.getContent());
+        return medicalReportRepository.save(medicalReport);
     }
 
     @Override

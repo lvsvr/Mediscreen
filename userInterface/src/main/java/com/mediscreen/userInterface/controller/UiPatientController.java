@@ -2,7 +2,9 @@ package com.mediscreen.userInterface.controller;
 
 
 
+import com.mediscreen.userInterface.model.MedicalReport;
 import com.mediscreen.userInterface.model.Patient;
+import com.mediscreen.userInterface.proxy.MedicalReportProxy;
 import com.mediscreen.userInterface.proxy.PatientProxy;
 
 import org.apache.logging.log4j.LogManager;
@@ -26,6 +28,8 @@ public class UiPatientController {
     @Autowired
     private PatientProxy patientProxy;
 
+    @Autowired
+    private MedicalReportProxy medicalReportProxy;
     /**
      * Gets home page
      *
@@ -49,7 +53,9 @@ public class UiPatientController {
     @GetMapping("/{id}")
     public String getPatientById(@PathVariable("id") int id, Model model) {
         Patient patient = patientProxy.getPatientById(id);
+        List<MedicalReport>medicalReports = medicalReportProxy.getAllReportsByPatientId(id);
         model.addAttribute("patient", patient);
+        model.addAttribute("medicalReports", medicalReports);
         logger.info("REQUEST: GET /patient/{id} - patient's information");
         return "patient/patient";
     }
@@ -105,6 +111,7 @@ public class UiPatientController {
     @GetMapping("/deletePatient/{id}")
     public String getPatientDeletedById(@PathVariable("id") int id, Model model) {
         Patient patient = patientProxy.getPatientById(id);
+        medicalReportProxy.deleteAllReportsByPatientId(id);
         model.addAttribute("patient", patient);
         patientProxy.getPatientDeletedById(id);
         logger.info("REQUEST: GET /deletePatient/{id} : " + patient.toString());

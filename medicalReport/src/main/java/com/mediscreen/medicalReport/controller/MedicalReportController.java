@@ -28,7 +28,7 @@ public class MedicalReportController {
      * Gets a new medical medicalReport added to the db
      *
      * @param medicalReport
-     * @return the patient
+     * @return the report
      */
     @PostMapping("/add")
     public MedicalReport addMedicalReport(@RequestBody @Valid MedicalReport medicalReport) {
@@ -66,13 +66,14 @@ public class MedicalReportController {
      * Gets a medical medicalReport updated
      *
      * @param id
-     * @param medicalReport
+     * @param id
+     * content
      * @return the medicalReport
      */
     @PostMapping("/update/{id}")
-    public MedicalReport updateMedicalReport(@PathVariable("id") String id, @RequestBody @Valid MedicalReport medicalReport) {
-        logger.info("REQUEST: POST /updateP/{id}:  from " + medicalReportService.getReportById(medicalReport.getId()) + ", to " + medicalReport.toString());
-        return medicalReportService.updateReport(medicalReport);
+    public MedicalReport updateMedicalReport(@PathVariable("id") String id, @RequestBody @Valid MedicalReport updatedReport) {
+        logger.info("REQUEST: POST /update/{id}:  from " + medicalReportService.getReportById(id).getContent() + ", to " + updatedReport.getContent());
+        return medicalReportService.updateReport(id, updatedReport);
     }
 
     /**

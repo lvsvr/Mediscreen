@@ -11,7 +11,10 @@ padding-top:5%;
 padding-bottom:5%;
 padding-right:5%;
 padding-left:5%;
+}
 
+h2 {
+  text-align: center;
 }
 
 .logBox1,.logBox2,.logBox3,.logBox5
@@ -56,8 +59,7 @@ padding: 2%;
 
 .table
 {
-border: 1px solid black;
-width: 80%;
+border: 2px solid #D9D2E9;
 margin: auto;
 }
 thead
@@ -80,7 +82,7 @@ justify-content: center;
 .positionBalance
 {
 width: 80%;
-background-color: #EEE;
+background-color: #D9D2E9;
 margin: auto;
 padding-top: 5%;
 padding-bottom: 5%;
