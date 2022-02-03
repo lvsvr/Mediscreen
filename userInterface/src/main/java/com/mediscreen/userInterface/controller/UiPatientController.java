@@ -86,7 +86,7 @@ public class UiPatientController {
     public String postUpdatedPatientById(@PathVariable("id") int id, @ModelAttribute @RequestBody @Valid Patient patient) {
         patient = patientProxy.updatePatient(patient.getId(), patient);
         logger.info("REQUEST: POST /update/{id} : " + patient.toString());
-        return "redirect:/patient/home";
+        return "redirect:/patient/"+ patient.getId();
     }
 
     /**

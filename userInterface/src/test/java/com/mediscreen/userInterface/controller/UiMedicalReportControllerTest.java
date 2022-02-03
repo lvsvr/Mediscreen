@@ -67,7 +67,7 @@ class UiMedicalReportControllerTest {
 
     @Test
     public void shouldReturnMedicalReportToUpdate() throws Exception {
-        medicalReport.setId("1");
+        when(reportMock.getId()).thenReturn("1");
         when(medicalReportProxy.getMedicalReportById("1")).thenReturn(medicalReport);
         when(patientProxy.getPatientById(0)).thenReturn(patient);
         mockMvc.perform(get("/patient/medicalReport/update/1"))
@@ -77,7 +77,7 @@ class UiMedicalReportControllerTest {
 
     @Test
     public void shouldUpdateMedicalReportById() throws Exception {
-        medicalReport.setId("1");
+        when(reportMock.getId()).thenReturn("1");
         when(medicalReportProxy.getMedicalReportById("1")).thenReturn(medicalReport);
         when(medicalReportProxy.updateMedicalReport("1", medicalReport)).thenReturn(medicalReport);
 

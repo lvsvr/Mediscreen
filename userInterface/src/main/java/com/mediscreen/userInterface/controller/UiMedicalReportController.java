@@ -43,7 +43,7 @@ public class UiMedicalReportController {
         patient = patientProxy.getPatientById(patientId);
         medicalReport = medicalReportProxy.addMedicalReport(medicalReport);
         logger.info("REQUEST: POST  medicalRecord/newMedicalReport : " + medicalReport.toString());
-        return "redirect:/patient/" + medicalReport.getPatientId();
+        return "redirect:/patient/home";
     }
 
     @GetMapping("/medicalReport/update/{id}")

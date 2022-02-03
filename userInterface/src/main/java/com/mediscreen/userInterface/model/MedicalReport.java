@@ -55,6 +55,4 @@ public class MedicalReport {
                 '}';
     }
 
-    public void setId(String s) {
-    }
 }

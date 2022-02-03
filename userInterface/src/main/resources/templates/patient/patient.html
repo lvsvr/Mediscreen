@@ -81,7 +81,7 @@
         <tr th:each="medicalReport:${medicalReports}" style="cursor: pointer">
             <th scope="row" th:text="${medicalReport.reportDate}"></th>
             <td th:text="${medicalReport.content}"></td>
-            <td><a th:href="@{'./medicalReport/update/' + ${medicalReport.id}}" class="btn btn-info col-5" role="button"
+            <td><a th:href="@{'./medicalReport/update/' + ${medicalReport.id}}" class="btn btn-info col-12" role="button"
                    aria-pressed="true">select</a></td>
         </tr>
         </tbody>
