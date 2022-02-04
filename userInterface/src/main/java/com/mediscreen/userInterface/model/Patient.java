@@ -20,15 +20,15 @@ public class Patient {
     @NotNull(message = "date of birth is mandatory")
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     private LocalDate dob;
-    @NotEmpty(message = "sex is mandatory")
-    private String sex;
+    @NotNull(message = "sex is mandatory")
+    private Sex sex;
     private String address;
     private String phone;
 
     public Patient() {
     }
 
-    public Patient(String family, String given, LocalDate dob, String sex, String address, String phone) {
+    public Patient(String family, String given, LocalDate dob, Sex sex, String address, String phone) {
 
         this.given = family;
         this.family = given;
@@ -70,11 +70,11 @@ public class Patient {
         this.dob = dob;
     }
 
-    public String getSex() {
+    public Sex getSex() {
         return sex;
     }
 
-    public void setSex(String sex) {
+    public void setSex(Sex sex) {
         this.sex = sex;
     }
 
@@ -101,7 +101,7 @@ public class Patient {
                 ", family='" + family+ '\'' +
                 ", given='" + given + '\'' +
                 ", birthDate=" + dob +
-                ", gender='" + sex + '\'' +
+                ", sex='" + sex + '\'' +
                 ", address='" + address + '\'' +
                 ", phone='" + phone + '\'' +
                 '}';

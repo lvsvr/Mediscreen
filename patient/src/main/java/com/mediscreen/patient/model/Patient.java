@@ -5,6 +5,8 @@ import org.springframework.format.annotation.DateTimeFormat;
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Pattern;
+import javax.validation.constraints.Size;
 import java.time.LocalDate;
 
 
@@ -29,9 +31,9 @@ public class Patient {
     @NotNull
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     private LocalDate dob;
-    @Column(name = "sex")
-    @NotBlank
-    private String sex;
+    @Column(name = "sex", columnDefinition = "varchar(1)")
+    @NotNull
+    private Sex sex;
     @Column(name = "address")
     private String address;
     @Column(name = "phone")
@@ -40,7 +42,7 @@ public class Patient {
     public Patient() {
     }
 
-    public Patient(String family, String given, LocalDate dob, String sex, String address, String phone) {
+    public Patient(String family, String given, LocalDate dob, Sex sex, String address, String phone) {
 
         this.family = family;
         this.given = given;
@@ -82,12 +84,12 @@ public class Patient {
         this.dob= dob;
     }
 
-    public String getSex() {
+    public Sex getSex() {
         return sex;
     }
 
-    public void setSex(String gender) {
-        this.sex = gender;
+    public void setSex(Sex sex) {
+        this.sex = sex;
     }
 
     public String getAddress() {

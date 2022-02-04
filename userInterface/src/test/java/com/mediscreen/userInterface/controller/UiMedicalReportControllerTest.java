@@ -2,6 +2,7 @@ package com.mediscreen.userInterface.controller;
 
 import com.mediscreen.userInterface.model.MedicalReport;
 import com.mediscreen.userInterface.model.Patient;
+import com.mediscreen.userInterface.model.Sex;
 import com.mediscreen.userInterface.proxy.MedicalReportProxy;
 import com.mediscreen.userInterface.proxy.PatientProxy;
 import org.junit.jupiter.api.BeforeEach;
@@ -42,7 +43,7 @@ class UiMedicalReportControllerTest {
 
     @BeforeEach
     public void setup(){
-        patient = new Patient("Test", "Test", LocalDate.of(2020, 1, 8), "X", "there", "06");
+        patient = new Patient("Test", "Test", LocalDate.of(2020, 1, 8), Sex.F, "there", "06");
         patient.setId(0);
         medicalReport = new MedicalReport(0, "test et reTest");
     }

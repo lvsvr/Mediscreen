@@ -3,12 +3,14 @@ package com.mediscreen.patient.service;
 import com.mediscreen.patient.exception.PatientAlreadyExistsException;
 import com.mediscreen.patient.exception.PatientNotFoundException;
 import com.mediscreen.patient.model.Patient;
+import com.mediscreen.patient.model.Sex;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import java.time.LocalDate;
 
+import static com.mediscreen.patient.model.Sex.F;
 import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
@@ -20,7 +22,7 @@ class PatientServiceImplTest {
     private String family = "testFamily";
     private String given = "testGiven";
     private LocalDate dob = LocalDate.of(1789, 7, 14);
-    private String sex = "X";
+    private Sex sex = F;
     private String address = "address: ";
     private String phone = "06";
     private Patient testPatient = new Patient(family, given, dob, sex, address, phone);
@@ -62,7 +64,7 @@ class PatientServiceImplTest {
         testPatient.setFamily("testFamily2");
         testPatient.setGiven("testGiven2");
         testPatient.setDob(LocalDate.of(1790, 7, 14));
-        testPatient.setSex("Y");
+        testPatient.setSex(F);
         testPatient.setAddress("address2");
         testPatient.setPhone("phone2");
 

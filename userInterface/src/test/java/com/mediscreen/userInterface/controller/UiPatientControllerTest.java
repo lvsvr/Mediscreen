@@ -13,6 +13,7 @@ import org.springframework.test.web.servlet.MockMvc;
 
 import java.time.LocalDate;
 
+import static com.mediscreen.userInterface.model.Sex.F;
 import static org.mockito.Mockito.when;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
@@ -33,9 +34,9 @@ public class UiPatientControllerTest {
 
     @BeforeEach
             public void setup(){
-        patient1 = new Patient("Test", "Test", LocalDate.of(2020, 1, 8), "X", "there", "06");
+        patient1 = new Patient("Test", "Test", LocalDate.of(2020, 1, 8), F, "there", "06");
         patient1.setId(1);
-        patient2 = new Patient("reTest", "reTest", LocalDate.of(2020, 1, 8), "Y", "somewhere", "06");
+        patient2 = new Patient("reTest", "reTest", LocalDate.of(2020, 1, 8), F, "somewhere", "06");
     }
 
     @Test
