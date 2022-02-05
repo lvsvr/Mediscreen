@@ -1,8 +1,6 @@
 package com.mediscreen.diabetesRiskAssessment.service;
 
-import com.mediscreen.diabetesRiskAssessment.model.RiskLevel;
-import com.mediscreen.diabetesRiskAssessment.model.Sex;
-import com.mediscreen.diabetesRiskAssessment.model.TriggeringFactors;
+import com.mediscreen.diabetesRiskAssessment.model.*;
 
 import java.time.LocalDate;
 import java.util.List;
@@ -39,10 +37,17 @@ public interface DiabetesRiskAssessmentService {
     /**
      * Gets the risk level from patient info
      *
-     * @param sex
-     * @param age
-     * @param contents
+     * @param riskInfo
      * @return a set of String
      */
-    RiskLevel getRiskLevel(Sex sex, int age,Set<String>contents);
+    RiskLevel getRiskLevel(DiabetesRiskInfo riskInfo);
+
+    /**
+     * Gets the risk assessment from patient info
+     *
+     * @param riskInfo
+     * @return a risk level, age, sex, triggering factors
+     */
+    DiabetesRiskAssessment getRiskAssessment(DiabetesRiskInfo riskInfo);
+
 }

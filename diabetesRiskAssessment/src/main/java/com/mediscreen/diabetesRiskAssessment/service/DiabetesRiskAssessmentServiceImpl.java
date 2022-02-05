@@ -1,8 +1,6 @@
 package com.mediscreen.diabetesRiskAssessment.service;
 
-import com.mediscreen.diabetesRiskAssessment.model.RiskLevel;
-import com.mediscreen.diabetesRiskAssessment.model.Sex;
-import com.mediscreen.diabetesRiskAssessment.model.TriggeringFactors;
+import com.mediscreen.diabetesRiskAssessment.model.*;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
@@ -32,18 +30,76 @@ public class DiabetesRiskAssessmentServiceImpl implements DiabetesRiskAssessment
     public Set<String> getTriggeringFactorsFromContents(List<String> contents) {
         Set<String> triggeringFactorsFromContent = new HashSet<String>();
         List<TriggeringFactors> triggeringFactors = getAllTriggeringFactors();
-        for(String content : contents){
-            for (TriggeringFactors triggeringFactor : triggeringFactors){
-                if(content.toLowerCase().contains(String.valueOf(triggeringFactor).toLowerCase())){
+        for (String content : contents) {
+            for (TriggeringFactors triggeringFactor : triggeringFactors) {
+                if (content.toLowerCase().contains(String.valueOf(triggeringFactor).toLowerCase())) {
                     triggeringFactorsFromContent.add(String.valueOf(triggeringFactor));
                 }
             }
         }
-        return  triggeringFactorsFromContent;
+        return triggeringFactorsFromContent;
+    }
+
+    //===== REMINDER ==================
+//      M < 30 = 5             |
+//      F <30 = 7                > : EARLY_ONSET
+//      M/F > 30 = 8          |
+//
+//      M < 30 = 3              |
+//      F <30 = 4                 > : IN_DANGER
+//      H/F > 30 = 6           |
+//
+//      M∕F > 30 = 2             : BORDERLINE
+//
+//      H∕F = 0                      : NONE
+//
+//    => age 30 -> sex -> triggering factors' number
+//===================================
+    @Override
+    public RiskLevel getRiskLevel(DiabetesRiskInfo riskInfo) {
+        Sex sex = riskInfo.getSex();
+        int age = getAgeFromLocalDate(riskInfo.getDob());
+        Set<String> triggeringFactors = getTriggeringFactorsFromContents(riskInfo.getContents());
+
+        RiskLevel riskLevel = RiskLevel.NONE;
+
+        if (age >= 30) {
+            if (2 <= triggeringFactors.size() && triggeringFactors.size() < 6) {
+                return riskLevel = RiskLevel.BORDERLINE;
+            } else if (6 <= triggeringFactors.size() && triggeringFactors.size() < 8) {
+                return riskLevel = RiskLevel.IN_DANGER;
+            } else if (triggeringFactors.size() >= 8) {
+                return riskLevel = RiskLevel.EARLY_ONSET;
+            }
+        } else{
+            if (sex.equals(Sex.F)){
+                if (4 <= triggeringFactors.size() && triggeringFactors.size() < 7) {
+                    return riskLevel = RiskLevel.IN_DANGER;
+                } else if (triggeringFactors.size() >= 7) {
+                    return riskLevel = RiskLevel.EARLY_ONSET;
+                }
+            }else{
+                if (3 <= triggeringFactors.size() && triggeringFactors.size() < 5) {
+                    return riskLevel = RiskLevel.IN_DANGER;
+                } else if (triggeringFactors.size() >= 5) {
+                    return riskLevel = RiskLevel.EARLY_ONSET;
+                }
+            }
+        }
+        return riskLevel;
     }
 
     @Override
-    public RiskLevel getRiskLevel(Sex sex, int age, Set<String> contents) {
-        return null;
+    public DiabetesRiskAssessment getRiskAssessment(DiabetesRiskInfo riskInfo){
+        DiabetesRiskAssessment riskAssessment = new DiabetesRiskAssessment();
+        riskAssessment.setRiskLevels(getRiskLevel(riskInfo));
+        riskAssessment.setPatientAge(getAgeFromLocalDate(riskInfo.getDob()));
+        riskAssessment.setSex(riskInfo.getSex());
+        riskAssessment.setTriggeringFactors(getTriggeringFactorsFromContents(riskInfo.getContents()));
+        return riskAssessment;
     }
 }
+
+
+
+

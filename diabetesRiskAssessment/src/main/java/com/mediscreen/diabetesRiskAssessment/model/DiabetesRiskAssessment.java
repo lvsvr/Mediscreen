@@ -1,7 +1,7 @@
 package com.mediscreen.diabetesRiskAssessment.model;
 
 import javax.validation.constraints.NotNull;
-import java.util.List;
+import java.util.Set;
 
 /**
  * The type DiabetesRiskAssessment
@@ -14,13 +14,9 @@ public class DiabetesRiskAssessment {
     private int patientAge;
     @NotNull
     private Sex sex;
-    private List<TriggeringFactors> triggeringFactors;
+    private Set<String> triggeringFactors;
 
-    public DiabetesRiskAssessment(RiskLevel riskLevels, int patientAge, Sex sex, List<TriggeringFactors> triggeringFactors) {
-        this.riskLevels = riskLevels;
-        this.patientAge = patientAge;
-        this.sex = sex;
-        this.triggeringFactors = triggeringFactors;
+    public DiabetesRiskAssessment() {
     }
 
     public RiskLevel getRiskLevels() {
@@ -47,11 +43,11 @@ public class DiabetesRiskAssessment {
         this.sex = sex;
     }
 
-    public List<TriggeringFactors> getTriggeringFactors() {
+    public Set<String> getTriggeringFactors() {
         return triggeringFactors;
     }
 
-    public void setTriggeringFactors(List<TriggeringFactors> triggeringFactors) {
+    public void setTriggeringFactors(Set<String> triggeringFactors) {
         this.triggeringFactors = triggeringFactors;
     }
 
