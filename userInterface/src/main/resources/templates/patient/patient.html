@@ -59,14 +59,12 @@
         </tbody>
     </table>
 </div>
+</div>
 <div class="position2">
-    <div class="row"></div>
-    <div class="row">
         <h4 class="col">Medical reports</h4>
         <form action="#" th:action="@{'./medicalReport/add/' + ${patient.id}}" method="get" th:object="${patient}">
             <button type="submit" class="col-1 btn btn-primary">Add</button>
         </form>
-    </div>
 </div>
 <div class="position2">
     <table id="reportTable" class="table table-fluid table-striped">
@@ -81,14 +79,26 @@
         <tr th:each="medicalReport:${medicalReports}" style="cursor: pointer">
             <th scope="row" th:text="${medicalReport.reportDate}"></th>
             <td th:text="${medicalReport.content}"></td>
-            <td><a th:href="@{'./medicalReport/update/' + ${medicalReport.id}}" class="btn btn-info col-12" role="button"
+            <td><a th:href="@{'./medicalReport/update/' + ${medicalReport.id}}" class="btn btn-info col-12"
+                   role="button"
                    aria-pressed="true">select</a></td>
         </tr>
         </tbody>
     </table>
 </div>
+<div class="position2">
+    <h4 class="col">Assessment</h4>
+<!--    <form action="#" th:action="@{'./diabetesRisk/assess}" method="post" th:object="${diabetesRiskInfo}">-->
+<!--        <input  type="hidden" th:field="*{patient.sex}">-->
+<!--        <input  type="hidden" th:field="*{patient.dob}">-->
+<!--        <input  type="hidden" th:field="*{medicalReports}">-->
+<!--        <button type="submit" class="col-2 btn btn-primary">Diabetes risk</button>-->
+    <a th:href="@{'/patient/diabetesRisk/assess/' + ${patient.id}}" class="btn btn-primary col-1" role="button" aria-pressed="true">Diabetes risk</a>
+<!--    </form>-->
+</div>
 <script>
 $(document).ready(function(){$('#reportTable').DataTable();});
+
 </script>
 </body>
 </html>

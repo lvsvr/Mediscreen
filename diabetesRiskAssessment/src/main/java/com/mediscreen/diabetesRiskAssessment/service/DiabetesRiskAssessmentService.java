@@ -20,6 +20,14 @@ public interface DiabetesRiskAssessmentService {
     int getAgeFromLocalDate(LocalDate dob);
 
     /**
+     * Gets the list of  contents from a List of medical reports
+     *
+     * @param riskInfo
+     * @return a set of String
+     */
+    List<String>getContentsFromRiskInfo(DiabetesRiskInfo riskInfo);
+
+    /**
      * Gets the list of all the triggering factors
      *
      * @return a list of enum

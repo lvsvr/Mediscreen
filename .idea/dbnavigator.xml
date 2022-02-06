@@ -74,7 +74,7 @@
           <driver-library value="" />
           <driver value="" />
           <url-type value="DATABASE" />
-          <host value="172.20.0.2" />
+          <host value="172.20.0.3" />
           <port value="5432" />
           <database value="postgres" />
           <type value="USER_PASSWORD" />

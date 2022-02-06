@@ -1,6 +1,4 @@
-package com.mediscreen.diabetesRiskAssessment.model;
-
-import org.springframework.format.annotation.DateTimeFormat;
+package com.mediscreen.userInterface.model;
 
 import java.time.LocalDate;
 import java.util.List;
@@ -14,10 +12,7 @@ public class DiabetesRiskInfo {
     private Sex sex;
     private List<MedicalReport> medicalReports;
 
-    public DiabetesRiskInfo(LocalDate dob, Sex sex, List<MedicalReport> medicalReports) {
-        this.dob = dob;
-        this.sex = sex;
-        this.medicalReports = medicalReports;
+    public DiabetesRiskInfo() {
     }
 
     public LocalDate getDob() {

@@ -4,10 +4,8 @@ import com.mediscreen.diabetesRiskAssessment.model.*;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.time.Period;
+import java.util.*;
 
 /**
  * The type DiabetesRiskAssessmentServiceImpl
@@ -18,7 +16,17 @@ public class DiabetesRiskAssessmentServiceImpl implements DiabetesRiskAssessment
 
     @Override
     public int getAgeFromLocalDate(LocalDate dob) {
-        return dob.getYear() - LocalDate.now().getYear();
+        return Period.between(dob, LocalDate.now()).getYears();
+    }
+
+    @Override
+    public List<String>getContentsFromRiskInfo(DiabetesRiskInfo riskInfo){
+        List<MedicalReport> medicalReports = riskInfo.getMedicalReports();
+        List<String> contents = new ArrayList<String>();
+        for(MedicalReport medicalReport:medicalReports) {
+            contents.add(medicalReport.getContent());
+        }
+        return contents;
     }
 
     @Override
@@ -59,7 +67,7 @@ public class DiabetesRiskAssessmentServiceImpl implements DiabetesRiskAssessment
     public RiskLevel getRiskLevel(DiabetesRiskInfo riskInfo) {
         Sex sex = riskInfo.getSex();
         int age = getAgeFromLocalDate(riskInfo.getDob());
-        Set<String> triggeringFactors = getTriggeringFactorsFromContents(riskInfo.getContents());
+        Set<String> triggeringFactors = getTriggeringFactorsFromContents(getContentsFromRiskInfo(riskInfo));
 
         RiskLevel riskLevel = RiskLevel.NONE;
 
@@ -92,10 +100,10 @@ public class DiabetesRiskAssessmentServiceImpl implements DiabetesRiskAssessment
     @Override
     public DiabetesRiskAssessment getRiskAssessment(DiabetesRiskInfo riskInfo){
         DiabetesRiskAssessment riskAssessment = new DiabetesRiskAssessment();
-        riskAssessment.setRiskLevels(getRiskLevel(riskInfo));
+        riskAssessment.setRiskLevel(getRiskLevel(riskInfo));
         riskAssessment.setPatientAge(getAgeFromLocalDate(riskInfo.getDob()));
         riskAssessment.setSex(riskInfo.getSex());
-        riskAssessment.setTriggeringFactors(getTriggeringFactorsFromContents(riskInfo.getContents()));
+        riskAssessment.setTriggeringFactors(getTriggeringFactorsFromContents(getContentsFromRiskInfo(riskInfo)));
         return riskAssessment;
     }
 }

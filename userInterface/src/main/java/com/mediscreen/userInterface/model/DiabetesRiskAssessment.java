@@ -1,4 +1,4 @@
-package com.mediscreen.diabetesRiskAssessment.model;
+package com.mediscreen.userInterface.model;
 
 import javax.validation.constraints.NotNull;
 import java.util.Set;
@@ -15,13 +15,6 @@ public class DiabetesRiskAssessment {
     @NotNull
     private Sex sex;
     private Set<String> triggeringFactors;
-
-    public DiabetesRiskAssessment(RiskLevel riskLevel, int patientAge, Sex sex, Set<String> triggeringFactors) {
-        this.riskLevel = riskLevel;
-        this.patientAge = patientAge;
-        this.sex = sex;
-        this.triggeringFactors = triggeringFactors;
-    }
 
     public DiabetesRiskAssessment() {
     }
