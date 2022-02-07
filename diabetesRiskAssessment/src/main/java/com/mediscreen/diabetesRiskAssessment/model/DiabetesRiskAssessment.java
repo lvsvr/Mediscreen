@@ -58,13 +58,4 @@ public class DiabetesRiskAssessment {
         this.triggeringFactors = triggeringFactors;
     }
 
-    @Override
-    public String toString() {
-        return "DiabetesRiskAssessment{" +
-                "riskLevels=" + riskLevel +
-                ", patientAge=" + patientAge +
-                ", sex=" + sex +
-                ", triggeringFactors=" + triggeringFactors +
-                '}';
-    }
 }

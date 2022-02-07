@@ -40,7 +40,7 @@ public class DiabetesRiskAssessmentServiceImpl implements DiabetesRiskAssessment
         List<TriggeringFactors> triggeringFactors = getAllTriggeringFactors();
         for (String content : contents) {
             for (TriggeringFactors triggeringFactor : triggeringFactors) {
-                if (content.toLowerCase().contains(String.valueOf(triggeringFactor).toLowerCase())) {
+                if (content.toLowerCase().contains(String.valueOf(triggeringFactor).toLowerCase().replaceAll("_"," "))) {
                     triggeringFactorsFromContent.add(String.valueOf(triggeringFactor));
                 }
             }

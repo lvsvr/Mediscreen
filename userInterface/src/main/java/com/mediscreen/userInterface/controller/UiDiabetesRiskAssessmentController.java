@@ -46,6 +46,7 @@ public class UiDiabetesRiskAssessmentController {
         riskInfo.setContents(medicalReportProxy.getAllReportsByPatientId(id));
         riskAssessment = diabetesRiskAssessmentProxy.getLevelRisk(riskInfo);
         model.addAttribute("diabetesRiskAssessment", riskAssessment);
+//        logger.info("REQUEST: GET  /patient/diabetesRisk/assess: patientId: " + patient.getId() + ": "+ riskAssessment.getRiskLevel());
         return "/patient/diabetesRiskAssessment";
     }
 
@@ -58,14 +59,8 @@ public class UiDiabetesRiskAssessmentController {
      * @return Level risk, sex, age & triggering factors
      */
     @PostMapping("/diabetesRisk/assess/{id}")
-    public String postDiabetesRiskInfo(@PathVariable("id") int id,Model model, @ModelAttribute DiabetesRiskInfo riskInfo, @ModelAttribute DiabetesRiskAssessment riskAssessment ) {
+    public String postDiabetesRiskInfo(@PathVariable("id") int id, @ModelAttribute DiabetesRiskInfo riskInfo, @ModelAttribute DiabetesRiskAssessment riskAssessment ) {
         Patient patient = patientProxy.getPatientById(id);
-        riskInfo.setDob(patient.getDob());
-        riskInfo.setSex(patient.getSex());
-        riskInfo.setContents(medicalReportProxy.getAllReportsByPatientId(id));
-        riskAssessment = diabetesRiskAssessmentProxy.getLevelRisk(riskInfo);
-        model.addAttribute("diabetesRiskAssessment", riskAssessment);
-        logger.info("REQUEST: POST  /patient/diabetesRisk/assess: " + riskAssessment.getRiskLevel());
         return "redirect:/patient/" + patient.getId();
     }
 }
