@@ -20,6 +20,9 @@ public class DiabetesRiskInfo {
         this.medicalReports = medicalReports;
     }
 
+    public DiabetesRiskInfo() {
+    }
+
     public LocalDate getDob() {
         return dob;
     }

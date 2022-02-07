@@ -12,8 +12,10 @@ public class MedicalReport {
     private LocalDate reportDate;
     private String content;
 
-    public MedicalReport(int patientId, String content) {
+    public MedicalReport(String id, int patientId, LocalDate reportDate, String content) {
+        this.id = id;
         this.patientId = patientId;
+        this.reportDate = reportDate;
         this.content = content;
     }
 
