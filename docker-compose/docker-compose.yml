@@ -1,0 +1,37 @@
+version: '3'
+services:
+  userinterface:
+    build: userinterface/
+    ports:
+      - "9000:9000"
+    container_name: "userinterface"
+    networks:
+      - mediscreennetwork
+    restart: always
+  patient:
+        build: patient/
+        ports:
+          - "9001:9001"
+        container_name: "patient"
+        networks:
+          - mediscreennetwork
+        restart: always
+  medicalreport:
+        build: medicalreport/
+        ports:
+          - "9002:9002"
+        container_name: "medicalreportl"
+        networks:
+          - mediscreennetwork
+        restart: always
+  diabetesriskassessment:
+        build: diabetesriskassessment/
+        ports:
+          - "9003:9003"
+        container_name: "diabetesriskassessment"
+        networks:
+          - mediscreennetwork
+        restart: always
+networks:
+  mediscreennetwork:
+
