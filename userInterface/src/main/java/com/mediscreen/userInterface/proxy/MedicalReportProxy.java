@@ -13,7 +13,7 @@ import java.util.List;
 /**
  * The proxy feign interface MedicalReportProxy.
  */
-@FeignClient(value = "medicalReport", url = "${proxy.medicalReport}")
+@FeignClient(value = "medicalReport", url = "${proxy.report}")
 public interface MedicalReportProxy {
 
     /**

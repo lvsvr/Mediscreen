@@ -35,7 +35,7 @@ public class UiMedicalReportController {
         medicalReport.setReportDate((LocalDate.now()));
         model.addAttribute("medicalReport", medicalReport);
         model.addAttribute("patient", patient);
-        return "/patient/newMedicalReport";
+        return "patient/newMedicalReport";
     }
 
     @PostMapping("/medicalReport/add/{patientId}")
@@ -47,17 +47,17 @@ public class UiMedicalReportController {
     }
 
     @GetMapping("/medicalReport/update/{id}")
-    public String getMedicalReportToUpdate(Model model,@PathVariable("id") String id){
-        MedicalReport medicalReport = medicalReportProxy.getMedicalReportById(id);
+    public String getMedicalReportToUpdate(Model model,@PathVariable("id") String id, @ModelAttribute  MedicalReport medicalReport){
+         medicalReport = medicalReportProxy.getMedicalReportById(id);
         Patient patient = patientProxy.getPatientById(medicalReport.getPatientId());
         model.addAttribute("patient", patient);
         model.addAttribute("medicalReport", medicalReport);
         logger.info("REQUEST: POST medicalRecord/update/{id} ");
-        return  "/patient/updateMedicalReport";
+        return  "patient/updateMedicalReport";
     }
 
     @PostMapping("/medicalReport/update/{id}")
-    public String postUpdatedMedicalReport(@PathVariable("id") String id,  @ModelAttribute @Valid  MedicalReport medicalReport){
+    public String postUpdatedMedicalReport(@PathVariable("id") String id,  @RequestBody @ModelAttribute @Valid  MedicalReport medicalReport){
         medicalReport = medicalReportProxy.updateMedicalReport(id, medicalReport);
         logger.info("REQUEST: POST medicalRecord/update/{id} : " + medicalReport.toString());
         return "redirect:/patient/" + medicalReport.getPatientId();
