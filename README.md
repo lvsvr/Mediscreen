@@ -1,9 +1,38 @@
 # Mediscreen
 
-Spring Boot application - Gradle - Microservices - OpenFeign - Docker
+Spring Boot application - Gradle - PostgreSQL - MongoDB - API ReST- OpenFeign - Docker
+
 
 ---
-**Instructions**
+**Annex directory : content**
+
+- coverage reports
+
+- documentation
+
+
+---
+
+**Instructions - all in Docker**
+---
+
+/Mediscreen/docker-compose]<br>
+$ docker-compose up <br>
+http://localhost:9000/patient/home <br>
+<br>
+bonus:<br>
+  - get the IpAddress<br>
+  $ docker ps // to get CONTAINER ID<br>
+  $ docker inspect {ij} // i & j are the 2 first numbers of the CONTAINER ID<br>
+  - connect to pgAdmin4<br>
+  http://localhost:5050 <br>
+  login: root@root.com - psw: root<br>
+  choose a name and add the IP address and password
+  - connect to Mongo Express:<br>
+      http://localhost:8081/ <br>
+
+---
+**Instructions - only db in Docker**
 ---
 
 1-**create data base 'dbpatient' with Docker-compose:**<br>
@@ -30,5 +59,14 @@ $ docker-compose up<br>
 <br>
 bonus:<br>
 - connect to Mongo Express:<br>
-http://localhost:8081/
+http://localhost:8081/ <br>
+
+
+3-**run :**<br>
+
+- patient
+- medicalReport
+- diabetesRiskAssessment
+- userInterface
+- http://localhost:9000/patient/home
 

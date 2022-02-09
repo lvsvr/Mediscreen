@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>UiPatientController.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">userInterface</a> &gt; <a href="index.source.html" class="el_package">com.mediscreen.userInterface.controller</a> &gt; <span class="el_source">UiPatientController.java</span></div><h1>UiPatientController.java</h1><pre class="source lang-java linenums">package com.mediscreen.userInterface.controller;
+
+
+
+import com.mediscreen.userInterface.model.MedicalReport;
+import com.mediscreen.userInterface.model.Patient;
+import com.mediscreen.userInterface.proxy.MedicalReportProxy;
+import com.mediscreen.userInterface.proxy.PatientProxy;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.*;
+
+import javax.validation.Valid;
+import java.util.List;
+
+/**
+ * The type UiPatientController
+ */
+@Controller
+@RequestMapping(&quot;/patient&quot;)
+<span class="fc" id="L25">public class UiPatientController {</span>
+<span class="fc" id="L26">    private static final Logger logger = LogManager.getLogger(&quot;userInterface&quot;);</span>
+
+    @Autowired
+    private PatientProxy patientProxy;
+
+    @Autowired
+    private MedicalReportProxy medicalReportProxy;
+    /**
+     * Gets home page
+     *
+     * @return a list of all patients
+     */
+    @GetMapping(&quot;/home&quot;)
+    public String getList(Model model) {
+
+<span class="fc" id="L41">        List&lt;Patient&gt; patients = patientProxy.getAllPatients();</span>
+<span class="fc" id="L42">        model.addAttribute(&quot;patients&quot;, patientProxy.getAllPatients());</span>
+<span class="fc" id="L43">        logger.info(&quot;REQUEST: GET /patient/home - patient's list&quot;);</span>
+<span class="fc" id="L44">        return &quot;patient/home&quot;;</span>
+    }
+
+    /**
+     * Gets a patient by id
+     *
+     * @param id
+     * @return a patient's information
+     */
+    @GetMapping(&quot;/{id}&quot;)
+    public String getPatientById(@PathVariable(&quot;id&quot;) int id, Model model) {
+<span class="fc" id="L55">        Patient patient = patientProxy.getPatientById(id);</span>
+<span class="fc" id="L56">        List&lt;MedicalReport&gt;medicalReports = medicalReportProxy.getAllReportsByPatientId(id);</span>
+<span class="fc" id="L57">        model.addAttribute(&quot;patient&quot;, patient);</span>
+<span class="fc" id="L58">        model.addAttribute(&quot;medicalReports&quot;, medicalReports);</span>
+<span class="fc" id="L59">        logger.info(&quot;REQUEST: GET /patient/{id} - patient's information&quot;);</span>
+<span class="fc" id="L60">        return &quot;patient/patient&quot;;</span>
+    }
+
+    /**
+     * Gets a form to update patient by id
+     *
+     * @param id
+     * @param patient
+     * @return a form to update a patient
+     */
+    @GetMapping(&quot;/update/{id}&quot;)
+    public String getPatientToUpdateById(Model model, @PathVariable(&quot;id&quot;) int id, @ModelAttribute Patient patient) {
+<span class="fc" id="L72">        patient = patientProxy.getPatientById(id);</span>
+<span class="fc" id="L73">        model.addAttribute(&quot;patient&quot;, patient);</span>
+<span class="fc" id="L74">        logger.info(&quot;REQUEST: GET /update/{id} : &quot; + patient.toString());</span>
+<span class="fc" id="L75">        return &quot;patient/updatePatient&quot;;</span>
+    }
+
+    /**
+     * Updates patient by id
+     *
+     * @param id
+     * @param patient
+     * @return the patient home page
+     */
+    @PostMapping(&quot;/update/{id}&quot;)
+    public String postUpdatedPatientById(@PathVariable(&quot;id&quot;) int id, @ModelAttribute @RequestBody @Valid Patient patient) {
+<span class="fc" id="L87">        patient = patientProxy.updatePatient(patient.getId(), patient);</span>
+<span class="fc" id="L88">        logger.info(&quot;REQUEST: POST /update/{id} : &quot; + patient.toString());</span>
+<span class="fc" id="L89">        return &quot;redirect:/patient/&quot;+ patient.getId();</span>
+    }
+
+    /**
+     * Gets a warning page before get a patient deleted by id
+     *
+     * @param id
+     * @return patient's information
+     */
+    @GetMapping(&quot;/toBeDeleted/{id}&quot;)
+    public String getPatientToDeleteById(@PathVariable(&quot;id&quot;) int id, Model model) {
+<span class="fc" id="L100">        Patient patient = patientProxy.getPatientById(id);</span>
+<span class="fc" id="L101">        model.addAttribute(&quot;patient&quot;, patient);</span>
+<span class="fc" id="L102">        return &quot;patient/deletePatient&quot;;</span>
+    }
+
+    /**
+     * Gets a patient deleted by id
+     *
+     * @param id
+     * @return the patient home page
+     */
+    @GetMapping(&quot;/deletePatient/{id}&quot;)
+    public String getPatientDeletedById(@PathVariable(&quot;id&quot;) int id, Model model) {
+<span class="fc" id="L113">        Patient patient = patientProxy.getPatientById(id);</span>
+<span class="fc" id="L114">        medicalReportProxy.deleteAllReportsByPatientId(id);</span>
+<span class="fc" id="L115">        model.addAttribute(&quot;patient&quot;, patient);</span>
+<span class="fc" id="L116">        patientProxy.getPatientDeletedById(id);</span>
+<span class="fc" id="L117">        logger.info(&quot;REQUEST: GET /deletePatient/{id} : &quot; + patient.toString());</span>
+<span class="fc" id="L118">        return &quot;redirect:/patient/home&quot;;</span>
+    }
+
+    /**
+     * Gets a form to create a new patient
+     *
+     * @return a form
+     */
+    @GetMapping(&quot;/add&quot;)
+    public String addPatient(Model model, @ModelAttribute Patient patient) {
+<span class="fc" id="L128">        model.addAttribute(&quot;patient&quot;, patient);</span>
+<span class="fc" id="L129">        return &quot;patient/newPatient&quot;;</span>
+    }
+
+    /**
+     * Gets a new patient created
+     *
+     * @param patient
+     * @return the patient home page
+     */
+    @PostMapping(&quot;/add&quot;)
+    public String postNewPatient(@ModelAttribute @RequestBody @Valid Patient patient) {
+<span class="fc" id="L140">        patient = patientProxy.addPatient(patient);</span>
+<span class="fc" id="L141">        logger.info(&quot;REQUEST: POST  /newPatient : &quot; + patient.toString());</span>
+<span class="fc" id="L142">        return &quot;redirect:/patient/home&quot;;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

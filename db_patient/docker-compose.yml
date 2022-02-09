@@ -1,4 +1,4 @@
-version: '3.0'
+version: '3'
 services:
   dbpatient:
     container_name: dbpatient
@@ -10,9 +10,8 @@ services:
       POSTGRES_DB: dbpatient
     ports:
       - "5432:5432"
-
-
-
+    networks:
+      -  mediscreennetwork
   pgadmin:
     container_name: pgadmin4
     image: dpage/pgadmin4
@@ -23,11 +22,9 @@ services:
 #      PGADMIN_LISTEN_PORT = 80
     ports:
       - "5050:80"
-
-
-#   networks:
-#      -  mediscreennetwork
-#networks:
-#  mediscreennetwork:
+    networks:
+      -  mediscreennetwork
+networks:
+  mediscreennetwork:
 
 

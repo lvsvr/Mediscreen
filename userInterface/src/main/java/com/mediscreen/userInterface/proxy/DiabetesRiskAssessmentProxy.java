@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 /**
  * The proxy feign interface DiabetesRiskAssessmentProxy
  */
-@FeignClient(value = "medicalReport", url = "${proxy.diabetesRiskAssessment}")
+@FeignClient(value = "medicalReport", url = "${proxy.assessment}")
 public interface DiabetesRiskAssessmentProxy {
 
     /**

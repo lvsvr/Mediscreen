@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>DiabetesRiskAssessment.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">userInterface</a> &gt; <a href="index.source.html" class="el_package">com.mediscreen.userInterface.model</a> &gt; <span class="el_source">DiabetesRiskAssessment.java</span></div><h1>DiabetesRiskAssessment.java</h1><pre class="source lang-java linenums">package com.mediscreen.userInterface.model;
+
+import javax.validation.constraints.NotNull;
+import java.util.Set;
+
+/**
+ * The type DiabetesRiskAssessment
+ */
+public class DiabetesRiskAssessment {
+
+    @NotNull
+    private RiskLevel riskLevel;
+    @NotNull
+    private int patientAge;
+    @NotNull
+    private Sex sex;
+    private Set&lt;String&gt; triggeringFactors;
+
+<span class="fc" id="L19">    public DiabetesRiskAssessment() {</span>
+<span class="fc" id="L20">    }</span>
+
+    public RiskLevel getRiskLevel() {
+<span class="fc" id="L23">        return riskLevel;</span>
+    }
+
+    public void setRiskLevel(RiskLevel riskLevel) {
+<span class="fc" id="L27">        this.riskLevel = riskLevel;</span>
+<span class="fc" id="L28">    }</span>
+
+    public int getPatientAge() {
+<span class="fc" id="L31">        return patientAge;</span>
+    }
+
+    public void setPatientAge(int patientAge) {
+<span class="fc" id="L35">        this.patientAge = patientAge;</span>
+<span class="fc" id="L36">    }</span>
+
+    public Sex getSex() {
+<span class="fc" id="L39">        return sex;</span>
+    }
+
+    public void setSex(Sex sex) {
+<span class="fc" id="L43">        this.sex = sex;</span>
+<span class="fc" id="L44">    }</span>
+
+    public Set&lt;String&gt; getTriggeringFactors() {
+<span class="fc" id="L47">        return triggeringFactors;</span>
+    }
+
+    public void setTriggeringFactors(Set&lt;String&gt; triggeringFactors) {
+<span class="fc" id="L51">        this.triggeringFactors = triggeringFactors;</span>
+<span class="fc" id="L52">    }</span>
+
+    @Override
+    public String toString() {
+<span class="fc" id="L56">        return &quot;DiabetesRiskAssessment{&quot; +</span>
+                &quot;riskLevels=&quot; + riskLevel +
+                &quot;, patientAge=&quot; + patientAge +
+                &quot;, sex=&quot; + sex +
+                &quot;, triggeringFactors=&quot; + triggeringFactors +
+                '}';
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

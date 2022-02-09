@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>DbInitService.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">patient</a> &gt; <a href="index.source.html" class="el_package">com.mediscreen.patient.tools</a> &gt; <span class="el_source">DbInitService.java</span></div><h1>DbInitService.java</h1><pre class="source lang-java linenums">package com.mediscreen.patient.tools;
+
+import com.mediscreen.patient.model.Patient;
+import com.mediscreen.patient.model.Sex;
+import com.mediscreen.patient.repository.PatientRepository;
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.stereotype.Service;
+
+import java.time.LocalDate;
+
+@Service
+public class DbInitService implements CommandLineRunner {
+
+    private PatientRepository patientRepository;
+
+<span class="fc" id="L16">    public DbInitService(PatientRepository patientRepository) {</span>
+<span class="fc" id="L17">        this.patientRepository = patientRepository;</span>
+<span class="fc" id="L18">    }</span>
+
+
+    @Override
+    public void run(String... args) throws Exception {
+<span class="pc bpc" id="L23" title="1 of 2 branches missed.">        if (patientRepository.findAll().isEmpty()) {</span>
+<span class="nc" id="L24">            Patient p0 = new Patient();</span>
+<span class="nc" id="L25">            p0.setFamily(&quot;TestNone&quot;);</span>
+<span class="nc" id="L26">            p0.setGiven(&quot;Test&quot;);</span>
+<span class="nc" id="L27">            p0.setDob(LocalDate.of(1966, 12, 31));</span>
+<span class="nc" id="L28">            p0.setSex(Sex.F);</span>
+<span class="nc" id="L29">            p0.setAddress(&quot;1 Brookside St&quot;);</span>
+<span class="nc" id="L30">            p0.setPhone(&quot;100-222-3333&quot;);</span>
+
+<span class="nc" id="L32">            Patient p1 = new Patient();</span>
+<span class="nc" id="L33">            p1.setFamily(&quot;TestBorderline&quot;);</span>
+<span class="nc" id="L34">            p1.setGiven(&quot;Test1&quot;);</span>
+<span class="nc" id="L35">            p1.setDob(LocalDate.of(1945, 06, 24));</span>
+<span class="nc" id="L36">            p1.setSex(Sex.M);</span>
+<span class="nc" id="L37">            p1.setAddress(&quot;2 High St&quot;);</span>
+<span class="nc" id="L38">            p1.setPhone(&quot;200-333-4444&quot;);</span>
+
+<span class="nc" id="L40">            Patient p2 = new Patient();</span>
+<span class="nc" id="L41">            p2.setFamily(&quot;TestInDanger&quot;);</span>
+<span class="nc" id="L42">            p2.setGiven((&quot;Test2&quot;));</span>
+<span class="nc" id="L43">            p2.setDob(LocalDate.of(2004, 06, 18));</span>
+<span class="nc" id="L44">            p2.setSex(Sex.M);</span>
+<span class="nc" id="L45">            p2.setAddress(&quot;3 Club Road&quot;);</span>
+<span class="nc" id="L46">            p2.setPhone(&quot;300-444-5555&quot;);</span>
+
+<span class="nc" id="L48">            Patient p3 = new Patient();</span>
+<span class="nc" id="L49">            p3.setFamily(&quot;TestEarlyOnset&quot;);</span>
+<span class="nc" id="L50">            p3.setGiven((&quot;Test3&quot;));</span>
+<span class="nc" id="L51">            p3.setDob(LocalDate.of(2002, 06, 28));</span>
+<span class="nc" id="L52">            p3.setSex(Sex.F);</span>
+<span class="nc" id="L53">            p3.setAddress(&quot;4 Valley Dr&quot;);</span>
+<span class="nc" id="L54">            p3.setPhone(&quot;400-555-6666&quot;);</span>
+
+<span class="nc" id="L56">            this.patientRepository.save(p0);</span>
+<span class="nc" id="L57">            this.patientRepository.save(p1);</span>
+<span class="nc" id="L58">            this.patientRepository.save(p2);</span>
+<span class="nc" id="L59">            this.patientRepository.save(p3);</span>
+        }
+<span class="fc" id="L61">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

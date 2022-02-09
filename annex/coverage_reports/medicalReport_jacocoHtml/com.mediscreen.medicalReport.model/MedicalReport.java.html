@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>MedicalReport.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">medicalReport</a> &gt; <a href="index.source.html" class="el_package">com.mediscreen.medicalReport.model</a> &gt; <span class="el_source">MedicalReport.java</span></div><h1>MedicalReport.java</h1><pre class="source lang-java linenums">package com.mediscreen.medicalReport.model;
+
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+import org.springframework.data.mongodb.core.mapping.Field;
+
+import javax.validation.constraints.NotNull;
+import java.time.LocalDate;
+
+@Document(collection = &quot;report&quot;)
+public class MedicalReport {
+    @Id
+    private String id;
+    @Field(&quot;patientId&quot;)
+    @NotNull
+    private int patientId;
+    @Field(&quot;date&quot;)
+    private LocalDate reportDate;
+    @Field(&quot;content&quot;)
+    private String content;
+
+<span class="fc" id="L22">    public MedicalReport(int patientId, String content) {</span>
+<span class="fc" id="L23">        this.patientId = patientId;</span>
+<span class="fc" id="L24">        this.content = content;</span>
+<span class="fc" id="L25">    }</span>
+
+    public String getId() {
+<span class="fc" id="L28">        return id;</span>
+    }
+
+    public int getPatientId() {
+<span class="fc" id="L32">        return patientId;</span>
+    }
+
+    public void setPatientId(int patientId) {
+<span class="nc" id="L36">        this.patientId = patientId;</span>
+<span class="nc" id="L37">    }</span>
+
+    public LocalDate getReportDate() {
+<span class="fc" id="L40">        return reportDate;</span>
+    }
+
+    public void setReportDate(LocalDate reportDate) {
+<span class="fc" id="L44">        this.reportDate = reportDate;</span>
+<span class="fc" id="L45">    }</span>
+
+    public String getContent() {
+<span class="fc" id="L48">        return content;</span>
+    }
+
+    public void setContent(String content) {
+<span class="fc" id="L52">        this.content = content;</span>
+<span class="fc" id="L53">    }</span>
+
+    @Override
+    public String toString() {
+<span class="fc" id="L57">        return &quot;MedicalReport{&quot; +</span>
+                &quot;id=&quot; + id +
+                &quot;, patientId=&quot; + patientId +
+                &quot;, reportDate=&quot; + reportDate +
+                &quot;, content='&quot; + content + '\'' +
+                '}';
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

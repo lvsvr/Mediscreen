@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>DiabetesRiskAssessmentServiceImpl.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">diabetesRiskAssessment</a> &gt; <a href="index.source.html" class="el_package">com.mediscreen.diabetesRiskAssessment.service</a> &gt; <span class="el_source">DiabetesRiskAssessmentServiceImpl.java</span></div><h1>DiabetesRiskAssessmentServiceImpl.java</h1><pre class="source lang-java linenums">package com.mediscreen.diabetesRiskAssessment.service;
+
+import com.mediscreen.diabetesRiskAssessment.model.*;
+import org.springframework.stereotype.Service;
+
+import java.time.LocalDate;
+import java.time.Period;
+import java.util.*;
+
+/**
+ * The type DiabetesRiskAssessmentServiceImpl
+ */
+@Service
+<span class="fc" id="L14">public class DiabetesRiskAssessmentServiceImpl implements DiabetesRiskAssessmentService {</span>
+
+
+    @Override
+    public int getAgeFromLocalDate(LocalDate dob) {
+<span class="fc" id="L19">        return Period.between(dob, LocalDate.now()).getYears();</span>
+    }
+
+    @Override
+    public List&lt;String&gt;getContentsFromRiskInfo(DiabetesRiskInfo riskInfo){
+<span class="fc" id="L24">        List&lt;MedicalReport&gt; medicalReports = riskInfo.getMedicalReports();</span>
+<span class="fc" id="L25">        List&lt;String&gt; contents = new ArrayList&lt;String&gt;();</span>
+<span class="fc bfc" id="L26" title="All 2 branches covered.">        for(MedicalReport medicalReport:medicalReports) {</span>
+<span class="fc" id="L27">            contents.add(medicalReport.getContent());</span>
+<span class="fc" id="L28">        }</span>
+<span class="fc" id="L29">        return contents;</span>
+    }
+
+    @Override
+    public List&lt;TriggeringFactors&gt; getAllTriggeringFactors() {
+<span class="fc" id="L34">        return Arrays.asList(TriggeringFactors.values());</span>
+    }
+
+    @Override
+    public Set&lt;String&gt; getTriggeringFactorsFromContents(List&lt;String&gt; contents) {
+<span class="fc" id="L39">        Set&lt;String&gt; triggeringFactorsFromContent = new HashSet&lt;String&gt;();</span>
+<span class="fc" id="L40">        List&lt;TriggeringFactors&gt; triggeringFactors = getAllTriggeringFactors();</span>
+<span class="fc bfc" id="L41" title="All 2 branches covered.">        for (String content : contents) {</span>
+<span class="fc bfc" id="L42" title="All 2 branches covered.">            for (TriggeringFactors triggeringFactor : triggeringFactors) {</span>
+<span class="fc bfc" id="L43" title="All 2 branches covered.">                if (content.toLowerCase().contains(String.valueOf(triggeringFactor).toLowerCase().replaceAll(&quot;_&quot;,&quot; &quot;))) {</span>
+<span class="fc" id="L44">                    triggeringFactorsFromContent.add(String.valueOf(triggeringFactor));</span>
+                }
+<span class="fc" id="L46">            }</span>
+<span class="fc" id="L47">        }</span>
+<span class="fc" id="L48">        return triggeringFactorsFromContent;</span>
+    }
+
+    //===== REMINDER ==================
+//      M &lt; 30 = 5             |
+//      F &lt;30 = 7                &gt; : EARLY_ONSET
+//      M/F &gt; 30 = 8          |
+//
+//      M &lt; 30 = 3              |
+//      F &lt;30 = 4                 &gt; : IN_DANGER
+//      H/F &gt; 30 = 6           |
+//
+//      M∕F &gt; 30 = 2             : BORDERLINE
+//
+//      H∕F = 0                      : NONE
+//
+//    =&gt; age 30 -&gt; sex -&gt; triggering factors' number
+//===================================
+    @Override
+    public RiskLevel getRiskLevel(DiabetesRiskInfo riskInfo) {
+<span class="fc" id="L68">        Sex sex = riskInfo.getSex();</span>
+<span class="fc" id="L69">        int age = getAgeFromLocalDate(riskInfo.getDob());</span>
+<span class="fc" id="L70">        Set&lt;String&gt; triggeringFactors = getTriggeringFactorsFromContents(getContentsFromRiskInfo(riskInfo));</span>
+
+<span class="fc" id="L72">        RiskLevel riskLevel = RiskLevel.NONE;</span>
+
+<span class="fc bfc" id="L74" title="All 2 branches covered.">        if (age &gt;= 30) {</span>
+<span class="fc bfc" id="L75" title="All 4 branches covered.">            if (2 &lt;= triggeringFactors.size() &amp;&amp; triggeringFactors.size() &lt; 6) {</span>
+<span class="fc" id="L76">                return riskLevel = RiskLevel.BORDERLINE;</span>
+<span class="fc bfc" id="L77" title="All 4 branches covered.">            } else if (6 &lt;= triggeringFactors.size() &amp;&amp; triggeringFactors.size() &lt; 8) {</span>
+<span class="fc" id="L78">                return riskLevel = RiskLevel.IN_DANGER;</span>
+<span class="fc bfc" id="L79" title="All 2 branches covered.">            } else if (triggeringFactors.size() &gt;= 8) {</span>
+<span class="fc" id="L80">                return riskLevel = RiskLevel.EARLY_ONSET;</span>
+            }
+        } else{
+<span class="fc bfc" id="L83" title="All 2 branches covered.">            if (sex.equals(Sex.F)){</span>
+<span class="fc bfc" id="L84" title="All 4 branches covered.">                if (4 &lt;= triggeringFactors.size() &amp;&amp; triggeringFactors.size() &lt; 7) {</span>
+<span class="fc" id="L85">                    return riskLevel = RiskLevel.IN_DANGER;</span>
+<span class="fc bfc" id="L86" title="All 2 branches covered.">                } else if (triggeringFactors.size() &gt;= 7) {</span>
+<span class="fc" id="L87">                    return riskLevel = RiskLevel.EARLY_ONSET;</span>
+                }
+            }else{
+<span class="fc bfc" id="L90" title="All 4 branches covered.">                if (3 &lt;= triggeringFactors.size() &amp;&amp; triggeringFactors.size() &lt; 5) {</span>
+<span class="fc" id="L91">                    return riskLevel = RiskLevel.IN_DANGER;</span>
+<span class="fc bfc" id="L92" title="All 2 branches covered.">                } else if (triggeringFactors.size() &gt;= 5) {</span>
+<span class="fc" id="L93">                    return riskLevel = RiskLevel.EARLY_ONSET;</span>
+                }
+            }
+        }
+<span class="fc" id="L97">        return riskLevel;</span>
+    }
+
+    @Override
+    public DiabetesRiskAssessment getRiskAssessment(DiabetesRiskInfo riskInfo){
+<span class="fc" id="L102">        DiabetesRiskAssessment riskAssessment = new DiabetesRiskAssessment();</span>
+<span class="fc" id="L103">        riskAssessment.setRiskLevel(getRiskLevel(riskInfo));</span>
+<span class="fc" id="L104">        riskAssessment.setPatientAge(getAgeFromLocalDate(riskInfo.getDob()));</span>
+<span class="fc" id="L105">        riskAssessment.setSex(riskInfo.getSex());</span>
+<span class="fc" id="L106">        riskAssessment.setTriggeringFactors(getTriggeringFactorsFromContents(getContentsFromRiskInfo(riskInfo)));</span>
+<span class="fc" id="L107">        return riskAssessment;</span>
+    }
+}
+
+
+
+
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

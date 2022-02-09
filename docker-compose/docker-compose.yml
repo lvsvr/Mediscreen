@@ -1,26 +1,93 @@
 version: '3'
 services:
+  patientpg:
+      container_name: patientpg
+      image: postgres
+      restart: always
+      environment:
+        POSTGRES_USER: root
+        POSTGRES_PASSWORD: root
+        POSTGRES_DB: dbpatient
+      ports:
+        - "5432:5432"
+      networks:
+        -  mediscreennetwork
+  pgadmin:
+      container_name: pgadmin4
+      image: dpage/pgadmin4
+      restart: always
+      environment:
+        PGADMIN_DEFAULT_EMAIL: root@root.com
+        PGADMIN_DEFAULT_PASSWORD: root
+      ports:
+        - "5050:80"
+      networks:
+        -  mediscreennetwork
+  patient:
+    build: patient/
+    depends_on:
+      - patientpg
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://patientpg:5432/dbpatient
+      - SPRING_DATASOURCE_USERNAME=root
+      - SPRING_DATASOURCE_PASSWORD=root
+    ports:
+      - "9001:9001"
+    container_name: "patient"
+    restart: always
+    networks:
+      - mediscreennetwork
   userinterface:
     build: userinterface/
+    depends_on :
+      - patient
+      - medicalreport
+      - diabetesriskassessment
+    environment:
+      - PROXY_PATIENT=http://patient:9001/patient
+      - PROXY_REPORT=http://medicalreport:9002/medicalReport
+      - PROXY_ASSESSMENT=http://diabetesriskassessment:9003/diabetesRisk
     ports:
       - "9000:9000"
     container_name: "userinterface"
     networks:
       - mediscreennetwork
     restart: always
-  patient:
-        build: patient/
-        ports:
-          - "9001:9001"
-        container_name: "patient"
-        networks:
-          - mediscreennetwork
-        restart: always
+  dbmedicalreport:
+    container_name: dbmedicalreport
+    image: mongo
+    restart: always
+    ports:
+      - "27017:27017"
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=root
+      - MONGO_INITDB_ROOT_PASSWORD=root
+    networks:
+      -  mediscreennetwork
+  mongo-express:
+    container_name: mongo-express
+    image: mongo-express
+    restart: always
+    ports:
+      - "8081:8081"
+    environment:
+      - ME_CONFIG_MONGODB_ADMINUSERNAME=root
+      - ME_CONFIG_MONGODB_ADMINPASSWORD=root
+      - ME_CONFIG_MONGODB_SERVER=dbmedicalreport
+    networks:
+      -  mediscreennetwork
   medicalreport:
         build: medicalreport/
+        depends_on:
+          - dbmedicalreport
+        environment:
+          - SPRING_DATA_MONGODB_AUTHENTICATION-DATABASE=admin
+          - SPRING_DATA_MONGODB_USERNAME=root
+          - SPRING_DATA_MONGODB_PASSWORD=root
+          - SPRING_DATA_MONGODB_DATABASE=dbmedicalreport
         ports:
           - "9002:9002"
-        container_name: "medicalreportl"
+        container_name: "medicalreport"
         networks:
           - mediscreennetwork
         restart: always
@@ -34,4 +101,9 @@ services:
         restart: always
 networks:
   mediscreennetwork:
+
+
+
+
+
 

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>DiabetesRiskInfo.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">diabetesRiskAssessment</a> &gt; <a href="index.source.html" class="el_package">com.mediscreen.diabetesRiskAssessment.model</a> &gt; <span class="el_source">DiabetesRiskInfo.java</span></div><h1>DiabetesRiskInfo.java</h1><pre class="source lang-java linenums">package com.mediscreen.diabetesRiskAssessment.model;
+
+import org.springframework.format.annotation.DateTimeFormat;
+
+import java.time.LocalDate;
+import java.util.List;
+
+/**
+ * The type DiabetesRiskInfo
+ */
+public class DiabetesRiskInfo {
+
+    private LocalDate dob;
+    private Sex sex;
+    private List&lt;MedicalReport&gt; medicalReports;
+
+<span class="nc" id="L17">    public DiabetesRiskInfo(LocalDate dob, Sex sex, List&lt;MedicalReport&gt; medicalReports) {</span>
+<span class="nc" id="L18">        this.dob = dob;</span>
+<span class="nc" id="L19">        this.sex = sex;</span>
+<span class="nc" id="L20">        this.medicalReports = medicalReports;</span>
+<span class="nc" id="L21">    }</span>
+
+<span class="fc" id="L23">    public DiabetesRiskInfo() {</span>
+<span class="fc" id="L24">    }</span>
+
+    public LocalDate getDob() {
+<span class="fc" id="L27">        return dob;</span>
+    }
+
+    public void setDob(LocalDate dob) {
+<span class="fc" id="L31">        this.dob = dob;</span>
+<span class="fc" id="L32">    }</span>
+
+    public Sex getSex() {
+<span class="fc" id="L35">        return sex;</span>
+    }
+
+    public void setSex(Sex sex) {
+<span class="fc" id="L39">        this.sex = sex;</span>
+<span class="fc" id="L40">    }</span>
+
+    public List&lt;MedicalReport&gt; getMedicalReports() {
+<span class="fc" id="L43">        return medicalReports;</span>
+    }
+
+    public void setContents(List&lt;MedicalReport&gt; medicalReports) {
+<span class="fc" id="L47">        this.medicalReports = medicalReports;</span>
+<span class="fc" id="L48">    }</span>
+
+    @Override
+    public String toString() {
+<span class="fc" id="L52">        return &quot;DiabetesRiskAssessment{&quot; +</span>
+                &quot;dob=&quot; + dob +
+                &quot;, sex=&quot; + sex +
+                &quot;, contents=&quot; + medicalReports +
+                '}';
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

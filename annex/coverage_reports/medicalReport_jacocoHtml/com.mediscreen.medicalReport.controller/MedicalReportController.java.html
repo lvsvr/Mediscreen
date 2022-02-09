@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>MedicalReportController.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">medicalReport</a> &gt; <a href="index.source.html" class="el_package">com.mediscreen.medicalReport.controller</a> &gt; <span class="el_source">MedicalReportController.java</span></div><h1>MedicalReportController.java</h1><pre class="source lang-java linenums">package com.mediscreen.medicalReport.controller;
+
+import com.mediscreen.medicalReport.model.MedicalReport;
+import com.mediscreen.medicalReport.repository.MedicalReportRepository;
+import com.mediscreen.medicalReport.service.MedicalReportService;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+
+import javax.validation.Valid;
+import java.util.List;
+
+/**
+ * The type MedicalReportController.
+ */
+@RestController
+@RequestMapping(&quot;/medicalReport&quot;)
+<span class="fc" id="L19">public class MedicalReportController {</span>
+<span class="fc" id="L20">    private static final Logger logger = LogManager.getLogger(&quot;medicalReport&quot;);</span>
+
+    @Autowired
+    private MedicalReportService medicalReportService;
+    @Autowired
+    private MedicalReportRepository repo;
+
+    /**
+     * Gets a new medical medicalReport added to the db
+     *
+     * @param medicalReport
+     * @return the report
+     */
+    @PostMapping(&quot;/add&quot;)
+    public MedicalReport addMedicalReport(@RequestBody @Valid MedicalReport medicalReport) {
+<span class="fc" id="L35">        MedicalReport newMedicalReport = medicalReportService.addReport(medicalReport);</span>
+<span class="fc" id="L36">        logger.info(&quot;REQUEST: POST /add : &quot; + newMedicalReport.toString());</span>
+<span class="fc" id="L37">        return newMedicalReport;</span>
+    }
+
+    /**
+     * Gets a list of all reports
+     *
+     * @return a list of all reports
+     */
+    @GetMapping(&quot;/list&quot;)
+    public List&lt;MedicalReport&gt; getAllReports() {
+<span class="fc" id="L47">        logger.info(&quot;REQUEST: GET  /list&quot;);</span>
+<span class="fc" id="L48">        return repo.findAll();</span>
+    }
+
+    /**
+     * Gets a medical report by id
+     *
+     * @param id
+     * @return a report
+     */
+    @GetMapping(&quot;/{id}&quot;)
+    public MedicalReport getMedicalReportById(@PathVariable(&quot;id&quot;) String id) {
+<span class="fc" id="L59">        logger.info(&quot;REQUEST: GET /{id} : &quot; + id);</span>
+<span class="fc" id="L60">        return medicalReportService.getReportById(id);</span>
+
+
+    }
+
+    /**
+     * Gets a medical medicalReport updated
+     *
+     * @param id
+     * @param id
+     * content
+     * @return the medicalReport
+     */
+    @PostMapping(&quot;/update/{id}&quot;)
+    public MedicalReport updateMedicalReport(@PathVariable(&quot;id&quot;) String id, @RequestBody @Valid MedicalReport updatedReport) {
+<span class="fc" id="L75">        logger.info(&quot;REQUEST: POST /update/{id}:  from &quot; + medicalReportService.getReportById(id).getContent() + &quot;, to &quot; + updatedReport.getContent());</span>
+<span class="fc" id="L76">        return medicalReportService.updateReport(id, updatedReport);</span>
+    }
+
+    /**
+     * Gets a list of all medical reports by patient id
+     *
+     * @return for a given patient, returns a list of all medical reports
+     * @parm id
+     */
+    @GetMapping(&quot;/list/{id}&quot;)
+    public List&lt;MedicalReport&gt; getAllReportsByPatientId(@PathVariable(&quot;id&quot;) int id) {
+<span class="fc" id="L87">        logger.info(&quot;REQUEST: GET  /list/{id} : &quot; + id);</span>
+<span class="fc" id="L88">        return medicalReportService.getAllReportsByPatientId(id);</span>
+    }
+
+    /**
+     * Deletes a list of all medical reports by patient id
+     *
+     * @return for a given patient, deletes all medical reports
+     * @parm id
+     */
+    @GetMapping(&quot;/delete/list/{id}&quot;)
+    public void deleteAllReportsByPatientId(@PathVariable(&quot;id&quot;) int id) {
+<span class="fc" id="L99">        logger.info(&quot;REQUEST: GET  /delete/list/{id} : &quot; + id);</span>
+<span class="fc" id="L100">        medicalReportService.deleteAllReportsByPatientId(id);</span>
+<span class="fc" id="L101">    }</span>
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

@@ -3,6 +3,7 @@ package com.mediscreen.patient.controller;
 import com.mediscreen.patient.exception.PatientAlreadyExistsException;
 import com.mediscreen.patient.exception.PatientNotFoundException;
 import com.mediscreen.patient.model.Patient;
+import com.mediscreen.patient.repository.PatientRepository;
 import com.mediscreen.patient.service.PatientService;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -22,6 +23,7 @@ public class PatientController {
 
     @Autowired
     private PatientService patientService;
+
 
     /**
      * Gets a list of all patients
