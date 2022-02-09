@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org" xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity5"
+      lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mediscreen</title>
+    <link href="/static/css/bootstrap.css" th:href="@{/css/bootstrap.css}" rel="stylesheet"/>
+    <link href="/static/css/style.css" th:href="@{/css/style.css}" rel="stylesheet"/>
+</head>
+<body>
+<header>
+    <div class="row align-self-center">
+        <div class="col">
+            <button type="button" class="btn btn-dark">Mediscreen</button>
+        </div>
+        <div class="position1">
+            <div class="row">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="/patient/home">home</a></li>
+                        <li class="breadcrumb-item active">new patient</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="position2">
+    <div class="row"></div>
+</div>
+<div class="logBox">
+    <br>
+    <form action="#" th:action="@{/patient/add}" method="post" th:object="${patient}">
+        <fieldset>
+            <div class="logBox1">
+                <h2 class="position1">Patient</h2>
+                <br>
+            </div>
+
+            <div class="logBox1">
+                <em>given name:</em><br>
+                <input type="text" class="form-control" placeholder="given name" th:field="*{given}" required
+                       autofocus="autofocus">
+                <br>
+                <em>family name:</em><br>
+                <input type="text" class="form-control" placeholder="family name" th:field="*{family}" required
+                       autofocus="autofocus">
+                <br>
+                <em>date of birth:</em><br>
+                <input type="date" class="form-control" th:placeholder="${patient.dob}"
+                       th:field="*{dob}" required
+                       autofocus="autofocus">
+                <br>
+                <em>sex:</em><br>
+                <input type="text" class="form-control" placeholder="sex" th:field="*{sex}" required
+                       autofocus="autofocus">
+                <br>
+                <em>address:</em><br>
+                <input type="text" class="form-control" placeholder="address" th:field="*{address}"
+                       autofocus="autofocus">
+                <br>
+                <em>phone:</em><br>
+                <input type="text" class="form-control" placeholder="phone" th:field="*{phone}"
+                       autofocus="autofocus">
+                <br>
+                <div class="form-group">
+                    <a th:href="@{/patient/home}" class="btn btn-secondary col-5" role="button" aria-pressed="true">Cancel</a>
+                    <button type="submit" class="col-5 btn btn-primary">Add</button>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+
+</div>
+
+</div>
+</body>
+</html>

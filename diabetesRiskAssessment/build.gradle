@@ -1,0 +1,69 @@
+plugins {
+	id 'org.springframework.boot' version '2.6.3'
+	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+	id 'java'
+	id 'jacoco'
+	id 'com.palantir.docker' version '0.32.0'
+}
+
+group = 'com.mediscreen'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+targetCompatibility = '1.8'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.boot:spring-boot-starter-validation'
+
+
+	implementation 'org.apache.logging.log4j:log4j-api:2.17.1'
+	implementation'org.apache.logging.log4j:log4j-core:2.17.1'
+
+//=====================================================
+// SPRINGFOX ISSUE
+//=====================================================
+//Matching strategy could return issue
+//Spring MVC uses PathPatternParser instead of AntPathMatcher
+//fix in application.properties with :
+//spring.mvc.pathmatch.use-suffix-pattern=true
+//spring.mvc.pathmatch.matching-strategy=ant-path-matcher
+//=====================================================
+	implementation 'io.springfox:springfox-boot-starter:3.0.0'
+
+	testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.2'
+	testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.2'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+configurations {
+	all*.exclude module : 'spring-boot-starter-logging'
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}
+
+test {
+	useJUnitPlatform()
+	finalizedBy jacocoTestReport
+}
+
+jacocoTestReport {
+	dependsOn test // tests are required to run before generating the report
+}
+
+jacoco {
+	toolVersion = "0.8.7"
+}
+
+jacocoTestReport {
+	reports {
+		xml.enabled false
+		csv.enabled false
+		html.destination file("${buildDir}/jacocoHtml")
+	}
+}

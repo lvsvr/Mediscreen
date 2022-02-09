@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>PatientController.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">patient</a> &gt; <a href="index.source.html" class="el_package">com.mediscreen.patient.controller</a> &gt; <span class="el_source">PatientController.java</span></div><h1>PatientController.java</h1><pre class="source lang-java linenums">package com.mediscreen.patient.controller;
+
+import com.mediscreen.patient.exception.PatientAlreadyExistsException;
+import com.mediscreen.patient.exception.PatientNotFoundException;
+import com.mediscreen.patient.model.Patient;
+import com.mediscreen.patient.repository.PatientRepository;
+import com.mediscreen.patient.service.PatientService;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+
+import javax.validation.Valid;
+import java.util.List;
+
+/**
+ * The type PatientController
+ */
+@RestController
+@RequestMapping(&quot;/patient&quot;)
+<span class="fc" id="L21">public class PatientController {</span>
+<span class="fc" id="L22">    private static final Logger logger = LogManager.getLogger(&quot;patient&quot;);</span>
+
+    @Autowired
+    private PatientService patientService;
+
+
+    /**
+     * Gets a list of all patients
+     *
+     * @throws PatientNotFoundException
+     * @return a list of all patients
+     */
+    @GetMapping(&quot;/list&quot;)
+    public List&lt;Patient&gt; getAllPatients() throws PatientNotFoundException {
+<span class="fc" id="L36">        logger.info(&quot;REQUEST: GET  /list&quot; );</span>
+<span class="fc" id="L37">        return patientService.getAllPatients();</span>
+    }
+
+    /**
+     * Gets a patient by id
+     *
+     * @param id
+     * @throws PatientNotFoundException
+     * @return a patient
+     */
+    @GetMapping(&quot;/{id}&quot;)
+    public Patient getPatientById(@PathVariable(&quot;id&quot;) Integer id) throws PatientNotFoundException {
+<span class="fc" id="L49">        logger.info(&quot;REQUEST: GET /{id} : &quot; + id );</span>
+<span class="fc" id="L50">        return patientService.getPatientById(id);</span>
+    }
+
+    /**
+     * Gets patients by family
+     *
+     * @param family
+     * @throws PatientAlreadyExistsException
+     * @throws PatientNotFoundException
+     * @return list of patients with the same family name
+     */
+    @GetMapping(&quot;/search/{family}&quot;)
+    public List&lt;Patient&gt; getPatientsByName(@PathVariable(name = &quot;family&quot;) String family) throws PatientNotFoundException, PatientAlreadyExistsException {
+<span class="fc" id="L63">        logger.info(&quot;REQUEST: GET /search/{family} : &quot;+ family );</span>
+<span class="fc" id="L64">        return patientService.getPatientsByFamily(family);</span>
+    }
+
+    /**
+     * Gets patient deleted by id
+     *
+     * @param id
+     * @throws PatientNotFoundException
+     */
+    @GetMapping(&quot;/delete&quot;)
+    public void getPatientDeletedById(@RequestParam(&quot;id&quot;) Integer id) throws PatientNotFoundException {
+<span class="fc" id="L75">        Patient patient = patientService.getPatientById(id);</span>
+<span class="fc" id="L76">        patientService.deletePatient(id);</span>
+<span class="fc" id="L77">        logger.info(&quot;REQUEST: GET /delete?id={id} : &quot;+  patient.toString());</span>
+<span class="fc" id="L78">    }</span>
+
+    /**
+     * Gets a new patient added to the db
+     *
+     * @throws PatientNotFoundException
+     * @throws PatientAlreadyExistsException
+     * @return the patient
+     */
+    @PostMapping(&quot;/add&quot;)
+    public Patient addPatient(@RequestBody @Valid Patient patient) throws PatientNotFoundException, PatientAlreadyExistsException {
+<span class="fc" id="L89">        Patient newPatient = patientService.addPatient(patient);</span>
+<span class="fc" id="L90">        logger.info(&quot;REQUEST: POST /add : &quot; + newPatient.toString() );</span>
+<span class="fc" id="L91">        return newPatient;</span>
+    }
+
+    /**
+     * Gets a patient updated
+     *
+     * @throws PatientNotFoundException
+     * @throws PatientAlreadyExistsException
+     * @return the patient
+     */
+    @PostMapping(&quot;/update/{id}&quot;)
+    public Patient updatePatient(@PathVariable(&quot;id&quot;) Integer id, @RequestBody @Valid Patient patient) throws PatientNotFoundException {
+<span class="fc" id="L103">        logger.info(&quot;REQUEST: POST /update/{id}:  from &quot; + patientService.getPatientById(patient.getId())+ &quot;, to &quot; + patient.toString() );</span>
+<span class="fc" id="L104">        return patientService.updatePatient(patient);</span>
+    }
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org" xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity5"
+      lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mediscreen</title>
+    <link href="/static/css/bootstrap.css" th:href="@{/css/bootstrap.css}" rel="stylesheet"/>
+    <link href="/static/css/style.css" th:href="@{/css/style.css}" rel="stylesheet"/>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+</head>
+<body>
+<header>
+    <div class="row align-self-center">
+        <div class="col">
+            <button type="button" class="btn btn-dark">Mediscreen</button>
+        </div>
+        <h2>Patient</h2>
+        <div class="position1">
+            <div class="row">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="./home">home</a></li>
+                        <li class="breadcrumb-item active">patient</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="position2">
+    <table id="patientTable" class="table table-fluid table-striped">
+        <thead>
+        <tr>
+            <th data-field="id" scope="col">id</th>
+            <th data-field="family" scope="col">family name</th>
+            <th data-field="given" scope="col">given name</th>
+            <th data-field="dob" scope="col">d.o.b</th>
+            <th data-field="dob" scope="col">sex</th>
+            <th data-field="dob" scope="col">address</th>
+            <th data-field="dob" scope="col">phone</th>
+            <th data-field="link" scope="col">access</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:object="${patient}">
+            <th scope="row" th:text="${patient.id}"></th>
+            <td th:text="${patient.family}"></td>
+            <td th:text="${patient.given}"></td>
+            <td th:text="${patient.dob}"></td>
+            <td th:text="${patient.sex}"></td>
+            <td th:text="${patient.address}"></td>
+            <td th:text="${patient.phone}"></td>
+            <td><a th:href="@{'/patient/update/' + ${patient.id}}" class="btn btn-info col-12" role="button"
+                   aria-pressed="true">Update</a></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</div>
+<div class="position2">
+        <h4 class="col">Medical reports</h4>
+        <form action="#" th:action="@{'./medicalReport/add/' + ${patient.id}}" method="get" th:object="${patient}">
+            <button type="submit" class="col-1 btn btn-primary">Add</button>
+        </form>
+</div>
+<div class="position2">
+    <table id="reportTable" class="table table-fluid table-striped">
+        <thead>
+        <tr class="table1">
+            <th data-field="reportDate" scope="col">date</th>
+            <th data-field="content" scope="col">content</th>
+            <th data-field="link" scope="col">access</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="medicalReport:${medicalReports}" style="cursor: pointer">
+            <th scope="row" th:text="${medicalReport.reportDate}"></th>
+            <td th:text="${medicalReport.content}"></td>
+            <td><a th:href="@{'./medicalReport/update/' + ${medicalReport.id}}" class="btn btn-info col-12"
+                   role="button"
+                   aria-pressed="true">select</a></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<div class="position2">
+    <h4 class="col">Assessment</h4>
+<!--    <form action="#" th:action="@{'./diabetesRisk/assess}" method="post" th:object="${diabetesRiskInfo}">-->
+<!--        <input  type="hidden" th:field="*{patient.sex}">-->
+<!--        <input  type="hidden" th:field="*{patient.dob}">-->
+<!--        <input  type="hidden" th:field="*{medicalReports}">-->
+<!--        <button type="submit" class="col-2 btn btn-primary">Diabetes risk</button>-->
+    <a th:href="@{'/patient/diabetesRisk/assess/' + ${patient.id}}" class="btn btn-primary col-1" role="button" aria-pressed="true">Diabetes risk</a>
+<!--    </form>-->
+</div>
+<script>
+$(document).ready(function(){$('#reportTable').DataTable();});
+
+</script>
+</body>
+</html>
+
+

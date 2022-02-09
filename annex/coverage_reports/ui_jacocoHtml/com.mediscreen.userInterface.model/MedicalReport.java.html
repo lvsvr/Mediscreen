@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>MedicalReport.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">userInterface</a> &gt; <a href="index.source.html" class="el_package">com.mediscreen.userInterface.model</a> &gt; <span class="el_source">MedicalReport.java</span></div><h1>MedicalReport.java</h1><pre class="source lang-java linenums">package com.mediscreen.userInterface.model;
+
+import java.time.LocalDate;
+
+/**
+ * The type MedicalReport
+ */
+public class MedicalReport {
+
+    String id;
+    private int patientId;
+    private LocalDate reportDate;
+    private String content;
+
+<span class="fc" id="L15">    public MedicalReport(int patientId, String content) {</span>
+<span class="fc" id="L16">        this.patientId = patientId;</span>
+<span class="fc" id="L17">        this.content = content;</span>
+<span class="fc" id="L18">    }</span>
+
+    public String getId() {
+<span class="fc" id="L21">        return id;</span>
+    }
+
+    public int getPatientId() {
+<span class="fc" id="L25">        return patientId;</span>
+    }
+
+    public void setPatientId(int patientId) {
+<span class="fc" id="L29">        this.patientId = patientId;</span>
+<span class="fc" id="L30">    }</span>
+
+    public LocalDate getReportDate() {
+<span class="fc" id="L33">        return reportDate;</span>
+    }
+
+    public void setReportDate(LocalDate reportDate) {
+<span class="fc" id="L37">        this.reportDate = reportDate;</span>
+<span class="fc" id="L38">    }</span>
+
+    public String getContent() {
+<span class="fc" id="L41">        return content;</span>
+    }
+
+    public void setContent(String content) {
+<span class="nc" id="L45">        this.content = content;</span>
+<span class="nc" id="L46">    }</span>
+
+    @Override
+    public String toString() {
+<span class="fc" id="L50">        return &quot;MedicalReport{&quot; +</span>
+                &quot;id=&quot; + id +
+                &quot;, patientId=&quot; + patientId +
+                &quot;, reportDate=&quot; + reportDate +
+                &quot;, content='&quot; + content + '\'' +
+                '}';
+    }
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

@@ -9,6 +9,7 @@ plugins {
 group = 'com.mediscreen'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '1.8'
+targetCompatibility = '1.8'
 
 repositories {
 	mavenCentral()
@@ -17,12 +18,24 @@ repositories {
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
-	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
 	implementation 'org.springframework.boot:spring-boot-starter-validation'
 	runtimeOnly 'org.postgresql:postgresql'
 
 	implementation 'org.apache.logging.log4j:log4j-api:2.17.1'
 	implementation'org.apache.logging.log4j:log4j-core:2.17.1'
+
+//=====================================================
+// SPRINGFOX ISSUE
+//=====================================================
+//Matching strategy could return issue
+//Spring MVC uses PathPatternParser instead of AntPathMatcher
+//fix in application.properties with :
+//spring.mvc.pathmatch.use-suffix-pattern=true
+//spring.mvc.pathmatch.matching-strategy=ant-path-matcher
+//=====================================================
+	implementation 'io.springfox:springfox-boot-starter:3.0.0'
+
+
 
 	testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.2'
 	testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.2'

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org" xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity5"
+      lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mediscreen</title>
+    <link href="/static/css/bootstrap.css" th:href="@{/css/bootstrap.css}" rel="stylesheet"/>
+    <link href="/static/css/style.css" th:href="@{/css/style.css}" rel="stylesheet"/>
+</head>
+<body>
+<header>
+    <div class="row align-self-center">
+        <div class="col">
+            <button type="button" class="btn btn-dark">Mediscreen</button>
+        </div>
+        <h2>Diabetes risk assessment</h2>
+        <div class="position1">
+            <div class="row">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="/patient/home">home</a></li>
+                        <li class="breadcrumb-item"><a th:href="@{'/patient/' + ${id}}">patient</a></li>
+                        <li class="breadcrumb-item active">assessment</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="position2">
+    <table id="assessmentTable" class="table table-fluid table-striped">
+        <thead>
+        <tr>
+            <th data-field="riskLevel" scope="col">riskLevel</th>
+            <th data-field="age" scope="col">age</th>
+            <th data-field="sex" scope="col">sex</th>
+            <th data-field="triggeringFactors" scope="col">triggering factors</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:object="${diabetesRiskAssessment}">
+            <th scope="row" th:text="${diabetesRiskAssessment.riskLevel}"></th>
+            <td th:text="${diabetesRiskAssessment.patientAge}"></td>
+            <td th:text="${diabetesRiskAssessment.sex}"></td>
+            <td th:text="${diabetesRiskAssessment.triggeringFactors}"></td>
+        </tr>
+        </tbody>
+    </table>
+    <br>
+    <a th:href="@{'/patient/' + ${id}}" class="btn btn-secondary col-1" role="button"
+       aria-pressed="true">Cancel</a>
+</div>
+</div>
+
+</body>
+</html>
+
+

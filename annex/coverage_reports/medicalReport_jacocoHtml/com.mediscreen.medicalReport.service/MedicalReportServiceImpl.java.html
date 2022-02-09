@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>MedicalReportServiceImpl.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">medicalReport</a> &gt; <a href="index.source.html" class="el_package">com.mediscreen.medicalReport.service</a> &gt; <span class="el_source">MedicalReportServiceImpl.java</span></div><h1>MedicalReportServiceImpl.java</h1><pre class="source lang-java linenums">package com.mediscreen.medicalReport.service;
+
+import com.mediscreen.medicalReport.model.MedicalReport;
+import com.mediscreen.medicalReport.repository.MedicalReportRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+/**
+ * The type MedicalReportServiceImpl
+ */
+@Service
+<span class="fc" id="L17">public class MedicalReportServiceImpl implements MedicalReportService{</span>
+
+    @Autowired
+    private MedicalReportRepository medicalReportRepository;
+
+    @Override
+    public MedicalReport addReport(MedicalReport medicalReport) {
+<span class="fc" id="L24">        medicalReport.setReportDate(LocalDate.now());</span>
+<span class="fc" id="L25">        return medicalReportRepository.save(medicalReport);</span>
+    }
+
+    @Override
+    public MedicalReport getReportById(String id) {
+<span class="fc" id="L30">        return medicalReportRepository.findById(id).get();</span>
+    }
+
+    @Override
+    public MedicalReport updateReport(String id, MedicalReport updatedReport) {
+<span class="fc" id="L35">        MedicalReport medicalReport = getReportById(id);</span>
+<span class="fc" id="L36">        medicalReport.setContent(updatedReport.getContent());</span>
+<span class="fc" id="L37">        return medicalReportRepository.save(medicalReport);</span>
+    }
+
+    @Override
+    public void deleteReport(String id) {
+<span class="fc" id="L42">        medicalReportRepository.deleteById(id);</span>
+<span class="fc" id="L43">    }</span>
+
+    @Override
+    public List&lt;MedicalReport&gt; getAllReportsByPatientId(int patientId) {
+<span class="fc" id="L47">        List&lt;MedicalReport&gt; medicalReports =  medicalReportRepository.findAll();</span>
+<span class="fc" id="L48">        List&lt;MedicalReport&gt; reportsByPatientId = new ArrayList();</span>
+<span class="fc bfc" id="L49" title="All 2 branches covered.">        for ( MedicalReport medicalReport : medicalReports){</span>
+<span class="fc bfc" id="L50" title="All 2 branches covered.">            if(medicalReport.getPatientId() == patientId){</span>
+<span class="fc" id="L51">                reportsByPatientId.add(medicalReport);</span>
+            }
+<span class="fc" id="L53">        }</span>
+<span class="fc" id="L54">        Collections.reverse(reportsByPatientId);</span>
+<span class="fc" id="L55">        return reportsByPatientId;</span>
+    }
+
+    @Override
+    public void deleteAllReportsByPatientId(int patientId) {
+<span class="fc" id="L60">        List&lt;MedicalReport&gt; medicalReports = getAllReportsByPatientId(patientId);</span>
+<span class="fc bfc" id="L61" title="All 2 branches covered.">        for ( MedicalReport medicalReport : medicalReports){</span>
+<span class="fc" id="L62">            medicalReportRepository.delete(medicalReport);</span>
+<span class="fc" id="L63">        }</span>
+<span class="fc" id="L64">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

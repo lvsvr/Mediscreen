@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org" xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity5"
+      lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mediscreen</title>
+    <link href="/static/css/bootstrap.css" th:href="@{/css/bootstrap.css}" rel="stylesheet"/>
+    <link href="/static/css/style.css" th:href="@{/css/style.css}" rel="stylesheet"/>
+</head>
+<body>
+<header>
+    <div class="row align-self-center">
+        <div class="col">
+            <button type="button" class="btn btn-dark">Mediscreen</button>
+        </div>
+        <div class="position1">
+            <div class="row">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="/patient/home">home</a></li>
+                        <li class="breadcrumb-item active"><a th:href="@{'/patient/' + ${patient.id}}">patient</a></li>
+                        <li class="breadcrumb-item active">update patient</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="position2">
+    <div class="row"></div>
+    <div class="row">
+        <h4 class="col">Update information</h4>
+        <td><a th:href="@{'/patient/toBeDeleted/' + ${patient.id}}" class="btn btn-danger col-1" role="button"
+               aria-pressed="true">Delete</a></td>
+    </div>
+</div>
+<div class="logBox">
+    <br>
+    <form action="#" th:action="@{'/patient/update/' + ${patient.id}}" method="post" th:object="${patient}">
+        <fieldset>
+            <div class="logBox1">
+                <h2 class="position1">Patient</h2>
+                <br>
+            </div>
+            <br>
+            <div><em>Id:</em>
+                <th:block th:text="${patient.id}"></th:block>
+            </div>
+            <br>
+            <div class="logBox1">
+                <em>given name:</em><br>
+                <input type="text" class="form-control" th:placeholder="${patient.given}" th:field="*{given}"
+                       required
+                       autofocus="autofocus">
+                <br>
+                <em>family name:</em><br>
+                <input type="text" class="form-control" th:placeholder="${patient.family}" th:field="*{family}"
+                       required
+                       autofocus="autofocus">
+                <br>
+                <em>date of birth:</em><br>
+                <input type="date" class="form-control" th:placeholder="${patient.dob}"
+                       th:field="*{dob}" required
+                       autofocus="autofocus">
+                <br>
+                <em>sex:</em><br>
+                <input type="text" class="form-control" th:placeholder="${patient.sex}" th:field="*{sex}" required
+                       autofocus="autofocus">
+                <br>
+                <em>address:</em><br>
+                <input type="text" class="form-control" th:placeholder="${patient.address}" th:field="*{address}"
+
+                       autofocus="autofocus">
+                <br>
+                <em>phone:</em><br>
+                <input type="text" class="form-control" th:placeholder="${patient.phone}" th:field="*{phone}"
+                       autofocus="autofocus">
+                <br>
+                <div class="form-group">
+                    <a th:href="@{'/patient/' + ${patient.id}}" class="btn btn-secondary col-5" role="button"
+                       aria-pressed="true">Cancel</a>
+                    <button type="submit" class="col-5 btn btn-primary">Amend</button>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+
+</div>
+
+</div>
+</body>
+</html>
