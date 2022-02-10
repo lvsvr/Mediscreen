@@ -30,6 +30,9 @@ bonus:<br>
   choose a name and add the IP address and password
   - connect to Mongo Express:<br>
       http://localhost:8081/ <br>
+  - connect to swagger:<br>
+    http://localhost:9000/swagger-ui/#/ <br>
+    NB : (9000 : UI) / (9001 : patient) / (9002 : medicalReport) / (9003 : diabetesRiskAssessment)  <br>
 
 ---
 **Instructions - only db in Docker**
@@ -68,5 +71,10 @@ http://localhost:8081/ <br>
 - medicalReport
 - diabetesRiskAssessment
 - userInterface
-- http://localhost:9000/patient/home
+- http://localhost:9000/patient/home <br>
+<br>
+bonus:<br>
+- connect to swagger:<br>
+  http://localhost:9000/swagger-ui/#/ <br>
+      NB : (9000 : UI) / (9001 : patient) / (9002 : medicalReport) / (9003 : diabetesRiskAssessment)  <br>
 
